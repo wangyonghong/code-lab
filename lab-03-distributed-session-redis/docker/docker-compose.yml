@@ -1,0 +1,44 @@
+version: "3"
+services:
+  redis:
+    # https://hub.docker.com/_/redis
+    # docker run -d -p 6379:6379 redis:alpine --requirepass "123456"
+    image: redis:alpine
+    container_name: springboot-lab-redis
+    ports:
+      - 6379:6379
+    volumes:
+      - ./data:/data
+    command: redis-server --requirepass 123456
+    restart: always
+  spring01:
+    build:
+      context: .
+    container_name: springboot-lab-spring01
+    environment:
+      HOSTNAME: springboot-lab-spring01
+    restart: always
+    depends_on:
+      - redis
+  spring02:
+    build:
+      context: .
+    container_name: springboot-lab-spring02
+    environment:
+      HOSTNAME: springboot-lab-spring02
+    restart: always
+    depends_on:
+      - redis
+  nginx:
+    # https://hub.docker.com/_/nginx
+    image: nginx:alpine
+    container_name: springboot-lab-nginx
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - spring01
+      - spring02
+
