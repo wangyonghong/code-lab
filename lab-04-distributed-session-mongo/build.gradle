@@ -11,5 +11,9 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    // 实现对 Spring Session 使用 MongoDB 作为数据源的自动化配置
+    implementation 'org.springframework.session:spring-session-data-mongodb'
+    // 自动化配置 Spring Data Mongodb
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

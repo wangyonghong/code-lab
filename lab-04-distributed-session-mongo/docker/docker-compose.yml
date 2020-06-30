@@ -1,0 +1,59 @@
+version: "3"
+services:
+  mongo:
+    image: mongo:latest
+    container_name: springboot-lab-mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: Passw0rd
+      MONGO_INITDB_DATABASE: springboot-lab
+    ports:
+      - 27017:27017
+    volumes:
+      - "./data:/data/db"
+      - "./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js"
+    restart: always
+  mongo-express:
+    image: mongo-express:latest
+    container_name: springboot-lab-mongo-express
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: Passw0rd
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: admin
+    ports:
+      - 8081:8081
+    restart: always
+    depends_on:
+      - mongo
+  spring01:
+    build:
+      context: .
+    container_name: springboot-lab-spring01
+    environment:
+      HOSTNAME: springboot-lab-spring01
+    restart: always
+    depends_on:
+      - mongo
+  spring02:
+    build:
+      context: .
+    container_name: springboot-lab-spring02
+    environment:
+      HOSTNAME: springboot-lab-spring02
+    restart: always
+    depends_on:
+      - mongo
+  nginx:
+    # https://hub.docker.com/_/nginx
+    image: nginx:alpine
+    container_name: springboot-lab-nginx
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+    ports:
+      - 8080:8080
+    restart: always
+    depends_on:
+      - spring01
+      - spring02
+
