@@ -36,3 +36,7 @@ app.jar
 
 ### macOS ###
 .DS_Store
+
+arthas-output
+
+stale_outputs_checked

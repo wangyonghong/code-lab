@@ -15,5 +15,5 @@ dependencies {
     implementation 'org.springframework.session:spring-session-data-mongodb'
     // 自动化配置 Spring Data Mongodb
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
 }

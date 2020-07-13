@@ -1,24 +1,31 @@
 version: "3"
 services:
   mongo:
+    # https://hub.docker.com/_/mongo
     image: mongo:latest
     container_name: springboot-lab-mongo
     environment:
+      # mongo admin 用户名密码
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: Passw0rd
+      # mongo 初始化脚本 database
       MONGO_INITDB_DATABASE: springboot-lab
     ports:
       - 27017:27017
     volumes:
       - "./data:/data/db"
+      # mongo 初始化脚本
       - "./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js"
     restart: always
   mongo-express:
+    # https://hub.docker.com/_/mongo-express
     image: mongo-express:latest
     container_name: springboot-lab-mongo-express
     environment:
+      # mongo admin 用户名密码 和上面 admin 密码一样
       ME_CONFIG_MONGODB_ADMINUSERNAME: admin
       ME_CONFIG_MONGODB_ADMINPASSWORD: Passw0rd
+      # mongo express 用户名密码 basic 认证
       ME_CONFIG_BASICAUTH_USERNAME: admin
       ME_CONFIG_BASICAUTH_PASSWORD: admin
     ports:

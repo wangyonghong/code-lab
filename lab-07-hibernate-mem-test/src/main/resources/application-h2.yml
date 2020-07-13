@@ -1,0 +1,29 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: true
+        format_sql: true
+        # 限制缓存条数
+        query:
+          plan_cache_max_size: 64
+          plan_parameter_metadata_max_size: 32
+  datasource:
+    driver-class-name: org.h2.Driver
+    platform: h2
+    url: jdbc:h2:mem:springboot;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: 123456
+    schema: classpath:schema-h2.sql
+    data: classpath:data-h2.sql
+  h2:
+    console:
+      enabled: true
+      path: /console
+      settings:
+        trace: false
+        web-allow-others: true

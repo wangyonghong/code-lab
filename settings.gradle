@@ -1,7 +1,12 @@
 rootProject.name = 'springboot-lab'
 include 'lab-00-alpha'
+include 'lab-00-beta'
 include 'lab-01-spring-security'
 include 'lab-02-spring-security-role'
 include 'lab-03-distributed-session-redis'
 include 'lab-04-distributed-session-mongo'
+include 'lab-05-distributed-session-spring-security'
+include 'lab-06-shiro'
+include 'lab-07-hibernate-mem-test'
+include 'lab-08-mybatis-mem-test'
 

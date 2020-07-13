@@ -1,6 +1,16 @@
 buildscript {
     ext {
+        // Spring
         SpringBootVersion = '2.3.1.RELEASE'
+
+        // Apache Common
+        CommonsLang3Version = '3.10'
+
+        // Data
+        MybatisPlusStarterVersion = '3.3.2'
+
+        // Security
+        ShiroStarterVersion = '1.5.3'
     }
 }
 

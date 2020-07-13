@@ -1,6 +1,12 @@
-# lab-03-distributed-session
+# lab-03-distributed-session-redis
 
 ## start
+
+```shell
+# 只启动 Redis
+cd docker
+docker-compose up redis
+```
 
 ```shell
 ./docker-start.sh
