@@ -1,6 +1,6 @@
 package me.yonghong.springboot.lab.kotlininaction.chapter04
 
-
+// 集合拓展方法
 fun main(args: Array<String>) {
     val list = arrayListOf<Char>('a', 'b', 'c', 'd')
     val a = list.map { it - 'a' }

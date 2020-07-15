@@ -1,5 +1,6 @@
 package me.yonghong.springboot.lab.kotlininaction.chapter04
 
+// 循环的多种方式
 fun main(args: Array<String>) {
 
     for (i in 1..10) {
