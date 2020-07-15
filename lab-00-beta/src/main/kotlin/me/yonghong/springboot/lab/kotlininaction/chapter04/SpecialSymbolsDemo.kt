@@ -40,7 +40,7 @@ fun main(args: Array<String>) {
     println(a == f)
     println(a === f)
 
-    val aFile: File = A("")
+    val aFile: File = AFile("")
 
 }
 
@@ -51,4 +51,4 @@ fun main(args: Array<String>) {
  * [kotlin.collections.LinkedHashSet]
  * [kotlin.collections.HashSet]
  */
-public typealias A = File
+public typealias AFile = File
