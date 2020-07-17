@@ -6,6 +6,12 @@ buildscript {
         // Apache Common
         CommonsLang3Version = '3.10'
 
+        // Google
+        GsonVersion = '2.8.6'
+        GuavaVersion = '29.0-jre'
+
+        RxJava3Version = '3.0.4'
+
         // Data
         MybatisPlusStarterVersion = '3.3.2'
 

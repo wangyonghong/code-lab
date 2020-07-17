@@ -9,4 +9,5 @@ include 'lab-05-distributed-session-spring-security'
 include 'lab-06-shiro'
 include 'lab-07-hibernate-mem-test'
 include 'lab-08-mybatis-mem-test'
+include 'lab-09-kotlin-demo'
 

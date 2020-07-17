@@ -40,7 +40,7 @@ interface Element {
     fun render(builder: StringBuilder, indent: String)
 }
 
-class TextElement(val text: String) : Element {
+class TextElement(private val text: String) : Element {
     override fun render(builder: StringBuilder, indent: String) {
         builder.append("$indent$text\n")
     }
@@ -59,7 +59,7 @@ abstract class Tag(val name: String) : Element {
     override fun render(builder: StringBuilder, indent: String) {
         builder.append("$indent<$name${renderAttributes()}>\n")
         for (c in children) {
-            c.render(builder, indent + "  ")
+            c.render(builder, "$indent  ")
         }
         builder.append("$indent</$name>\n")
     }

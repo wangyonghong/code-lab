@@ -17,8 +17,12 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    implementation "io.reactivex.rxjava3:rxjava:3.0.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core"
 
+
+    implementation "io.reactivex.rxjava3:rxjava:${RxJava3Version}"
+
+    implementation "com.google.code.gson:gson:${GsonVersion}"
 }
 
 compileKotlin {
