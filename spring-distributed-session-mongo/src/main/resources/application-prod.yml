@@ -1,0 +1,18 @@
+spring:
+  data:
+    # MongoDB 配置项，对应 MongoProperties 类
+    mongodb:
+      host: ${MONGO_HOST:mongo}
+      port: ${MONGO_PORT:27017}
+      database: ${MONGO_DATABASE:springboot-lab}
+      username: ${MONGO_USERNAME:test}
+      password: ${MONGO_PASSWORD:Passw0rd}
+      # 上述属性，也可以只配置 uri
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core: DEBUG # 打印 mongodb 操作的具体语句。生产环境下，不建议开启。
