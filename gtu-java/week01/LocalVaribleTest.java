@@ -1,3 +1,6 @@
+/**
+ * @author yonghongwang#163.com
+ */
 public class LocalVaribleTest {
     public static void main(String[] args) {
         MovingAverage ma = new MovingAverage();

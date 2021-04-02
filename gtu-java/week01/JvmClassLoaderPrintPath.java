@@ -3,6 +3,9 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
 
+/**
+ * @author yonghongwang#163.com
+ */
 public class JvmClassLoaderPrintPath {
 
     public static void main(String[] args) {

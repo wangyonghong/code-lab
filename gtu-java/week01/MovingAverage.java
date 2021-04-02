@@ -1,3 +1,6 @@
+/**
+ * @author yonghongwang#163.com
+ */
 public class MovingAverage {
     private int count = 0;
     private double sum = 0.0D;

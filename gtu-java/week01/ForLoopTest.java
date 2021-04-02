@@ -1,3 +1,6 @@
+/**
+ * @author yonghongwang#163.com
+ */
 public class ForLoopTest {
     private static int[] nums = {1, 6, 8};
     public static void main(String[] args) {
