@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         manager.notify(1, notification);
     }
 
-    public void cacelNotification(View view) {
+    public void cancelNotification(View view) {
         manager.cancel(1);
     }
 }

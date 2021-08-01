@@ -13,7 +13,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cacelNotification"
+        android:onClick="cancelNotification"
         android:text="取消通知" />
 
 </LinearLayout>
