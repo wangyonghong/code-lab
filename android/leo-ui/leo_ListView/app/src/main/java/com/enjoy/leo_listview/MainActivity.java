@@ -36,5 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//        listView.setOnLongClickListener();
+//        listView.setOnTouchListener();
     }
 }
