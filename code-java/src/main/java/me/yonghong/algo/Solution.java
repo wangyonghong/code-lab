@@ -1,6 +1,11 @@
 package me.yonghong.algo;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * @author yonghongwang#163.com
@@ -48,6 +53,26 @@ public interface Solution {
     }
 
     /**
+     * 打印 List<Integer> list
+     *
+     * @param list
+     */
+    default void printList(List<Integer> list) {
+        System.out.println(ArrayUtils.toString(list));
+    }
+
+    /**
+     * 打印 List<List<Integer>>
+     *
+     * @param list
+     */
+    default void printListList(List<List<Integer>> list) {
+        for (List<Integer> l : list) {
+            System.out.println(ArrayUtils.toString(l));
+        }
+    }
+
+    /**
      * 打印链表
      *
      * @param head
@@ -63,13 +88,60 @@ public interface Solution {
         System.out.print("]");
     }
 
+    default TreeNode stringToTreeNode(String input) {
+        input = input.trim();
+        input = input.substring(1, input.length() - 1);
+        if (input.length() == 0) {
+            return null;
+        }
+
+        String[] parts = input.split(",");
+        String item = parts[0];
+        TreeNode root = new TreeNode(Integer.parseInt(item));
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        nodeQueue.add(root);
+
+        int index = 1;
+        while (!nodeQueue.isEmpty()) {
+            TreeNode node = nodeQueue.remove();
+
+            if (index == parts.length) {
+                break;
+            }
+
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int leftNumber = Integer.parseInt(item);
+                node.left = new TreeNode(leftNumber);
+                nodeQueue.add(node.left);
+            }
+
+            if (index == parts.length) {
+                break;
+            }
+
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int rightNumber = Integer.parseInt(item);
+                node.right = new TreeNode(rightNumber);
+                nodeQueue.add(node.right);
+            }
+        }
+        return root;
+    }
+
     class ListNode {
         public int val;
         public ListNode next;
 
-        public ListNode() { }
+        public ListNode() {
+        }
 
-        public ListNode(int val) { this.val = val; }
+        public ListNode(int val) {
+            this.val = val;
+        }
 
         public ListNode(int val, ListNode next) {
             this.val = val;
@@ -82,9 +154,12 @@ public interface Solution {
         public TreeNode left;
         public TreeNode right;
 
-        public TreeNode() { }
+        public TreeNode() {
+        }
 
-        public TreeNode(int val) { this.val = val; }
+        public TreeNode(int val) {
+            this.val = val;
+        }
 
         public TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
