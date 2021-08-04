@@ -4,9 +4,11 @@ import me.yonghong.algo.Solution;
 
 /**
  * 236. 二叉树的最近公共祖先
- * https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
+ * 236. Lowest Common Ancestor of a Binary Tree
  *
  * @author yonghongwang#163.com
+ * @link <a href="https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/"></a>
+ * @link <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"></a>
  * @since 2021/7/28
  **/
 public class Lc236 implements Solution {

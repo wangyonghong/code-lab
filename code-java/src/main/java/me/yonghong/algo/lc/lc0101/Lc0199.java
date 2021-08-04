@@ -1,19 +1,37 @@
 package me.yonghong.algo.lc.lc0101;
 
+import me.yonghong.algo.Solution;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import me.yonghong.algo.Solution;
-
 /**
+ * 199. 二叉树的右视图
+ * 199. Binary Tree Right Side View
+ *
  * @author yonghongwang#163.com
+ * @link <a href="https://leetcode-cn.com/problems/binary-tree-right-side-view/"></a>
+ * @link <a href="https://leetcode.com/problems/binary-tree-right-side-view/"></a>
  * @since 2021/4/18
  */
 public class Lc0199 implements Solution {
 
+    public static void main(String[] args) {
+        new Lc0199().test();
+    }
+
+    @Override
+    public void test() {
+        TreeNode root = stringToTreeNode("[1,2,3,null,5,null,4]");
+        List<Integer> list = rightSideView(root);
+        printList(list);
+    }
+
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        if (root == null) { return res; }
+        if (root == null) {
+            return res;
+        }
         ArrayList<TreeNode> q = new ArrayList<>();
         q.add(root);
         // 标志位
