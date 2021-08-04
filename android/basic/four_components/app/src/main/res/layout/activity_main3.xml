@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:orientation="vertical">
+
+    <!-- startService 对应 stopService 区域 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startService 对应 stopService 区域"
+        android:textSize="20dp"
+        android:textColor="@color/design_default_color_secondary"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="startServce"
+            android:onClick="startServce"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stopServce"
+            android:onClick="stopServce"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <!-- bindService 对应 unBindService 区域 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bindService 对应 unBindService 区域"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bindServce"
+            android:onClick="bindServce"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unBindServce"
+            android:onClick="unBindServce"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
