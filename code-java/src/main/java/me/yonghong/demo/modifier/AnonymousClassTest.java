@@ -1,4 +1,4 @@
-package me.yonghong.demo.innerclass;
+package me.yonghong.demo.modifier;
 
 /**
  * @author yonghongwang#163.com

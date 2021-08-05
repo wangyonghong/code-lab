@@ -1,18 +1,18 @@
-package me.yonghong.demo.producerandconsumer;
+package me.yonghong.design.producerandconsumer;
 
 /**
  * @author yonghongwang#163.com
  * @since 2021/4/17
  */
-public class Consumer extends Thread {
+public class Producer extends Thread {
 
     /**
-     * 每次消费的数量
+     * 每秒生产的数量
      */
     private int num = 0;
 
     /**
-     * 消费批次数
+     * 生产批次数
      */
     private int batch = 0;
 
@@ -21,7 +21,7 @@ public class Consumer extends Thread {
      */
     public AbstractStorage storage;
 
-    public Consumer(AbstractStorage storage) {
+    public Producer(AbstractStorage storage) {
         this.storage = storage;
     }
 
@@ -44,20 +44,20 @@ public class Consumer extends Thread {
     /**
      * 调用仓库 Storage 的生产函数
      */
-    public void consume(int num) {
+    public void produce(int num) {
         while (batch != 0) {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            storage.consume(num);
+            storage.produce(num);
             batch--;
         }
     }
 
     @Override
     public void run() {
-        consume(num);
+        produce(num);
     }
 }

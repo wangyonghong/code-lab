@@ -1,4 +1,4 @@
-package me.yonghong.interview.juc;
+package me.yonghong.demo.thread.juc;
 
 /**
  * @author yonghongwang#163.com

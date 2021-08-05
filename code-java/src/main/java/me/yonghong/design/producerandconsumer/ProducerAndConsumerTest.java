@@ -1,4 +1,4 @@
-package me.yonghong.demo.producerandconsumer;
+package me.yonghong.design.producerandconsumer;
 
 /**
  * @author yonghongwang#163.com

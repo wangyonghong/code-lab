@@ -1,4 +1,4 @@
-package me.yonghong.interview.juc;
+package me.yonghong.demo.thread.juc;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;

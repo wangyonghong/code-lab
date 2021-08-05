@@ -1,4 +1,4 @@
-package me.yonghong.ds.wangz.array;
+package me.yonghong.demo.container.array;
 
 public class GenericArray<T> {
 

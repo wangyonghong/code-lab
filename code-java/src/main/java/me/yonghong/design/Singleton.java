@@ -1,4 +1,4 @@
-package me.yonghong.interview.test;
+package me.yonghong.design;
 
 /**
  * @author yonghongwang#163.com

@@ -1,4 +1,4 @@
-package me.yonghong.java3;
+package me.yonghong.demo.string;
 
 /**
  * https://www.bilibili.com/video/BV1Hy4y1B78T?p=2
