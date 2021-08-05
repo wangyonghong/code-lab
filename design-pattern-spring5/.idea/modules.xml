@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/design-pattern-spring5.iml" filepath="$PROJECT_DIR$/.idea/design-pattern-spring5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-design-principle/gupaoedu-vip-design-principle.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-design-principle/gupaoedu-vip-design-principle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-adapter/gupaoedu-vip-pattern-adapter.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-adapter/gupaoedu-vip-pattern-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-decorator/gupaoedu-vip-pattern-decorator.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-decorator/gupaoedu-vip-pattern-decorator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-delegate/gupaoedu-vip-pattern-delegate.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-delegate/gupaoedu-vip-pattern-delegate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-factory/gupaoedu-vip-pattern-factory.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-factory/gupaoedu-vip-pattern-factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-observer/gupaoedu-vip-pattern-observer.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-observer/gupaoedu-vip-pattern-observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-prototype/gupaoedu-vip-pattern-prototype.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-prototype/gupaoedu-vip-pattern-prototype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-proxy/gupaoedu-vip-pattern-proxy.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-proxy/gupaoedu-vip-pattern-proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-singleton/gupaoedu-vip-pattern-singleton.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-singleton/gupaoedu-vip-pattern-singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-strategy/gupaoedu-vip-pattern-strategy.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-strategy/gupaoedu-vip-pattern-strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-template/gupaoedu-vip-pattern-template.iml" filepath="$PROJECT_DIR$/gupaoedu-vip-pattern/gupaoedu-vip-pattern-template/gupaoedu-vip-pattern-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-spring-1.0/gupaoedu-vip-spring (1) (com.gupaoedu.vip.gpmvc).iml" filepath="$PROJECT_DIR$/gupaoedu-vip-spring-1.0/gupaoedu-vip-spring (1) (com.gupaoedu.vip.gpmvc).iml" />
+      <module fileurl="file://$PROJECT_DIR$/gupaoedu-vip-spring-2.0/gupaoedu-vip-spring (2) (com.gupaoedu.vip).iml" filepath="$PROJECT_DIR$/gupaoedu-vip-spring-2.0/gupaoedu-vip-spring (2) (com.gupaoedu.vip).iml" />
+      <module fileurl="file://$PROJECT_DIR$/sql-helper/sql-helper.iml" filepath="$PROJECT_DIR$/sql-helper/sql-helper.iml" />
+    </modules>
+  </component>
+</project>
