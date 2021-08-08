@@ -53,21 +53,21 @@ public interface Solution {
     }
 
     /**
-     * 打印 List<Integer> list
+     * 打印 List<T> list
      *
      * @param list
      */
-    default void printList(List<Integer> list) {
+    default <T> void printList(List<T> list) {
         System.out.println(ArrayUtils.toString(list));
     }
 
     /**
-     * 打印 List<List<Integer>>
+     * 打印 List<List<T>>
      *
      * @param list
      */
-    default void printListList(List<List<Integer>> list) {
-        for (List<Integer> l : list) {
+    default <T> void printListList(List<List<T>> list) {
+        for (List<T> l : list) {
             printList(l);
         }
     }
