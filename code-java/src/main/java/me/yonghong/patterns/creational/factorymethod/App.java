@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
  * 工厂方法模式
  *
  * @author yonghongwang#163.com
+ * @see java.net.URLStreamHandlerFactory#createURLStreamHandler(String)
  * @since 2021/8/6
  */
 @Slf4j

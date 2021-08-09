@@ -3,7 +3,11 @@ package me.yonghong.patterns.creational.singleton;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 单例模式
+ *
  * @author yonghongwang#163.com
+ * @see java.lang.Runtime#getRuntime()
+ * @see java.lang.System#getSecurityManager()
  * @since 2021/8/6
  */
 @Slf4j
