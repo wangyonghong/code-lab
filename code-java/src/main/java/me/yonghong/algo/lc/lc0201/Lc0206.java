@@ -26,6 +26,14 @@ public class Lc0206 implements Solution {
     }
 
     public ListNode reverseList(ListNode head) {
+        return reverseList1(head);
+        //return reverseList2(head);
+    }
+
+    /**
+     * 迭代反转链表
+     */
+    public ListNode reverseList1(ListNode head) {
         ListNode prev = null, curr = head;
         while (curr != null) {
             ListNode temp = curr.next;
@@ -34,5 +42,18 @@ public class Lc0206 implements Solution {
             curr = temp;
         }
         return prev;
+    }
+
+    /**
+     * 递归反转链表
+     */
+    public ListNode reverseList2(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode last = reverseList2(head.next);
+        head.next.next = head;
+        head.next = null;
+        return last;
     }
 }
