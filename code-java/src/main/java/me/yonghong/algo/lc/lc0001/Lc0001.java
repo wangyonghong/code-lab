@@ -12,6 +12,7 @@ import java.util.Map;
  * @author yonghongwang#163.com
  * @link <a href="https://leetcode-cn.com/problems/two-sum/"></a>
  * @link <a href="https://leetcode.com/problems/two-sum/"></a>
+ * @see me.yonghong.algo.lc.lc0101.Lc0167
  * @since 2021/2/21
  **/
 public class Lc0001 implements Solution {
