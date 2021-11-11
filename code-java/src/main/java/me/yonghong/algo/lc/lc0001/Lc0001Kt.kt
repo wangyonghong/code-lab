@@ -15,12 +15,12 @@ import java.util.HashMap
  *
  * @since 2021/2/21
  */
-class Lc0001 : Solution {
+class Lc0001Kt : Solution {
 
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
-            Lc0001().test()
+            Lc0001Kt().test()
         }
     }
 
