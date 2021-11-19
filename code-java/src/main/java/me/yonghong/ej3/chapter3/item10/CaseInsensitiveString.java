@@ -13,7 +13,8 @@ public final class CaseInsensitiveString {
     }
 
     // Broken - violates symmetry!
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (o instanceof CaseInsensitiveString)
             return s.equalsIgnoreCase(
                     ((CaseInsensitiveString) o).s);

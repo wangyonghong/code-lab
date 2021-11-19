@@ -10,10 +10,11 @@ public class Point {
         this.y = y;
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (!(o instanceof Point))
             return false;
-        Point p = (Point)o;
+        Point p = (Point) o;
         return p.x == x && p.y == y;
     }
 
@@ -26,7 +27,8 @@ public class Point {
 //    }
 
     // See Item 11
-    @Override public int hashCode()  {
+    @Override
+    public int hashCode() {
         return 31 * x + y;
     }
 }

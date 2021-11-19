@@ -10,7 +10,7 @@ public class PizzaTest {
                 .addTopping(SAUSAGE).addTopping(ONION).build();
         Calzone calzone = new Calzone.Builder()
                 .addTopping(HAM).sauceInside().build();
-        
+
         System.out.println(pizza);
         System.out.println(calzone);
     }
