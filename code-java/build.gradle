@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.5.31'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.0'
 }
 
 group 'me.yonghong'
@@ -23,7 +23,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation 'org.apache.commons:commons-lang3:3.12.0'
 
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.31'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
+
 
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
     implementation 'org.slf4j:slf4j-log4j12:1.7.32'
