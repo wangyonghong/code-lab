@@ -1,7 +1,6 @@
-
-/*
-* This is main function. Entry point of the application.
-* */
+/**
+ * This is main function. Entry point of the application.
+ */
 fun main(args: Array<String>) {
 
     var myNumber = 10       // Int

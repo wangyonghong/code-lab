@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
         Property 1: Refer to context object by using 'this'
         Property 2: The return value is the 'lambda result'  */
 
-    val person = Person()
+    val person = Person("David", 23)
 
     val bio: String = with(person) {
         println(name)

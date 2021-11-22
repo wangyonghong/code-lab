@@ -1,4 +1,3 @@
-
 // Explore First App
 
 fun main(args: Array<String>) {
