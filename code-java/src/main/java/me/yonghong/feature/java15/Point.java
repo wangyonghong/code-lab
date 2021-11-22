@@ -1,4 +1,4 @@
-package me.yonghong;
+package me.yonghong.feature.java15;
 
 public record Point(int x, int y) {
 

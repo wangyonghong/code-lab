@@ -1,4 +1,4 @@
-package me.yonghong;
+package me.yonghong.feature.java15;
 
 /**
  * JEP 360: Sealed Classes(Preview) 密封的类和接口（预览）
