@@ -1,5 +1,3 @@
-
-
 /*
 * DO WHILE Loop
 * */

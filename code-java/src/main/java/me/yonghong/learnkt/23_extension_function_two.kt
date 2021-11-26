@@ -1,4 +1,3 @@
-
 /*
 *   Extension Functions: EXAMPLE TWO
 * */

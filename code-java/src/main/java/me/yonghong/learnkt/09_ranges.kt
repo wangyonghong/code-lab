@@ -1,5 +1,3 @@
-
-
 /*
 * Explore Ranges
 * */
@@ -24,5 +22,5 @@ fun main(args: Array<String>) {
 
     var moveUp = 1.rangeTo(10)
     // This range contains number 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-    
+
 }

@@ -1,5 +1,3 @@
-
-
 /*
 *   BREAK Keyword and Labelled FOR Loop
 * */
@@ -13,7 +11,7 @@ fun main(args: Array<String>) {
         }
     }
 
-    println() 
+    println()
 
     myLoop@ for (i in 1..3) {
         for (j in 1..3) {
