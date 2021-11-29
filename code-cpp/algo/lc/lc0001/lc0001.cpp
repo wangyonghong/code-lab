@@ -19,7 +19,7 @@ public:
     }
 
     void test() override {
-        vector<int> nums = {2, 7, 11, 15};
+        vector<int> nums = stringToIntegerVector("[2, 7, 11, 15]");
         vector<int> res = twoSum(nums, 9);
         cout << integerVectorToString(res) << endl;
     }
