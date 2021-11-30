@@ -17,7 +17,7 @@ protected:
 
 public:
     virtual void test() {
-        cout << "构造函数 Derived." << endl;
+        cout << "Test 请编写自己的逻辑！！！" << endl;
     }
 
     void trimLeftTrailingSpaces(string &input) {
