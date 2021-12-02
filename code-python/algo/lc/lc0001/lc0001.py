@@ -5,6 +5,10 @@ from typing import List
 sys.path.append(os.path.dirname(os.path.dirname(sys.path[0])))
 from base.solution import Solution
 
+# 1. 两数之和
+# https://leetcode-cn.com/problems/two-sum/
+# https://leetcode.com/problems/two-sum/
+
 
 class Lc0001(Solution):
   def twoSum(self, nums: List[int], target: int) -> List[int]:
