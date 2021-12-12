@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation('com.google.guava:guava:31.0.1-jre')
+    implementation 'com.google.guava:guava:31.0.1-jre'
     implementation 'com.google.code.gson:gson:2.8.9'
 
     // https://mvnrepository.com/artifact/org.json/json
@@ -22,6 +22,8 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation 'org.apache.commons:commons-lang3:3.12.0'
+
+    implementation 'cn.hutool:hutool-all:5.7.17'
 
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
