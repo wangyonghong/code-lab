@@ -1,0 +1,78 @@
+buildscript {
+    repositories {
+        maven {
+            url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/'
+        }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.2"
+    }
+}
+
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 31
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
+
+import proguard.obfuscate.MappingProcessor
+import proguard.obfuscate.MappingReader
+
+task checkMappingContainsAaa {
+    doLast {
+        File mappingFile = new File(projectDir.getPath() + "/build/outputs/mapping/release/mapping.txt")
+        println mappingFile.getCanonicalPath()
+        MappingReader reader = new MappingReader(mappingFile)
+        Set<String> aaSet = new HashSet<String>() {
+            {
+                addAll("a", "a.a", "a.a.a", "a.a.a.a", "a.a.a.a.a", "a.a.a.a.a.a", "a.a.a.a.a.a.a", "a.a.a.a.a.a.a.a")
+            }
+        }
+        reader.pump(new MappingProcessor() {
+            @Override
+            boolean processClassMapping(String className, String newClassName) {
+                if (aaSet.contains(newClassName)) {
+                    throw new Exception("混淆结果中含有：" + newClassName + ", 原类名为：" + className)
+                }
+                return false
+            }
+
+            @Override
+            void processFieldMapping(String className, String fieldType, String fieldName, String newClassName, String newFieldName) {
+
+            }
+
+            @Override
+            void processMethodMapping(String className, int firstLineNumber, int lastLineNumber, String methodReturnType, String methodName, String methodArguments, String newClassName, int newFirstLineNumber, int newLastLineNumber, String newMethodName) {
+
+            }
+        })
+    }
+}
