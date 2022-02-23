@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/add-two-numbers"></a>
  * @since 2021/2/21
  **/
-public class Lc0002 implements Solution {
+class Lc0002 implements Solution {
 
     public static void main(String[] args) {
         new Lc0002().test();

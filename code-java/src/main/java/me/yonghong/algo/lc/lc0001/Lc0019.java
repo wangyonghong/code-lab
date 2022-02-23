@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/"></a>
  * @since 2021/8/16
  **/
-public class Lc0019 implements Solution {
+class Lc0019 implements Solution {
 
     public static void main(String[] args) {
         new Lc0019().test();

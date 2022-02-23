@@ -14,7 +14,7 @@ import java.util.Map;
  * @link <a href="https://leetcode.com/problems/string-to-integer-atoi/"></a>
  * @since 2021/8/8
  **/
-public class Lc0008 implements Solution {
+class Lc0008 implements Solution {
 
     public static void main(String[] args) {
         new Lc0008().test();

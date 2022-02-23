@@ -15,7 +15,7 @@ import java.util.Map;
  * @see me.yonghong.algo.lc.lc0101.Lc0167
  * @since 2021/2/21
  **/
-public class Lc0001 implements Solution {
+class Lc0001 implements Solution {
 
     public static void main(String[] args) {
         new Lc0001().test();

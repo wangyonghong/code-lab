@@ -13,7 +13,7 @@ import java.util.Map;
  * @link <a href="https://leetcode.com/problems/find-anagram-mappings/"></a>
  * @since 2021/8/19
  **/
-public class Lc0760 implements Solution {
+class Lc0760 implements Solution {
 
     public static void main(String[] args) {
         new Lc0760().test();

@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/insertion-sort-list/"></a>
  * @since 2021/8/4
  **/
-public class Lc0147 implements Solution {
+class Lc0147 implements Solution {
 
     public static void main(String[] args) {
         new Lc0147().test();

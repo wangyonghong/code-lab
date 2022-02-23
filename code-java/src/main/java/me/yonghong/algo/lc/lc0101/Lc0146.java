@@ -10,7 +10,7 @@ import java.util.Map;
  * @author yonghongwang#163.com
  * @since 2021/7/28
  **/
-public class Lc0146 extends LinkedHashMap<Integer, Integer> {
+class Lc0146 extends LinkedHashMap<Integer, Integer> {
 
     private int capacity;
 

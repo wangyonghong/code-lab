@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"></a>
  * @since 2021/7/28
  **/
-public class Lc0236 implements Solution {
+class Lc0236 implements Solution {
 
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

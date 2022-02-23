@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/flipping-an-image/"></a>
  * @since 2021/8/19
  */
-public class Lc0832 implements Solution {
+class Lc0832 implements Solution {
 
     public static void main(String[] args) {
 

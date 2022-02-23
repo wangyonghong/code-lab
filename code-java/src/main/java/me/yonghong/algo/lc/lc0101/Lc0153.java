@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"></a>
  * @since 2021/8/8
  **/
-public class Lc0153 implements Solution {
+class Lc0153 implements Solution {
 
     public static void main(String[] args) {
         new Lc0153().test();

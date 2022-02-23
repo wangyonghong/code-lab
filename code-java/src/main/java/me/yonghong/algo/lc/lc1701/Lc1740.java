@@ -8,7 +8,7 @@ import me.yonghong.algo.Solution;
  * @author yonghongwang#163.com
  * @since 2021/4/18
  */
-public class Lc1740 implements Solution {
+class Lc1740 implements Solution {
 
     public int findDistance(TreeNode root, int p, int q) {
         if (p == q) {

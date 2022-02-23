@@ -14,7 +14,7 @@ import java.util.List;
  * @link <a href="https://leetcode.com/problems/binary-tree-right-side-view/"></a>
  * @since 2021/4/18
  */
-public class Lc0199 implements Solution {
+class Lc0199 implements Solution {
 
     public static void main(String[] args) {
         new Lc0199().test();

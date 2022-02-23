@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/sort-an-array/"></a>
  * @since 2021/8/8
  **/
-public class Lc0912 implements Solution {
+class Lc0912 implements Solution {
 
     public static void main(String[] args) {
         new Lc0912().test();

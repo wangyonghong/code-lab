@@ -14,7 +14,7 @@ import java.util.Map;
  * @link <a href="https://leetcode.com/problems/largest-bst-subtree/"></a>
  * @since 2021/8/12
  **/
-public class Lc0333 implements Solution {
+class Lc0333 implements Solution {
 
     public static void main(String[] args) {
         new Lc0333().test();

@@ -15,7 +15,7 @@ import java.util.List;
  * @link <a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/"></a>
  * @since 2021/8/7
  **/
-public class Lc0017 implements Solution {
+class Lc0017 implements Solution {
 
     public static void main(String[] args) {
         new Lc0017().test();

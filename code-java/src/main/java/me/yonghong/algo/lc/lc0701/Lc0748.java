@@ -12,7 +12,7 @@ import java.util.Arrays;
  * @link <a href="https://leetcode.com/problems/shortest-completing-word/"></a>
  * @since 2021/12/10
  **/
-public class Lc0748 implements Solution {
+class Lc0748 implements Solution {
 
     public String shortestCompletingWord(String licensePlate, String[] words) {
         int[] cnts = new int[26];

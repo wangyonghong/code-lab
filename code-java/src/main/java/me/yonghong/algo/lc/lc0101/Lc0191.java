@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/number-of-1-bits/"></a>
  * @since 2021/8/20
  **/
-public class Lc0191 implements Solution {
+class Lc0191 implements Solution {
 
     public static void main(String[] args) {
         new Lc0191().test();
