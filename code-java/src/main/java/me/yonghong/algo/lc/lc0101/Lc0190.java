@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/reverse-bits/"></a>
  * @since 2021/8/20
  **/
-class Lc0190 implements Solution {
+class Lc0190 extends Solution {
 
     public static void main(String[] args) {
         new Lc0190().test();

@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/path-sum/"></a>
  * @since 2021/8/19
  **/
-class Lc0112 implements Solution {
+class Lc0112 extends Solution {
 
     public static void main(String[] args) {
         new Lc0112().test();

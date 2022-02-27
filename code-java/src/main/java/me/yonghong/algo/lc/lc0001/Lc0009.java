@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/palindrome-number/"></a>
  * @since 2021/8/11
  **/
-class Lc0009 implements Solution {
+class Lc0009 extends Solution {
 
     public static void main(String[] args) {
         new Lc0009().test();

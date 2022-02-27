@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/reverse-only-letters/"></a>
  * @since 2021/8/18
  */
-class Lc0917 implements Solution {
+class Lc0917 extends Solution {
 
     public static void main(String[] args) {
         new Lc0917().test();

@@ -14,7 +14,7 @@ import java.util.Deque;
  * @link <a href="https://leetcode.com/problems/beautiful-arrangement/"></a>
  * @since 2021/8/16
  **/
-class Lc0526 implements Solution {
+class Lc0526 extends Solution {
 
     int count = 0;
 

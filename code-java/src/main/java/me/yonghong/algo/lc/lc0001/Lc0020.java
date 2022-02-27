@@ -15,7 +15,7 @@ import java.util.Stack;
  * @link <a href="https://leetcode.com/problems/valid-parentheses/"></a>
  * @since 2021/7/28
  **/
-class Lc0020 implements Solution {
+class Lc0020 extends Solution {
 
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();

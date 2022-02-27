@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/push-dominoes/"></a>
  * @since 2022/02/21
  **/
-class Lc0838 implements Solution {
+class Lc0838 extends Solution {
 
     public static void main(String[] args) {
         new Lc0838().test();
@@ -19,7 +19,6 @@ class Lc0838 implements Solution {
 
     @Override
     public void test() {
-        Solution.super.test();
     }
 
     public String pushDominoes(String dominoes) {

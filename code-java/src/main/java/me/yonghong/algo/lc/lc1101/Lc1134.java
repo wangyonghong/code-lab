@@ -10,7 +10,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/armstrong-number/"></a>
  * @since 2021/8/19
  **/
-class Lc1134 implements Solution {
+class Lc1134 extends Solution {
 
     public static void main(String[] args) {
         new Lc1134().test();

@@ -15,7 +15,7 @@ import java.util.HashMap
  *
  * @since 2021/2/21
  */
-class Lc0001Kt : Solution {
+class Lc0001Kt : Solution() {
 
     companion object {
         @JvmStatic

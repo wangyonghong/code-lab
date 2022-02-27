@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/implement-trie-prefix-tree/"></a>
  * @since 2021/8/19
  **/
-class Lc0208 implements Solution {
+class Lc0208 extends Solution {
 
     public static void main(String[] args) {
         new Lc0208().test();

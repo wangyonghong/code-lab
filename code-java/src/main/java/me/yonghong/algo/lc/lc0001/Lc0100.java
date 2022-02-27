@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/same-tree/"></a>
  * @since 2021/8/2
  **/
-class Lc0100 implements Solution {
+class Lc0100 extends Solution {
 
     public static void main(String[] args) {
         new Lc0100().test();

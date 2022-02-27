@@ -15,7 +15,7 @@ import java.util.List;
  * @link <a href="https://leetcode.com/problems/3sum/"></a>
  * @since 2021/7/28
  **/
-class Lc0015 implements Solution {
+class Lc0015 extends Solution {
 
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);

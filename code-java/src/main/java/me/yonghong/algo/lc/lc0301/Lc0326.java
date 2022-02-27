@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/power-of-three/"></a>
  * @since 2021/09/23
  **/
-class Lc0326 implements Solution {
+class Lc0326 extends Solution {
 
     public static void main(String[] args) {
         new Lc0326().test();

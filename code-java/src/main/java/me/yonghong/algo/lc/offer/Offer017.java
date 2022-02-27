@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  * @link <a href="https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/"></a>
  * @since 2021/8/2
  **/
-public class Offer017 implements Solution {
+public class Offer017 extends Solution {
 
     public static void main(String[] args) {
         new Offer017().test();

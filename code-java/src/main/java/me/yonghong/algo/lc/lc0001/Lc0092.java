@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/reverse-linked-list-ii/"></a>
  * @since 2021/8/4
  **/
-class Lc0092 implements Solution {
+class Lc0092 extends Solution {
 
     public static void main(String[] args) {
         new Lc0092().test();

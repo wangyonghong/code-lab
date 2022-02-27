@@ -15,7 +15,7 @@ import java.util.List;
  * @link <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/"></a>
  * @since 2021/12/1
  **/
-class Lc0102 implements Solution {
+class Lc0102 extends Solution {
 
     public static void main(String[] args) {
         new Lc0102().test();

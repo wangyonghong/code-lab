@@ -2,21 +2,29 @@ package me.yonghong.algo;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * @author yonghongwang#163.com
  * @since 2021/7/26
  */
-public interface Solution {
+public class Solution {
+
+    private static final List<Solution> solutions = new ArrayList<>();
+
+    public Solution register(Solution solution) {
+        solutions.add(solution);
+        return this;
+    }
 
     /**
      * 测试用例
      */
-    default void test() {
+    public void test() {
+        solutions.forEach(solution -> {
+            System.out.println(solution.getClass().getCanonicalName());
+            solution.test();
+        });
     }
 
     /**
@@ -26,7 +34,7 @@ public interface Solution {
      * @param j
      * @return i < j
      */
-    default boolean less(int i, int j) {
+    public boolean less(int i, int j) {
         return i < j;
     }
 
@@ -37,7 +45,7 @@ public interface Solution {
      * @param i
      * @param j
      */
-    default void swap(int[] nums, int i, int j) {
+    public void swap(int[] nums, int i, int j) {
         int t = nums[i];
         nums[i] = nums[j];
         nums[j] = t;
@@ -48,7 +56,7 @@ public interface Solution {
      *
      * @param nums
      */
-    default void print(int[] nums) {
+    public void print(int[] nums) {
         System.out.println(Arrays.toString(nums));
     }
 
@@ -57,7 +65,7 @@ public interface Solution {
      *
      * @param list
      */
-    default <T> void printList(List<T> list) {
+    public <T> void printList(List<T> list) {
         System.out.println(ArrayUtils.toString(list));
     }
 
@@ -66,7 +74,7 @@ public interface Solution {
      *
      * @param list
      */
-    default <T> void printListList(List<List<T>> list) {
+    public <T> void printListList(List<List<T>> list) {
         for (List<T> l : list) {
             printList(l);
         }
@@ -77,11 +85,11 @@ public interface Solution {
      *
      * @param head
      */
-    default void print(ListNode head) {
+    public void print(ListNode head) {
         System.out.println(listNodeToString(head));
     }
 
-    default int[] stringToIntegerArray(String input) {
+    public int[] stringToIntegerArray(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
         if (input.length() == 0) {
@@ -97,7 +105,7 @@ public interface Solution {
         return output;
     }
 
-    default ListNode stringToListNode(String input) {
+    public ListNode stringToListNode(String input) {
         // Generate array from the input
         int[] nodeValues = stringToIntegerArray(input);
 
@@ -111,7 +119,7 @@ public interface Solution {
         return dummyRoot.next;
     }
 
-    default String listNodeToString(ListNode node) {
+    public String listNodeToString(ListNode node) {
         if (node == null) {
             return "[]";
         }
@@ -124,7 +132,7 @@ public interface Solution {
         return "[" + result.substring(0, result.length() - 2) + "]";
     }
 
-    default TreeNode stringToTreeNode(String input) {
+    public TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
         if (input.length() == 0) {
@@ -168,7 +176,7 @@ public interface Solution {
         return root;
     }
 
-    class ListNode {
+    public static class ListNode {
         public int val;
         public ListNode next;
 
@@ -185,7 +193,7 @@ public interface Solution {
         }
     }
 
-    class TreeNode {
+    public static class TreeNode {
         public int val;
         public TreeNode left;
         public TreeNode right;

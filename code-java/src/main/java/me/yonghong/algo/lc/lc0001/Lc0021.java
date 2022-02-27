@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/merge-two-sorted-lists/"></a>
  * @since 2021/8/8
  **/
-class Lc0021 implements Solution {
+class Lc0021 extends Solution {
 
     public static void main(String[] args) {
         new Lc0021().test();

@@ -17,7 +17,7 @@ import java.util.Deque;
  * @see me.yonghong.algo.lc.lc0201.Lc0227
  * @since 2021/8/10
  **/
-class Lc0772 implements Solution {
+class Lc0772 extends Solution {
 
     private int index = 0;
 

@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/valid-palindrome/"></a>
  * @since 2021/8/19
  **/
-class Lc0125 implements Solution {
+class Lc0125 extends Solution {
 
     public static void main(String[] args) {
         new Lc0125().test();

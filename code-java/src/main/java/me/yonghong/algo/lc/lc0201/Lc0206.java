@@ -12,7 +12,7 @@ import me.yonghong.algo.Solution;
  * @see me.yonghong.algo.lc.offer.Offer024
  * @since 2021/8/4
  **/
-class Lc0206 implements Solution {
+class Lc0206 extends Solution {
 
     public static void main(String[] args) {
         new Lc0206().test();

@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/"></a>
  * @since 2021/8/12
  **/
-class Lc0215 implements Solution {
+class Lc0215 extends Solution {
 
     public static void main(String[] args) {
 

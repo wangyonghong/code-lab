@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/"></a>
  * @since 2021/8/3
  **/
-class Lc0104 implements Solution {
+class Lc0104 extends Solution {
 
     public static void main(String[] args) {
         new Lc0104().test();

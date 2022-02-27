@@ -13,7 +13,7 @@ import java.util.Arrays;
  * @link <a href="https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/"></a>
  * @since 2022/02/23
  **/
-class Lc1465 implements Solution {
+class Lc1465 extends Solution {
 
     public static void main(String[] args) {
         new Lc1465().test();

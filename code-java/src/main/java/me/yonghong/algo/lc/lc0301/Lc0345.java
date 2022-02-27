@@ -15,7 +15,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/reverse-vowels-of-a-string/"></a>
  * @since 2021/8/18
  */
-class Lc0345 implements Solution {
+class Lc0345 extends Solution {
 
     public static void main(String[] args) {
         new Lc0345().test();

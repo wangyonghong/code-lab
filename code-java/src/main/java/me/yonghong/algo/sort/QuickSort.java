@@ -8,7 +8,7 @@ import me.yonghong.algo.Solution;
  * @author yonghongwang#163.com
  * @since 2021/7/26
  */
-public class QuickSort implements Solution {
+public class QuickSort extends Solution {
 
     public static void main(String[] args) {
         new QuickSort().test();

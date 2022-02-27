@@ -13,7 +13,7 @@ import java.util.Arrays;
  * @link <a href="https://leetcode.com/problems/valid-triangle-number/"></a>
  * @since 2021/8/4
  **/
-class Lc0611 implements Solution {
+class Lc0611 extends Solution {
 
     public static void main(String[] args) {
         new Lc0611().test();

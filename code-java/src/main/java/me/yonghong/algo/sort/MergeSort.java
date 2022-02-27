@@ -8,7 +8,7 @@ import me.yonghong.algo.Solution;
  * @author yonghongwang#163.com
  * @since 2021/7/26
  */
-public class MergeSort implements Solution {
+public class MergeSort extends Solution {
 
     private int[] aux;
 

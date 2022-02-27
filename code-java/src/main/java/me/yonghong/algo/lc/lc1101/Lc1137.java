@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/n-th-tribonacci-number/"></a>
  * @since 2021/8/8
  **/
-class Lc1137 implements Solution {
+class Lc1137 extends Solution {
 
     public static void main(String[] args) {
         new Lc1137().test();
