@@ -3,7 +3,7 @@
 * */
 fun main(args: Array<String>) {
 
-    var largeValue = max(4, 6)
+    val largeValue = max(4, 6)
 
     println("The greater number is $largeValue")
 }
