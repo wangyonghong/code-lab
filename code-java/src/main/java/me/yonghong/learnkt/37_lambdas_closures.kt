@@ -1,4 +1,3 @@
-
 /*
 *   1. Closures
 * */
@@ -8,7 +7,7 @@ fun main(args: Array<String>) {
 
     var result = 0
 
-    program.addTwoNumbers(2, 7) {x, y -> result = x + y}
+    program.addTwoNumbers(2, 7) { x, y -> result = x + y }
 
     println(result)
 }

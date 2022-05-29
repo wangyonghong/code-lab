@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
 
     val program = Programs()
     program.reverseAndDisplay("hello", { it.reversed() })
+    program.reverseAndDisplay("hello") { it.reversed() }
 }
 
 class Programs {

@@ -5,7 +5,7 @@
 * */
 fun main(args: Array<String>) {
 
-    var person = Perrson()
+    val person = Perrson()
 
     with(person) {
         name = "Steve"

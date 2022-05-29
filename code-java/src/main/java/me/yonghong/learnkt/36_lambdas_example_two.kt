@@ -1,4 +1,3 @@
-
 /*
     EXAMPLE TWO
 
@@ -13,7 +12,7 @@ fun main(args: Array<String>) {
 // OR,
 //    program.addTwoNumbers(2, 7, { x, y -> x + y })
 // OR,
-    program.addTwoNumbers(2, 7) {x, y -> x + y}
+    program.addTwoNumbers(2, 7) { x, y -> x + y }
 }
 
 class MyProgram {
