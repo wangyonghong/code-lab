@@ -13,7 +13,7 @@ import java.util.List;
  * 47. Permutations II
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/permutations-ii/"></a>
+ * @link <a href="https://leetcode.cn/problems/permutations-ii/"></a>
  * @link <a href="https://leetcode.com/problems/permutations-ii/"></a>
  * @since 2021/8/2
  **/

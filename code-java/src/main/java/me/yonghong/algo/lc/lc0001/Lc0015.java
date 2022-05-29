@@ -11,7 +11,7 @@ import java.util.List;
  * 15. 3Sum
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/3sum/"></a>
+ * @link <a href="https://leetcode.cn/problems/3sum/"></a>
  * @link <a href="https://leetcode.com/problems/3sum/"></a>
  * @since 2021/7/28
  **/

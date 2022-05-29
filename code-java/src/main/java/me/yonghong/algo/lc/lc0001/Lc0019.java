@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 19. Remove Nth Node From End of List
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/"></a>
+ * @link <a href="https://leetcode.cn/problems/remove-nth-node-from-end-of-list/"></a>
  * @link <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/"></a>
  * @since 2021/8/16
  **/

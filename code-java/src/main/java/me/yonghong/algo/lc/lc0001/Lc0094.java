@@ -12,7 +12,7 @@ import java.util.List;
  * 94. Binary Tree Inorder Traversal
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/binary-tree-inorder-traversal/"></a>
+ * @link <a href="https://leetcode.cn/problems/binary-tree-inorder-traversal/"></a>
  * @link <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/"></a>
  * @since 2021/8/12
  **/

@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 236. Lowest Common Ancestor of a Binary Tree
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/"></a>
+ * @link <a href="https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/"></a>
  * @link <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"></a>
  * @since 2021/7/28
  **/

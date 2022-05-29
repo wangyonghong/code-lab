@@ -9,7 +9,7 @@ import java.util.Arrays;
  * 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/"></a>
+ * @link <a href="https://leetcode.cn/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/"></a>
  * @link <a href="https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/"></a>
  * @since 2022/02/23
  **/

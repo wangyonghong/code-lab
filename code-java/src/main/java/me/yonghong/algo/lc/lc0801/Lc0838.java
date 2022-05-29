@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 838. Push Dominoes
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/push-dominoes/"></a>
+ * @link <a href="https://leetcode.cn/problems/push-dominoes/"></a>
  * @link <a href="https://leetcode.com/problems/push-dominoes/"></a>
  * @since 2022/02/21
  **/

@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
  * 剑指 Offer 17. 打印从1到最大的n位数
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/"></a>
+ * @link <a href="https://leetcode.cn/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/"></a>
  * @since 2021/8/2
  **/
 public class Offer017 extends Solution {

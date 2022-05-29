@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 294. Flip Game II
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/flip-game-ii/"></a>
+ * @link <a href="https://leetcode.cn/problems/flip-game-ii/"></a>
  * @link <a href="https://leetcode.com/problems/flip-game-ii/"></a>
  * @since 2021/8/19
  */

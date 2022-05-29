@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 867. Transpose Matrix
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/transpose-matrix/"></a>
+ * @link <a href="https://leetcode.cn/problems/transpose-matrix/"></a>
  * @link <a href="https://leetcode.com/problems/transpose-matrix/"></a>
  * @since 2021/8/19
  */

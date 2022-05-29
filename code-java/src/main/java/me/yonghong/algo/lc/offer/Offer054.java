@@ -6,7 +6,7 @@ import me.yonghong.algo.Solution;
  * 剑指 Offer 54. 二叉搜索树的第k大节点
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/"></a>
+ * @link <a href="https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/"></a>
  * @since 2021/8/8
  **/
 public class Offer054 extends Solution {

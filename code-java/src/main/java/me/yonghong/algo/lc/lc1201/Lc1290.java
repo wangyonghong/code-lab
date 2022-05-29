@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 1290. Convert Binary Number in a Linked List to Integer
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/"></a>
+ * @link <a href="https://leetcode.cn/problems/convert-binary-number-in-a-linked-list-to-integer/"></a>
  * @link <a href="https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/"></a>
  * @since 2021/8/19
  */

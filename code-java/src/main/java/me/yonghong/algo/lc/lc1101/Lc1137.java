@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 1137. N-th Tribonacci Number
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/n-th-tribonacci-number/"></a>
+ * @link <a href="https://leetcode.cn/problems/n-th-tribonacci-number/"></a>
  * @link <a href="https://leetcode.com/problems/n-th-tribonacci-number/"></a>
  * @since 2021/8/8
  **/

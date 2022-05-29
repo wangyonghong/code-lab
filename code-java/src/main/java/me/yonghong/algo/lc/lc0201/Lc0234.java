@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 234. Palindrome Linked List
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/palindrome-linked-list/"></a>
+ * @link <a href="https://leetcode.cn/problems/palindrome-linked-list/"></a>
  * @link <a href="https://leetcode.com/problems/palindrome-linked-list/"></a>
  * @since 2021/8/4
  **/

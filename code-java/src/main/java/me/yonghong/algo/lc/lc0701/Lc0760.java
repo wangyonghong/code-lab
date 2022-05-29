@@ -9,7 +9,7 @@ import java.util.Map;
  * 760. 找出变位映射
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/find-anagram-mappings/"></a>
+ * @link <a href="https://leetcode.cn/problems/find-anagram-mappings/"></a>
  * @link <a href="https://leetcode.com/problems/find-anagram-mappings/"></a>
  * @since 2021/8/19
  **/

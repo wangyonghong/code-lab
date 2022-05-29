@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 457. Circular Array Loop
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/circular-array-loop/"></a>
+ * @link <a href="https://leetcode.cn/problems/circular-array-loop/"></a>
  * @link <a href="https://leetcode.com/problems/circular-array-loop/"></a>
  * @see me.yonghong.algo.lc.lc0101.Lc0141
  * @since 2021/8/7

@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 125. Valid Palindrome
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/valid-palindrome/"></a>
+ * @link <a href="https://leetcode.cn/problems/valid-palindrome/"></a>
  * @link <a href="https://leetcode.com/problems/valid-palindrome/"></a>
  * @since 2021/8/19
  **/

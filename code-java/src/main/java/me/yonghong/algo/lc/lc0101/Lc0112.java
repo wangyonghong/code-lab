@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 112. Path Sum
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/path-sum/"></a>
+ * @link <a href="https://leetcode.cn/problems/path-sum/"></a>
  * @link <a href="https://leetcode.com/problems/path-sum/"></a>
  * @since 2021/8/19
  **/

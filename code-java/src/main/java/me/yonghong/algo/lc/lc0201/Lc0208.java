@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 208. Implement Trie (Prefix Tree)
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/implement-trie-prefix-tree/"></a>
+ * @link <a href="https://leetcode.cn/problems/implement-trie-prefix-tree/"></a>
  * @link <a href="https://leetcode.com/problems/implement-trie-prefix-tree/"></a>
  * @since 2021/8/19
  **/

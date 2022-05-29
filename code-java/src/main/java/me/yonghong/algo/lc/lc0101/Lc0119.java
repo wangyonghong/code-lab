@@ -10,7 +10,7 @@ import java.util.List;
  * 119. Pascal's Triangle II
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/pascals-triangle-ii/"></a>
+ * @link <a href="https://leetcode.cn/problems/pascals-triangle-ii/"></a>
  * @link <a href="https://leetcode.com/problems/pascals-triangle-ii/"></a>
  * @since 2021/8/19
  **/

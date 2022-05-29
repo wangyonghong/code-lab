@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 9. Palindrome Number
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/palindrome-number/"></a>
+ * @link <a href="https://leetcode.cn/problems/palindrome-number/"></a>
  * @link <a href="https://leetcode.com/problems/palindrome-number/"></a>
  * @since 2021/8/11
  **/

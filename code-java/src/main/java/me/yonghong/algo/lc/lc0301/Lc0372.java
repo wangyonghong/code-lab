@@ -10,7 +10,7 @@ import java.util.Deque;
  * 372. Super Pow
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/super-pow/"></a>
+ * @link <a href="https://leetcode.cn/problems/super-pow/"></a>
  * @link <a href="https://leetcode.com/problems/super-pow/"></a>
  * @see me.yonghong.algo.lc.lc0001.Lc0050
  * @since 2021/8/10

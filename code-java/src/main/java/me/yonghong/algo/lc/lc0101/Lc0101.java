@@ -6,7 +6,7 @@ import me.yonghong.algo.Solution;
  * 101. 对称二叉树
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/symmetric-tree/"></a>
+ * @link <a href="https://leetcode.cn/problems/symmetric-tree/"></a>
  * @link <a href="https://leetcode.com/problems/symmetric-tree/"></a>
  * @since 2021/8/2
  **/

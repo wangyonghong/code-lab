@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 206. Reverse Linked List
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/reverse-linked-list/"></a>
+ * @link <a href="https://leetcode.cn/problems/reverse-linked-list/"></a>
  * @link <a href="https://leetcode.com/problems/reverse-linked-list/"></a>
  * @see me.yonghong.algo.lc.offer.Offer024
  * @since 2021/8/4

@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 67. Add Binary
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/add-binary/"></a>
+ * @link <a href="https://leetcode.cn/problems/add-binary/"></a>
  * @link <a href="https://leetcode.com/problems/add-binary/"></a>
  * @since 2021/8/8
  **/

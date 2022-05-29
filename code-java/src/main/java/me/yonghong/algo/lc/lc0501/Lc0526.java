@@ -10,7 +10,7 @@ import java.util.Deque;
  * 526. Beautiful Arrangement
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/beautiful-arrangement/"></a>
+ * @link <a href="https://leetcode.cn/problems/beautiful-arrangement/"></a>
  * @link <a href="https://leetcode.com/problems/beautiful-arrangement/"></a>
  * @since 2021/8/16
  **/

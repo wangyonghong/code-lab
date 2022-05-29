@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 344. Reverse String
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/reverse-string/"></a>
+ * @link <a href="https://leetcode.cn/problems/reverse-string/"></a>
  * @link <a href="https://leetcode.com/problems/reverse-string/"></a>
  * @since 2021/8/18
  */

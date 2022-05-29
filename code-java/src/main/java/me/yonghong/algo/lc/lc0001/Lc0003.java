@@ -38,7 +38,7 @@ import java.util.Set;
  * s 由英文字母、数字、符号和空格组成
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/"></a>
+ * @link <a href="https://leetcode.cn/problems/longest-substring-without-repeating-characters/"></a>
  * @link <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/"></a>
  * @since 2022/02/24
  **/

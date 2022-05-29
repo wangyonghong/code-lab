@@ -12,7 +12,7 @@ import java.util.List;
  * 46. Permutations
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/permutations/"></a>
+ * @link <a href="https://leetcode.cn/problems/permutations/"></a>
  * @link <a href="https://leetcode.com/problems/permutations/"></a>
  * @since 2021/8/2
  **/

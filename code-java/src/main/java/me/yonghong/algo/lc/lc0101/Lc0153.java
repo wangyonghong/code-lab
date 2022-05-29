@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 153. Find Minimum in Rotated Sorted Array
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/"></a>
+ * @link <a href="https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/"></a>
  * @link <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"></a>
  * @since 2021/8/8
  **/

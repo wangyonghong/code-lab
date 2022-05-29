@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 215. Kth Largest Element in an Array
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/kth-largest-element-in-an-array/"></a>
+ * @link <a href="https://leetcode.cn/problems/kth-largest-element-in-an-array/"></a>
  * @link <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/"></a>
  * @since 2021/8/12
  **/

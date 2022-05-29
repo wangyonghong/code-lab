@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 326. Power of Three
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/power-of-three/"></a>
+ * @link <a href="https://leetcode.cn/problems/power-of-three/"></a>
  * @link <a href="https://leetcode.com/problems/power-of-three/"></a>
  * @since 2021/09/23
  **/

@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 100. Same Tree
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/same-tree/"></a>
+ * @link <a href="https://leetcode.cn/problems/same-tree/"></a>
  * @link <a href="https://leetcode.com/problems/same-tree/"></a>
  * @since 2021/8/2
  **/

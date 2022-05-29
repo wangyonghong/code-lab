@@ -9,7 +9,7 @@ import java.util.HashMap
  * 1. Two Sum
  *
  * @author yonghongwang#163.com
- * @link [](https://leetcode-cn.com/problems/two-sum/)
+ * @link [](https://leetcode.cn/problems/two-sum/)
  * @link [](https://leetcode.com/problems/two-sum/)
  * @see me.yonghong.algo.lc.lc0101.Lc0167
  *

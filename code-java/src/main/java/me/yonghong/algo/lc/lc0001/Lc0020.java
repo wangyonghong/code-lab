@@ -11,7 +11,7 @@ import java.util.Stack;
  * 20. Valid Parentheses
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/valid-parentheses/"></a>
+ * @link <a href="https://leetcode.cn/problems/valid-parentheses/"></a>
  * @link <a href="https://leetcode.com/problems/valid-parentheses/"></a>
  * @since 2021/7/28
  **/

@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * 345. Reverse Vowels of a String
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/reverse-vowels-of-a-string/"></a>
+ * @link <a href="https://leetcode.cn/problems/reverse-vowels-of-a-string/"></a>
  * @link <a href="https://leetcode.com/problems/reverse-vowels-of-a-string/"></a>
  * @since 2021/8/18
  */

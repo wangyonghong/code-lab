@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 147. Insertion Sort List
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/insertion-sort-list/"></a>
+ * @link <a href="https://leetcode.cn/problems/insertion-sort-list/"></a>
  * @link <a href="https://leetcode.com/problems/insertion-sort-list/"></a>
  * @since 2021/8/4
  **/

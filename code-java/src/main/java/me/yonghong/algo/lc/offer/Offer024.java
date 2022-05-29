@@ -7,8 +7,8 @@ import me.yonghong.algo.Solution;
  * 剑指 Offer 24. 反转链表
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/"></a>
- * @link <a href="https://leetcode-cn.com/problems/UHnkqh/"></a>
+ * @link <a href="https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/"></a>
+ * @link <a href="https://leetcode.cn/problems/UHnkqh/"></a>
  * @see me.yonghong.algo.lc.lc0201.Lc0206
  * @since 2021/8/4
  **/

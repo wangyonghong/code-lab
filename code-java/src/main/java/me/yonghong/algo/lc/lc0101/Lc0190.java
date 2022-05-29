@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 190. Reverse Bits
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/reverse-bits/"></a>
+ * @link <a href="https://leetcode.cn/problems/reverse-bits/"></a>
  * @link <a href="https://leetcode.com/problems/reverse-bits/"></a>
  * @since 2021/8/20
  **/

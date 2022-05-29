@@ -11,7 +11,7 @@ import java.util.List;
  * 17. Letter Combinations of a Phone Number
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/"></a>
+ * @link <a href="https://leetcode.cn/problems/letter-combinations-of-a-phone-number/"></a>
  * @link <a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/"></a>
  * @since 2021/8/7
  **/

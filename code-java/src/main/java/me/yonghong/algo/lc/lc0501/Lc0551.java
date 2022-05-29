@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 551. Student Attendance Record I
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/student-attendance-record-i/"></a>
+ * @link <a href="https://leetcode.cn/problems/student-attendance-record-i/"></a>
  * @link <a href="https://leetcode.com/problems/student-attendance-record-i/"></a>
  * @since 2021/8/17
  */

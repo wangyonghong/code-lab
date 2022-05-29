@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 832. Flipping an Image
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/flipping-an-image/"></a>
+ * @link <a href="https://leetcode.cn/problems/flipping-an-image/"></a>
  * @link <a href="https://leetcode.com/problems/flipping-an-image/"></a>
  * @since 2021/8/19
  */

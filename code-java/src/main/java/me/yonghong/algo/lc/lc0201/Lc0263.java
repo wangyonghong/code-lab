@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 263. Ugly Number
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/ugly-number/"></a>
+ * @link <a href="https://leetcode.cn/problems/ugly-number/"></a>
  * @link <a href="https://leetcode.com/problems/ugly-number/"></a>
  * @see me.yonghong.algo.lc.lc0201.Lc0264
  * @see me.yonghong.algo.lc.lc0301.Lc0313

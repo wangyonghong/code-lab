@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 191. Number of 1 Bits
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/number-of-1-bits/"></a>
+ * @link <a href="https://leetcode.cn/problems/number-of-1-bits/"></a>
  * @link <a href="https://leetcode.com/problems/number-of-1-bits/"></a>
  * @since 2021/8/20
  **/

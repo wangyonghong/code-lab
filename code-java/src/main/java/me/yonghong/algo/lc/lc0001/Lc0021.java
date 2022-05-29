@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 21. Merge Two Sorted Lists
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/"></a>
+ * @link <a href="https://leetcode.cn/problems/merge-two-sorted-lists/"></a>
  * @link <a href="https://leetcode.com/problems/merge-two-sorted-lists/"></a>
  * @since 2021/8/8
  **/

@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 917. Reverse Only Letters
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/reverse-only-letters/"></a>
+ * @link <a href="https://leetcode.cn/problems/reverse-only-letters/"></a>
  * @link <a href="https://leetcode.com/problems/reverse-only-letters/"></a>
  * @since 2021/8/18
  */

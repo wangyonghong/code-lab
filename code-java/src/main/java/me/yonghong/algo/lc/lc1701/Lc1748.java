@@ -32,7 +32,7 @@ import java.util.Set;
  * 1 <= nums[i] <= 100
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/sum-of-unique-elements/"></a>
+ * @link <a href="https://leetcode.cn/problems/sum-of-unique-elements/"></a>
  * @link <a href="https://leetcode.com/problems/sum-of-unique-elements/"></a>
  * @since 2022/02/22
  **/

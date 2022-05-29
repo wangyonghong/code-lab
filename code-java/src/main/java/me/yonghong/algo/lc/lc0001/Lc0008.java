@@ -10,7 +10,7 @@ import java.util.Map;
  * 8. String to Integer (atoi)
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/string-to-integer-atoi/"></a>
+ * @link <a href="https://leetcode.cn/problems/string-to-integer-atoi/"></a>
  * @link <a href="https://leetcode.com/problems/string-to-integer-atoi/"></a>
  * @since 2021/8/8
  **/

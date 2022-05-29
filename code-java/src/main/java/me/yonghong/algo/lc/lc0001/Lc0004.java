@@ -30,7 +30,7 @@ import me.yonghong.algo.Solution;
  * -10^6 <= nums1[i], nums2[i] <= 10^6
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/median-of-two-sorted-arrays/"></a>
+ * @link <a href="https://leetcode.cn/problems/median-of-two-sorted-arrays/"></a>
  * @link <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/"></a>
  * @since 2022/02/27
  **/

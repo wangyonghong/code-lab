@@ -14,7 +14,7 @@ import me.yonghong.algo.Solution;
  * -100000 <= A[i] <= 100000
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/monotonic-array/"></a>
+ * @link <a href="https://leetcode.cn/problems/monotonic-array/"></a>
  * @link <a href="https://leetcode.com/problems/monotonic-array/"></a>
  * @since 2021/2/28
  */

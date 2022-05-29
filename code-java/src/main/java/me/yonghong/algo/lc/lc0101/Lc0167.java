@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 167. Two Sum II - Input array is sorted
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/"></a>
+ * @link <a href="https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/"></a>
  * @link <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"></a>
  * @see me.yonghong.algo.lc.lc0001.Lc0001
  * @since 2021/8/19

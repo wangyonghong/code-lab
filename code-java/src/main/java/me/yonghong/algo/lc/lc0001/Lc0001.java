@@ -31,7 +31,7 @@ import java.util.Map;
  * 进阶：你可以想出一个时间复杂度小于 O(n^2) 的算法吗？
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/two-sum/"></a>
+ * @link <a href="https://leetcode.cn/problems/two-sum/"></a>
  * @link <a href="https://leetcode.com/problems/two-sum/"></a>
  * @see me.yonghong.algo.lc.lc0101.Lc0167
  * @since 2021/2/21

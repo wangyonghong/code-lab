@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 912. Sort an Array
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/sort-an-array/"></a>
+ * @link <a href="https://leetcode.cn/problems/sort-an-array/"></a>
  * @link <a href="https://leetcode.com/problems/sort-an-array/"></a>
  * @since 2021/8/8
  **/

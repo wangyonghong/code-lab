@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 104. Maximum Depth of Binary Tree
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/"></a>
+ * @link <a href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/"></a>
  * @link <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/"></a>
  * @since 2021/8/3
  **/

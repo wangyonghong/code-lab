@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 110. Balanced Binary Tree
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/balanced-binary-tree/"></a>
+ * @link <a href="https://leetcode.cn/problems/balanced-binary-tree/"></a>
  * @link <a href="https://leetcode.com/problems/balanced-binary-tree/"></a>
  * @since 2021/8/16
  **/

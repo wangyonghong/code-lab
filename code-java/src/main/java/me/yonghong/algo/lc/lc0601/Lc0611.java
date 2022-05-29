@@ -9,7 +9,7 @@ import java.util.Arrays;
  * 611. Valid Triangle Number
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/valid-triangle-number/"></a>
+ * @link <a href="https://leetcode.cn/problems/valid-triangle-number/"></a>
  * @link <a href="https://leetcode.com/problems/valid-triangle-number/"></a>
  * @since 2021/8/4
  **/

@@ -12,7 +12,7 @@ import java.util.List;
  * 144. Binary Tree Preorder Traversal
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/binary-tree-preorder-traversal/"></a>
+ * @link <a href="https://leetcode.cn/problems/binary-tree-preorder-traversal/"></a>
  * @link <a href="https://leetcode.com/problems/binary-tree-preorder-traversal/"></a>
  * @since 2021/8/12
  **/

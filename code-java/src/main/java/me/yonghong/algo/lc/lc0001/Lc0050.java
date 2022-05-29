@@ -6,7 +6,7 @@ import me.yonghong.algo.Solution;
  * 50. Pow(x, n)
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/powx-n/"></a>
+ * @link <a href="https://leetcode.cn/problems/powx-n/"></a>
  * @link <a href="https://leetcode.com/problems/powx-n/"></a>
  * @see me.yonghong.algo.lc.lc0301.Lc0372
  * @since 2021/8/10

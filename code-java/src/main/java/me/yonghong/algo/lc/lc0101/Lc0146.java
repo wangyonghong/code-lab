@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * 146. LRU 缓存机制
- * https://leetcode-cn.com/problems/lru-cache/
+ * https://leetcode.cn/problems/lru-cache/
  *
  * @author yonghongwang#163.com
  * @since 2021/7/28

@@ -10,7 +10,7 @@ import java.util.List;
  * 199. Binary Tree Right Side View
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/binary-tree-right-side-view/"></a>
+ * @link <a href="https://leetcode.cn/problems/binary-tree-right-side-view/"></a>
  * @link <a href="https://leetcode.com/problems/binary-tree-right-side-view/"></a>
  * @since 2021/4/18
  */

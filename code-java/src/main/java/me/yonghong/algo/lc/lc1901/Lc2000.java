@@ -38,7 +38,7 @@ import me.yonghong.algo.Solution;
  * ch 是一个小写英文字母
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/reverse-prefix-of-word/"></a>
+ * @link <a href="https://leetcode.cn/problems/reverse-prefix-of-word/"></a>
  * @link <a href="https://leetcode.com/problems/reverse-prefix-of-word/"></a>
  * @since 2022/02/22
  **/

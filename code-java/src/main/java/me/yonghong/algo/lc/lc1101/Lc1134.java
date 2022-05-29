@@ -6,7 +6,7 @@ import me.yonghong.algo.Solution;
  * 1134. 阿姆斯特朗数
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/armstrong-number/"></a>
+ * @link <a href="https://leetcode.cn/problems/armstrong-number/"></a>
  * @link <a href="https://leetcode.com/problems/armstrong-number/"></a>
  * @since 2021/8/19
  **/

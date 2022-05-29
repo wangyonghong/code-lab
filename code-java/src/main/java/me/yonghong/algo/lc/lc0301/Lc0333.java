@@ -10,7 +10,7 @@ import java.util.Map;
  * 333. Largest BST Subtree
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/largest-bst-subtree/"></a>
+ * @link <a href="https://leetcode.cn/problems/largest-bst-subtree/"></a>
  * @link <a href="https://leetcode.com/problems/largest-bst-subtree/"></a>
  * @since 2021/8/12
  **/

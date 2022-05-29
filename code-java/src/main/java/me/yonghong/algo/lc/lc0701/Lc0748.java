@@ -8,7 +8,7 @@ import java.util.Arrays;
  * 748. 最短补全词
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/shortest-completing-word/"></a>
+ * @link <a href="https://leetcode.cn/problems/shortest-completing-word/"></a>
  * @link <a href="https://leetcode.com/problems/shortest-completing-word/"></a>
  * @since 2021/12/10
  **/

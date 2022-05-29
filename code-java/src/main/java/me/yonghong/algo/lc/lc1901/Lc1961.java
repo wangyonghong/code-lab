@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 1961. Check If String Is a Prefix of Array
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/check-if-string-is-a-prefix-of-array/"></a>
+ * @link <a href="https://leetcode.cn/problems/check-if-string-is-a-prefix-of-array/"></a>
  * @link <a href="https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/"></a>
  * @since 2021/8/12
  **/

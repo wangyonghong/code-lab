@@ -13,7 +13,7 @@ import java.util.List;
  * 145. Binary Tree Postorder Traversal
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/binary-tree-postorder-traversal/"></a>
+ * @link <a href="https://leetcode.cn/problems/binary-tree-postorder-traversal/"></a>
  * @link <a href="https://leetcode.com/problems/binary-tree-postorder-traversal/"></a>
  * @since 2021/8/12
  **/

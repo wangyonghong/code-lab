@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 58. Length of Last Word
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/length-of-last-word/"></a>
+ * @link <a href="https://leetcode.cn/problems/length-of-last-word/"></a>
  * @link <a href="https://leetcode.com/problems/length-of-last-word/"></a>
  * @since 2021/8/8
  **/

@@ -7,7 +7,7 @@ import me.yonghong.algo.Solution;
  * 141. Linked List Cycle
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/linked-list-cycle/"></a>
+ * @link <a href="https://leetcode.cn/problems/linked-list-cycle/"></a>
  * @link <a href="https://leetcode.com/problems/linked-list-cycle/"></a>
  * @see me.yonghong.algo.lc.lc0401.Lc0457
  * @since 2021/8/7

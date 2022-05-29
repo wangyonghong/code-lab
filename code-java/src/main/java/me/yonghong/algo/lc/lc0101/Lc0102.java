@@ -11,7 +11,7 @@ import java.util.List;
  * 102. 二叉树的层序遍历
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/binary-tree-level-order-traversal/"></a>
+ * @link <a href="https://leetcode.cn/problems/binary-tree-level-order-traversal/"></a>
  * @link <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/"></a>
  * @since 2021/12/1
  **/

@@ -31,7 +31,7 @@ import me.yonghong.algo.Solution;
  * 题目数据保证列表表示的数字不含前导零
  *
  * @author yonghongwang#163.com
- * @link <a href="https://leetcode-cn.com/problems/add-two-numbers"></a>
+ * @link <a href="https://leetcode.cn/problems/add-two-numbers"></a>
  * @link <a href="https://leetcode.com/problems/add-two-numbers"></a>
  * @since 2021/2/21
  **/
