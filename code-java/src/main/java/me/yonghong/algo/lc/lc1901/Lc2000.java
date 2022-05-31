@@ -42,7 +42,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/reverse-prefix-of-word/"></a>
  * @since 2022/02/22
  **/
-class Lc2000 extends Solution {
+class Lc2000 implements Solution {
 
     public static void main(String[] args) {
         new Lc2000().test();

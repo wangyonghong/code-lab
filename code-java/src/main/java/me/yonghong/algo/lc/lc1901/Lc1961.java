@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/"></a>
  * @since 2021/8/12
  **/
-class Lc1961 extends Solution {
+class Lc1961 implements Solution {
 
     public static void main(String[] args) {
         new Lc1961().test();

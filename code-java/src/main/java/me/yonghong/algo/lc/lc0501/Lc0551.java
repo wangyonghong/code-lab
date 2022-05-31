@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/student-attendance-record-i/"></a>
  * @since 2021/8/17
  */
-class Lc0551 extends Solution {
+class Lc0551 implements Solution {
 
     public static void main(String[] args) {
         new Lc0551().test();

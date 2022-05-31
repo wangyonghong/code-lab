@@ -1,6 +1,8 @@
 package me.yonghong.algo;
 
+import me.yonghong.algo.lc.lc0001.Lc0001;
 import org.apache.commons.lang3.ArrayUtils;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 
@@ -8,23 +10,16 @@ import java.util.*;
  * @author yonghongwang#163.com
  * @since 2021/7/26
  */
-public class Solution {
+public interface Solution extends Comparable<Solution> {
 
-    private static final List<Solution> solutions = new ArrayList<>();
-
-    public Solution register(Solution solution) {
-        solutions.add(solution);
-        return this;
+    public static void main(String[] args) {
+        SolutionUtils.runTest(Lc0001.class);
     }
 
     /**
      * 测试用例
      */
-    public void test() {
-        solutions.forEach(solution -> {
-            System.out.println(solution.getClass().getCanonicalName());
-            solution.test();
-        });
+    default void test() {
     }
 
     /**
@@ -34,7 +29,7 @@ public class Solution {
      * @param j
      * @return i < j
      */
-    public boolean less(int i, int j) {
+    default boolean less(int i, int j) {
         return i < j;
     }
 
@@ -45,7 +40,7 @@ public class Solution {
      * @param i
      * @param j
      */
-    public void swap(int[] nums, int i, int j) {
+    default void swap(int[] nums, int i, int j) {
         int t = nums[i];
         nums[i] = nums[j];
         nums[j] = t;
@@ -56,7 +51,7 @@ public class Solution {
      *
      * @param nums
      */
-    public void print(int[] nums) {
+    default void print(int[] nums) {
         System.out.println(Arrays.toString(nums));
     }
 
@@ -65,7 +60,7 @@ public class Solution {
      *
      * @param list
      */
-    public <T> void printList(List<T> list) {
+    default <T> void printList(List<T> list) {
         System.out.println(ArrayUtils.toString(list));
     }
 
@@ -74,7 +69,7 @@ public class Solution {
      *
      * @param list
      */
-    public <T> void printListList(List<List<T>> list) {
+    default <T> void printListList(List<List<T>> list) {
         for (List<T> l : list) {
             printList(l);
         }
@@ -85,11 +80,11 @@ public class Solution {
      *
      * @param head
      */
-    public void print(ListNode head) {
+    default void print(ListNode head) {
         System.out.println(listNodeToString(head));
     }
 
-    public int[] stringToIntegerArray(String input) {
+    default int[] stringToIntegerArray(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
         if (input.length() == 0) {
@@ -105,7 +100,7 @@ public class Solution {
         return output;
     }
 
-    public ListNode stringToListNode(String input) {
+    default ListNode stringToListNode(String input) {
         // Generate array from the input
         int[] nodeValues = stringToIntegerArray(input);
 
@@ -119,7 +114,7 @@ public class Solution {
         return dummyRoot.next;
     }
 
-    public String listNodeToString(ListNode node) {
+    default String listNodeToString(ListNode node) {
         if (node == null) {
             return "[]";
         }
@@ -132,7 +127,12 @@ public class Solution {
         return "[" + result.substring(0, result.length() - 2) + "]";
     }
 
-    public TreeNode stringToTreeNode(String input) {
+    @Override
+    default int compareTo(@NotNull Solution o) {
+        return this.getClass().getCanonicalName().compareTo(o.getClass().getCanonicalName());
+    }
+
+    default TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
         if (input.length() == 0) {
@@ -176,7 +176,7 @@ public class Solution {
         return root;
     }
 
-    public static class ListNode {
+    class ListNode {
         public int val;
         public ListNode next;
 
@@ -193,7 +193,7 @@ public class Solution {
         }
     }
 
-    public static class TreeNode {
+    class TreeNode {
         public int val;
         public TreeNode left;
         public TreeNode right;

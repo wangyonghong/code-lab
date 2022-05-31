@@ -16,7 +16,7 @@ import java.util.List;
  * @link <a href="https://leetcode.com/problems/binary-tree-preorder-traversal/"></a>
  * @since 2021/8/12
  **/
-class Lc0144 extends Solution {
+class Lc0144 implements Solution {
 
     public static void main(String[] args) {
         new Lc0144().test();

@@ -16,7 +16,7 @@ import java.util.List;
  * @link <a href="https://leetcode.com/problems/permutations/"></a>
  * @since 2021/8/2
  **/
-class Lc0046 extends Solution {
+class Lc0046 implements Solution {
 
     public static void main(String[] args) {
         new Lc0046().test();

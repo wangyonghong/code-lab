@@ -36,7 +36,7 @@ import java.util.Set;
  * @link <a href="https://leetcode.com/problems/sum-of-unique-elements/"></a>
  * @since 2022/02/22
  **/
-class Lc1748 extends Solution {
+class Lc1748 implements Solution {
 
     public static void main(String[] args) {
         new Lc1748().test();

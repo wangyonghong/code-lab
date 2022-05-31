@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/add-binary/"></a>
  * @since 2021/8/8
  **/
-class Lc0067 extends Solution {
+class Lc0067 implements Solution {
 
     public static void main(String[] args) {
         new Lc0067().test();

@@ -1,6 +1,7 @@
 package me.yonghong.algo.lc.lc0001;
 
 import me.yonghong.algo.Solution;
+import me.yonghong.algo.SolutionUtils;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -42,17 +43,16 @@ import java.util.Set;
  * @link <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/"></a>
  * @since 2022/02/24
  **/
-public class Lc0003 extends Solution {
+public interface Lc0003 extends Solution {
 
     public static void main(String[] args) {
-        new Solution()
-                .register(new Solution1())
-//                .register(new Solution2())
-                .test();
+        SolutionUtils.runTest(Lc0003.class);
     }
 
+    int lengthOfLongestSubstring(String s);
+
     @Override
-    public void test() {
+    default void test() {
         int res;
         res = lengthOfLongestSubstring("abcabcbb");
         System.out.println(res);
@@ -64,11 +64,10 @@ public class Lc0003 extends Solution {
         System.out.println(res);
     }
 
-    public int lengthOfLongestSubstring(String s) {
-        return -1;
-    }
 
-    static class Solution1 extends Lc0003 {
+    class Solution1 implements Lc0003 {
+
+        @Override
         public int lengthOfLongestSubstring(String s) {
             // 哈希集合，记录每个字符是否出现过
             Set<Character> occ = new HashSet<>();

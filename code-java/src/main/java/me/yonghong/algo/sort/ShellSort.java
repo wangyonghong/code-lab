@@ -8,7 +8,7 @@ import me.yonghong.algo.Solution;
  * @author yonghongwang#163.com
  * @since 2021/7/26
  */
-public class ShellSort extends Solution {
+public class ShellSort implements Solution {
 
     public static void main(String[] args) {
         new ShellSort().test();

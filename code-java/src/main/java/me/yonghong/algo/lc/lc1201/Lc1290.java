@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/"></a>
  * @since 2021/8/19
  */
-class Lc1290 extends Solution {
+class Lc1290 implements Solution {
 
     public static void main(String[] args) {
         new Lc1290().test();

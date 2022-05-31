@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/transpose-matrix/"></a>
  * @since 2021/8/19
  */
-class Lc0867 extends Solution {
+class Lc0867 implements Solution {
 
     public int[][] transpose(int[][] matrix) {
         int wid = matrix.length;

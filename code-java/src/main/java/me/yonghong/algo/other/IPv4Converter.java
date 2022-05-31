@@ -8,7 +8,7 @@ import me.yonghong.algo.Solution;
  * @author yonghongwang#163.com
  * @since 2021/8/2
  **/
-public class IPv4Converter extends Solution {
+public class IPv4Converter implements Solution {
 
     public static void main(String[] args) {
         new IPv4Converter().test();

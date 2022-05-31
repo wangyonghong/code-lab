@@ -14,7 +14,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/flip-game/"></a>
  * @since 2021/8/19
  */
-class Lc0293 extends Solution {
+class Lc0293 implements Solution {
 
     public static void main(String[] args) {
 

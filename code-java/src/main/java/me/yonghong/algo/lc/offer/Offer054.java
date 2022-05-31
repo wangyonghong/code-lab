@@ -9,7 +9,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/"></a>
  * @since 2021/8/8
  **/
-public class Offer054 extends Solution {
+public class Offer054 implements Solution {
 
     private int res, k;
 

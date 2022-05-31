@@ -1,6 +1,7 @@
 package me.yonghong.algo.lc.lc0001;
 
 import me.yonghong.algo.Solution;
+import me.yonghong.algo.SolutionUtils;
 
 /**
  * 2. 两数相加
@@ -35,17 +36,16 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/add-two-numbers"></a>
  * @since 2021/2/21
  **/
-class Lc0002 extends Solution {
+interface Lc0002 extends Solution {
 
     public static void main(String[] args) {
-        new Solution()
-                .register(new Solution1())
-                .register(new Solution2())
-                .test();
+        SolutionUtils.runTest(Lc0002.class);
     }
 
+    ListNode addTwoNumbers(ListNode l1, ListNode l2);
+
     @Override
-    public void test() {
+    default void test() {
         // case 1
         ListNode l1, l2, res;
         l1 = stringToListNode("[2,4,3]");
@@ -60,11 +60,10 @@ class Lc0002 extends Solution {
         print(res);
     }
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        return null;
-    }
 
-    static class Solution1 extends Lc0002 {
+    class Solution1 implements Lc0002 {
+
+        @Override
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             ListNode head = new ListNode();
             ListNode curr = head;
@@ -92,7 +91,9 @@ class Lc0002 extends Solution {
         }
     }
 
-    static class Solution2 extends Lc0002 {
+    class Solution2 implements Lc0002 {
+
+        @Override
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             if (l1 == null) {
                 return l2;

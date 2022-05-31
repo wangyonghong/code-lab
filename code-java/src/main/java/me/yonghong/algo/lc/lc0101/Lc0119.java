@@ -14,7 +14,7 @@ import java.util.List;
  * @link <a href="https://leetcode.com/problems/pascals-triangle-ii/"></a>
  * @since 2021/8/19
  **/
-class Lc0119 extends Solution {
+class Lc0119 implements Solution {
 
     public static void main(String[] args) {
         new Lc0119().test();

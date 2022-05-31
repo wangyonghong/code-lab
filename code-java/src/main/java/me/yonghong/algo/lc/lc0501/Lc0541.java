@@ -11,7 +11,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/reverse-string-ii/"></a>
  * @since 2021/8/18
  */
-class Lc0541 extends Solution {
+class Lc0541 implements Solution {
 
     public static void main(String[] args) {
         new Lc0541().test();

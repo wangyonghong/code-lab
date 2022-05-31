@@ -1,6 +1,7 @@
 package me.yonghong.algo.lc.lc0001;
 
 import me.yonghong.algo.Solution;
+import me.yonghong.algo.SolutionUtils;
 
 /**
  * 4. 寻找两个正序数组的中位数
@@ -34,17 +35,16 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/"></a>
  * @since 2022/02/27
  **/
-public class Lc0004 extends Solution {
+public interface Lc0004 extends Solution {
 
     public static void main(String[] args) {
-        new Solution()
-                .register(new Solution1())
-                .register(new Solution2())
-                .test();
+        SolutionUtils.runTest(Lc0004.class);
     }
 
+    double findMedianSortedArrays(int[] nums1, int[] nums2);
+
     @Override
-    public void test() {
+    default void test() {
         double res;
         res = findMedianSortedArrays(new int[]{1, 3}, new int[]{2});
         System.out.println(res);
@@ -53,12 +53,10 @@ public class Lc0004 extends Solution {
         System.out.println(res);
     }
 
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        return -1;
-    }
+    class Solution1 implements Lc0004 {
 
-    static class Solution1 extends Lc0004 {
         // 先合并，再取中位数，时间复杂度 O(m+n)
+        @Override
         public double findMedianSortedArrays(int[] nums1, int[] nums2) {
             int i = 0, j = 0, k = 0, m = nums1.length, n = nums2.length;
             int[] nums = new int[m + n];
@@ -81,7 +79,9 @@ public class Lc0004 extends Solution {
         }
     }
 
-    static class Solution2 extends Lc0004 {
+    class Solution2 implements Lc0004 {
+
+        @Override
         public double findMedianSortedArrays(int[] nums1, int[] nums2) {
             int m = nums1.length, n = nums2.length;
             int totalLength = m + n;

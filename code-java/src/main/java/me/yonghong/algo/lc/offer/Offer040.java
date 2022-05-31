@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
  * @author yonghongwang#163.com
  * @since 2021/8/4
  **/
-public class Offer040 extends Solution {
+public class Offer040 implements Solution {
 
     public static void main(String[] args) {
         new Offer040().test();

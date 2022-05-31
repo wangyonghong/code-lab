@@ -10,7 +10,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/binary-search/"></a>
  * @since 2022/05/29
  **/
-public class Lc0704 extends Solution {
+public class Lc0704 implements Solution {
 
     public int search(int[] nums, int target) {
         int l = 0, h = nums.length - 1;

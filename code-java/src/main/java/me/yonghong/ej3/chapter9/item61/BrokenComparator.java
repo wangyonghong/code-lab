@@ -3,7 +3,7 @@ import java.util.*;
 
 // Broken comparator - can you spot the flaw? - Page 273
 public class BrokenComparator {
-    @SuppressWarnings("deprecation")
+    @SuppressWarnings("removal")
     public static void main(String[] args) {
 
 //        Comparator<Integer> naturalOrder =

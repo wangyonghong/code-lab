@@ -8,7 +8,7 @@ import me.yonghong.algo.Solution;
  * @author yonghongwang#163.com
  * @since 2021/7/26
  */
-public class InsertionSort extends Solution {
+public class InsertionSort implements Solution {
 
     public static void main(String[] args) {
         new InsertionSort().test();

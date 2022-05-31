@@ -1,6 +1,7 @@
 package me.yonghong.algo.lc.lc0001
 
 import me.yonghong.algo.Solution
+import me.yonghong.algo.SolutionUtils
 import kotlin.jvm.JvmStatic
 import java.util.HashMap
 
@@ -15,14 +16,17 @@ import java.util.HashMap
  *
  * @since 2021/2/21
  */
-class Lc0001Kt : Solution() {
+interface Lc0001Kt : Solution {
 
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
-            Lc0001Kt().test()
+            println(Lc0001Kt::class.java.isInterface)
+            SolutionUtils.runTest(Lc0001Kt::class.java)
         }
     }
+
+    fun twoSum(nums: IntArray, target: Int): IntArray
 
     override fun test() {
         val res1 = twoSum(intArrayOf(2, 7, 11, 15), 9)
@@ -33,30 +37,30 @@ class Lc0001Kt : Solution() {
         print(res3)
     }
 
-    fun twoSum(nums: IntArray, target: Int): IntArray {
-        //            return twoSum1(nums, target);
-        return twoSum2(nums, target)
-    }
-
-    fun twoSum1(nums: IntArray, target: Int): IntArray {
-        val map: MutableMap<Int, Int?> = HashMap()
-        for (i in nums.indices) {
-            if (map[target - nums[i]] != null) {
-                return intArrayOf(map[target - nums[i]]!!, i)
+    class Solution01 : Lc0001Kt {
+        override fun twoSum(nums: IntArray, target: Int): IntArray {
+            val map: MutableMap<Int, Int?> = HashMap()
+            for (i in nums.indices) {
+                if (map[target - nums[i]] != null) {
+                    return intArrayOf(map[target - nums[i]]!!, i)
+                }
+                map[nums[i]] = i
             }
-            map[nums[i]] = i
+            return intArrayOf()
         }
-        return intArrayOf()
     }
 
-    fun twoSum2(nums: IntArray, target: Int): IntArray {
-        for (i in 0 until nums.size - 1) {
-            for (j in i + 1 until nums.size) {
-                if (nums[i] + nums[j] == target) {
-                    return intArrayOf(i, j)
+    class Solution02 : Lc0001Kt {
+        override fun twoSum(nums: IntArray, target: Int): IntArray {
+            for (i in 0 until nums.size - 1) {
+                for (j in i + 1 until nums.size) {
+                    if (nums[i] + nums[j] == target) {
+                        return intArrayOf(i, j)
+                    }
                 }
             }
+            return intArrayOf()
         }
-        return intArrayOf()
+
     }
 }

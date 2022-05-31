@@ -15,7 +15,7 @@ import java.util.Deque;
  * @see me.yonghong.algo.lc.lc0001.Lc0050
  * @since 2021/8/10
  **/
-class Lc0372 extends Solution {
+class Lc0372 implements Solution {
 
     int mod = 1337;
 

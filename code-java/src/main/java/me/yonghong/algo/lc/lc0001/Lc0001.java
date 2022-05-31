@@ -1,6 +1,7 @@
 package me.yonghong.algo.lc.lc0001;
 
 import me.yonghong.algo.Solution;
+import me.yonghong.algo.SolutionUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,17 +37,16 @@ import java.util.Map;
  * @see me.yonghong.algo.lc.lc0101.Lc0167
  * @since 2021/2/21
  **/
-class Lc0001 extends Solution {
+public interface Lc0001 extends Solution {
 
     public static void main(String[] args) {
-        new Solution()
-                .register(new Solution1())
-                .register(new Solution2())
-                .test();
+        SolutionUtils.runTest(Lc0001.class);
     }
 
+    int[] twoSum(int[] nums, int target);
+
     @Override
-    public void test() {
+    default void test() {
         int[] res1 = twoSum(new int[]{2, 7, 11, 15}, 9);
         print(res1);
         int[] res2 = twoSum(new int[]{3, 2, 4}, 6);
@@ -55,11 +55,9 @@ class Lc0001 extends Solution {
         print(res3);
     }
 
-    public int[] twoSum(int[] nums, int target) {
-        return new int[0];
-    }
+    class Solution1 implements Lc0001 {
 
-    static class Solution1 extends Lc0001 {
+        @Override
         public int[] twoSum(int[] nums, int target) {
             Map<Integer, Integer> map = new HashMap<>();
             for (int i = 0; i < nums.length; i++) {
@@ -72,7 +70,9 @@ class Lc0001 extends Solution {
         }
     }
 
-    static class Solution2 extends Lc0001 {
+    class Solution2 implements Lc0001 {
+
+        @Override
         public int[] twoSum(int[] nums, int target) {
             for (int i = 0; i < nums.length - 1; i++) {
                 for (int j = i + 1; j < nums.length; j++) {

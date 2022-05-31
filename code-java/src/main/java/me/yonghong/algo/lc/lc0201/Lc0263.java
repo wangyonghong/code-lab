@@ -13,7 +13,7 @@ import me.yonghong.algo.Solution;
  * @see me.yonghong.algo.lc.lc0301.Lc0313
  * @since 2021/8/9
  */
-class Lc0263 extends Solution {
+class Lc0263 implements Solution {
 
     public static void main(String[] args) {
         new Lc0263().test();

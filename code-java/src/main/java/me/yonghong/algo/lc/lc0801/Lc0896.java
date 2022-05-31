@@ -18,7 +18,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/monotonic-array/"></a>
  * @since 2021/2/28
  */
-class Lc0896 extends Solution {
+class Lc0896 implements Solution {
 
     public static void main(String[] args) {
         new Lc0896().test();

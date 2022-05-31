@@ -10,7 +10,7 @@ import me.yonghong.algo.Solution;
  * @link <a href="https://leetcode.com/problems/symmetric-tree/"></a>
  * @since 2021/8/2
  **/
-class Lc0101 extends Solution {
+class Lc0101 implements Solution {
 
     public static void main(String[] args) {
         new Lc0101().test();
