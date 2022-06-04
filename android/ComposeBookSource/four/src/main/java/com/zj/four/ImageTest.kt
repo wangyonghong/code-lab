@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import dev.chrisbanes.accompanist.coil.CoilImage
+import coil.compose.AsyncImage
 
 @Composable
 fun ImageTest() {
@@ -50,8 +50,8 @@ fun ImageTest() {
 //        contentDescription = "描述", colorFilter = ColorFilter.tint(Color.Red)
 //    )
 
-    CoilImage(
-        data = "https://img0.baidu.com/it/u=3155998395,3600507640&fm=26&fmt=auto&gp=0.jpg",
+    AsyncImage(
+        model = "https://img0.baidu.com/it/u=3155998395,3600507640&fm=26&fmt=auto&gp=0.jpg",
         contentDescription = null
     )
 

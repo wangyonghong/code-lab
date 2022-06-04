@@ -1,6 +1,5 @@
 package com.zj.seven
 
-import android.util.Log
 import androidx.compose.animation.animateColor
 import androidx.compose.animation.core.animateDp
 import androidx.compose.animation.core.animateFloat
@@ -12,8 +11,6 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
-import androidx.compose.ui.draw.scale
-import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Color.Companion.Blue
 import androidx.compose.ui.graphics.Color.Companion.Red
@@ -28,25 +25,30 @@ fun TransitionTest() {
     var boxState: BoxState by remember { mutableStateOf(BoxState.Small) }
     val transition = updateTransition(targetState = boxState, label = "transition")
     val color by transition.animateColor(label = "color") {
-        boxState.color
+        it.color
     }
     val size by transition.animateDp(label = "size") {
-        boxState.size
+        it.size
     }
     val offset by transition.animateDp(label = "offset") {
-        boxState.offset
+        it.offset
     }
     val angle by transition.animateFloat(label = "angle") {
-        boxState.angle
+        it.angle
     }
-    Column(Modifier.padding(16.dp).size(360.dp)) {
+
+    Column(
+        Modifier
+            .padding(16.dp)
+            .size(360.dp)) {
         Button(
             onClick = { boxState = !boxState }
         ) {
             Text("Transition Test")
         }
         Box(
-            Modifier.padding(top = 20.dp)
+            Modifier
+                .padding(top = 20.dp)
                 .rotate(angle)
                 .size(size)
                 .offset(x = offset)

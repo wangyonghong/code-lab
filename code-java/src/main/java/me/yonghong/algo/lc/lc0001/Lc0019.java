@@ -34,13 +34,12 @@ class Lc0019 implements Solution {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummyHead = new ListNode(-1, head);
-        ListNode fast = head;
+        ListNode fast = dummyHead;
         ListNode slow = dummyHead;
-        while (n > 0) {
+        while (n-- > 0) {
             fast = fast.next;
-            n--;
         }
-        while (fast != null) {
+        while (fast.next != null) {
             fast = fast.next;
             slow = slow.next;
         }

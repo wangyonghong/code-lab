@@ -29,15 +29,15 @@ class MainActivity : ComponentActivity() {
                 Surface(color = MaterialTheme.colors.background) {
 //                    Greeting("Android")
 //                    AndroidViewPage()
-//                    WebViewPage()
+                    WebViewPage()
 //                    AndroidViewBindingPage()
-                    Text(
-                        "第9章",
-                        modifier = Modifier.fillMaxWidth(),
-                        fontSize = 50.sp,
-                        textAlign = TextAlign.Center
-                    )
-                    //ScreenAdapter1()
+//                    Text(
+//                        "第9章",
+//                        modifier = Modifier.fillMaxWidth(),
+//                        fontSize = 50.sp,
+//                        textAlign = TextAlign.Center
+//                    )
+//                    ScreenAdapter1()
                 }
             }
         }

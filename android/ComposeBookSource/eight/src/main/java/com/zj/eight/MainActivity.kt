@@ -20,12 +20,12 @@ class MainActivity : ComponentActivity() {
 //                    Greeting("Android")
 //                    One()
 //                    FlowTest()
-                    NavigationTest()
-//                }
+//                NavigationTest()
             }
         }
     }
 }
+
 
 @Composable
 fun Greeting(name: String) {

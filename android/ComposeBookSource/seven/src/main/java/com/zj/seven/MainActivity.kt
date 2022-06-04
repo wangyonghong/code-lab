@@ -13,8 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.zj.seven.ui.theme.SevenTheme
 
 class MainActivity : ComponentActivity() {
-    @ExperimentalMaterialApi
-    @ExperimentalAnimationApi
+    @OptIn(ExperimentalMaterialApi::class, ExperimentalAnimationApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

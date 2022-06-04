@@ -25,23 +25,27 @@ fun AnimatableTest() {
             initialValue = Color.Red,
         )
     }
-    LaunchedEffect(ok) {
+    // 监听 ok.value 值的变化
+    LaunchedEffect(ok.value) {
         color.animateTo(if (ok.value) Color.Yellow else Color.Green)
     }
-    Box(Modifier.size(360.dp).background(color.value))
+//    Box(Modifier.size(360.dp).background(color.value))
 
-//    Column(Modifier.padding(16.dp)) {
-//        Button(
-//            onClick = {
-//                ok.value = !ok.value
-//
-//            },
-//            modifier = Modifier.padding(vertical = 16.dp)
-//        ) {
-//            Text("Change Color")
-//        }
-//        Box(Modifier.size(360.dp).background(color.value))
-//    }
+    Column(Modifier.padding(16.dp)) {
+        Button(
+            onClick = {
+                ok.value = !ok.value
+
+            },
+            modifier = Modifier.padding(vertical = 16.dp)
+        ) {
+            Text("Change Color")
+        }
+        Box(
+            Modifier
+                .size(360.dp)
+                .background(color.value))
+    }
 
 }
 

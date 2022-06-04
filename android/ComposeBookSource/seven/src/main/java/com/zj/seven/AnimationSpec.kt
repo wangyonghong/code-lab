@@ -71,6 +71,6 @@ fun AnimationSpecs() {
 
 @Preview(showBackground = true)
 @Composable
-fun AnimationSpecPreciew() {
+fun AnimationSpecPreview() {
 
 }

@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun LazyVerticalGridTest() {
     val photos = arrayListOf<Int>()
-    for (index in 0..20) {
+    for (index in 0..30) {
         photos.add(R.drawable.ic_launcher_background)
     }
 //    LazyVerticalGrid(

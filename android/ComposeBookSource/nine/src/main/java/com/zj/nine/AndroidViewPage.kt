@@ -14,12 +14,12 @@ import androidx.compose.ui.viewinterop.AndroidView
 fun AndroidViewPage() {
     AndroidView(
         factory = {
-            CalendarView(it)
+            CalendarView(it) // it -> Context
         },
         modifier = Modifier.fillMaxWidth(),
         update = {
             it.setOnDateChangeListener { view, year, month, day ->
-                Toast.makeText(view.context, "${year}年${month}月${day}日", Toast.LENGTH_LONG).show()
+                Toast.makeText(view.context, "${year}年${month}月${day}日", Toast.LENGTH_SHORT).show()
             }
         }
     )

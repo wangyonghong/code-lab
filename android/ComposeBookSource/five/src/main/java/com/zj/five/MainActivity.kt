@@ -12,7 +12,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.zj.five.ui.theme.FiveTheme
 
 class MainActivity : ComponentActivity() {
-    @ExperimentalFoundationApi
+    @OptIn(ExperimentalFoundationApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity() {
                 Surface(color = MaterialTheme.colors.background) {
 //                    Greeting("Android")
 //                    LazyColumnTest()
+//                    LazyRowTest()
 //                    StickyHeaderTest()
 //                    ComplexStickyHeaderTest()
 //                    LazyVerticalGridTest()
