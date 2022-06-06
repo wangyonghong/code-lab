@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - proximity_plugin (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - proximity_plugin (from `.symlinks/plugins/proximity_plugin/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  proximity_plugin:
+    :path: ".symlinks/plugins/proximity_plugin/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+  proximity_plugin: 785406458c163e978e45676c383caafc8fb01fde
+
+PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
+
+COCOAPODS: 1.6.1

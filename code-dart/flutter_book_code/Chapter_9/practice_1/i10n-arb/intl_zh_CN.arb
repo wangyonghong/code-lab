@@ -1,0 +1,21 @@
+{
+  "@@last_modified": "2019-05-27T13:07:46.329",
+  "title": "Flutter APP",
+  "@title": {
+    "description": "Title for the Demo application",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appBarContent": "Flutter演示首页",
+  "@appBarContent": {
+    "description": "Flutter演示首页",
+    "type": "text",
+    "placeholders": {}
+  },
+  "counterDescribe": "你点击按钮的次数为：",
+  "@counterDescribe": {
+    "description": "按钮计数",
+    "type": "text",
+    "placeholders": {}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "@@last_modified": "2019-05-27T13:28:02.867",
+  "title": "Flutter APP",
+  "@title": {
+    "description": "Title for the Demo application",
+    "type": "text",
+    "placeholders": {}
+  },
+  "appBarContent": "Flutter Demo Home Page",
+  "@appBarContent": {
+    "description": "Flutter Demo Home Page",
+    "type": "text",
+    "placeholders": {}
+  },
+  "counterDescribe": "You have clicked the button this many times:",
+  "@counterDescribe": {
+    "description": "You have clicked the button this many times:",
+    "type": "text",
+    "placeholders": {}
+  }
+}
