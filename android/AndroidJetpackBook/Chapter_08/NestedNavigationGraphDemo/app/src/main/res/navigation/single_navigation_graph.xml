@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_navigation_graph"
+    app:startDestination="@id/good_navigation">
+
+    <navigation android:id="@+id/account_navigation"
+        app:startDestination="@id/loginFragment">
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.example.nestednavigationgraphdemo.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_loginFragment_to_regNewUserFragment"
+                app:destination="@id/regNewUserFragment" />
+            <action
+                android:id="@+id/action_loginFragment_to_recoverPasswordFragment"
+                app:destination="@id/recoverPasswordFragment" />
+            <action
+                android:id="@+id/action_loginFragment_to_goodListFragment"
+                app:destination="@id/good_navigation" />
+        </fragment>
+        <fragment
+            android:id="@+id/regNewUserFragment"
+            android:name="com.example.nestednavigationgraphdemo.RegNewUserFragment"
+            android:label="fragment_reg_new_user"
+            tools:layout="@layout/fragment_reg_new_user" />
+        <fragment
+            android:id="@+id/recoverPasswordFragment"
+            android:name="com.example.nestednavigationgraphdemo.RecoverPasswordFragment"
+            android:label="fragment_recover_password"
+            tools:layout="@layout/fragment_recover_password">
+            <action
+                android:id="@+id/action_recoverPasswordFragment_to_regNewUserFragment"
+                app:destination="@id/regNewUserFragment" />
+            <action
+                android:id="@+id/action_recoverPasswordFragment_to_setNewPasswordFragment"
+                app:destination="@id/setNewPasswordFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/setNewPasswordFragment"
+            android:name="com.example.nestednavigationgraphdemo.SetNewPasswordFragment"
+            android:label="fragment_set_new_password"
+            tools:layout="@layout/fragment_set_new_password">
+            <action
+                android:id="@+id/action_setNewPasswordFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
+        </fragment>
+    </navigation>
+    <navigation android:id="@+id/good_navigation"
+        app:startDestination="@id/goodListFragment">
+        <fragment
+            android:id="@+id/goodListFragment"
+            android:name="com.example.nestednavigationgraphdemo.GoodListFragment"
+            android:label="fragment_good_list"
+            tools:layout="@layout/fragment_good_list">
+            <action
+                android:id="@+id/action_goodListFragment_to_goodDetailFragment"
+                app:destination="@id/goodDetailFragment" />
+            <action
+                android:id="@+id/action_goodListFragment_to_paymentListFragment"
+                app:destination="@id/payment_navigation" />
+        </fragment>
+        <fragment
+            android:id="@+id/goodDetailFragment"
+            android:name="com.example.nestednavigationgraphdemo.GoodDetailFragment"
+            android:label="fragment_good_detail"
+            tools:layout="@layout/fragment_good_detail">
+            <action
+                android:id="@+id/action_goodDetailFragment_to_paymentListFragment"
+                app:destination="@id/payment_navigation" />
+        </fragment>
+    </navigation>
+    <navigation android:id="@+id/payment_navigation"
+        app:startDestination="@id/paymentListFragment">
+        <fragment
+            android:id="@+id/paymentListFragment"
+            android:name="com.example.nestednavigationgraphdemo.PaymentListFragment"
+            android:label="fragment_payment_list"
+            tools:layout="@layout/fragment_payment_list">
+            <action
+                android:id="@+id/action_paymentListFragment_to_goodDetailFragment"
+                app:destination="@id/good_navigation" />
+            <action
+                android:id="@+id/action_paymentListFragment_to_paymentPayFragment"
+                app:destination="@id/paymentPayFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/paymentPayFragment"
+            android:name="com.example.nestednavigationgraphdemo.PaymentPayFragment"
+            android:label="fragment_payment_pay"
+            tools:layout="@layout/fragment_payment_pay">
+            <action
+                android:id="@+id/action_paymentPayFragment_to_paymentPayResultFragment"
+                app:destination="@id/paymentPayResultFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/paymentPayResultFragment"
+            android:name="com.example.nestednavigationgraphdemo.PaymentPayResultFragment"
+            android:label="fragment_payment_pay_result"
+            tools:layout="@layout/fragment_payment_pay_result">
+            <action
+                android:id="@+id/action_paymentPayResultFragment_to_goodListFragment"
+                app:destination="@id/good_navigation" />
+        </fragment>
+    </navigation>
+</navigation>

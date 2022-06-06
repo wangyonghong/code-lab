@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/good_navigation"
+    app:startDestination="@id/goodListFragment">
+
+    <fragment
+        android:id="@+id/goodListFragment"
+        android:name="com.example.nestednavigationgraphdemo.GoodListFragment"
+        android:label="fragment_good_list"
+        tools:layout="@layout/fragment_good_list">
+        <action
+            android:id="@+id/action_goodListFragment_to_goodDetailFragment"
+            app:destination="@id/goodDetailFragment" />
+        <action
+            android:id="@+id/action_goodListFragment_to_paymentListFragment"
+            app:destination="@id/payment_navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/goodDetailFragment"
+        android:name="com.example.nestednavigationgraphdemo.GoodDetailFragment"
+        android:label="fragment_good_detail"
+        tools:layout="@layout/fragment_good_detail">
+        <action
+            android:id="@+id/action_goodDetailFragment_to_paymentListFragment"
+            app:destination="@id/payment_navigation" />
+    </fragment>
+
+</navigation>

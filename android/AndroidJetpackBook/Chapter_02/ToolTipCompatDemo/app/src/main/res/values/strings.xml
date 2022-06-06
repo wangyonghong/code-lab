@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ToolTipCompatDemo</string>
+    <string name="tool_tip_str">你好，世界！</string>
+</resources>

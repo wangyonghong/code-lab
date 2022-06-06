@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ViewModelWithDataBindingDemo</string>
+    <string name="common_phone_number">手机号：</string>
+    <string name="common_phone_number_already_input">输入的手机号：</string>
+</resources>

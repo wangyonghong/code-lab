@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/activity_main_simple_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简易对话框" />
+
+    <Button
+        android:id="@+id/activity_main_single_select_list_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单选对话框" />
+
+    <Button
+        android:id="@+id/activity_main_single_select_with_confirm_list_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="带有确认的单选对话框" />
+
+    <Button
+        android:id="@+id/activity_main_multi_select_with_confirm_list_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="带有确认的多选对话框" />
+
+    <Button
+        android:id="@+id/activity_main_single_custom_select_with_confirm_list_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义选项布局的对话框" />
+
+</LinearLayout>

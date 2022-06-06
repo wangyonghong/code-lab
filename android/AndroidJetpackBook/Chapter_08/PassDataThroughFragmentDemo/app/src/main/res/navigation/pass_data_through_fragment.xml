@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simple_navigation"
+    app:startDestination="@id/fragmentA">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.example.passdatathroughfragmentdemo.FragmentA"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a">
+
+        <argument
+            android:name="text"
+            android:defaultValue="A"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentB"
+            app:destination="@id/fragmentB" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.passdatathroughfragmentdemo.FragmentB"
+        android:label="FragmentB"
+        tools:layout="@layout/fragment_b">
+
+        <argument
+            android:name="text"
+            android:defaultValue="B"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

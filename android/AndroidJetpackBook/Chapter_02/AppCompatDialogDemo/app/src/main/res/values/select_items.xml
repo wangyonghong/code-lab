@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_names">
+        <item>菜单项1</item>
+        <item>菜单项2</item>
+        <item>菜单项3</item>
+        <item>菜单项4</item>
+        <item>菜单项5</item>
+    </string-array>
+</resources>

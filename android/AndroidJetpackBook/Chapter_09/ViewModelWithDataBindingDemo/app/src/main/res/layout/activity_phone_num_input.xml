@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PhoneNumInputActivity">
+
+    <data>
+
+        <variable
+            name="phoneViewModel"
+            type="com.example.viewmodelwithdatabindingdemo.PhoneViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_phone_number"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/activity_phone_num_input_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:text="@={phoneViewModel.phoneNum}"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_phone_number_already_input"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/activity_login_pwd_input_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{phoneViewModel.phoneNum}"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

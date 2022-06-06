@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ViewModelShareDataBetweenFragment</string>
+    <string name="fragment_bottom_refresh_btn">获取输入框文本</string>
+</resources>

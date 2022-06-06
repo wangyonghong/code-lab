@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import
+            alias="DateTimeConverter"
+            type="com.example.databindingdemo.DateTimeUtil" />
+
+        <variable
+            name="currentDateTime"
+            type="com.example.databindingdemo.ExampleDataObject" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> currentDateTime.logCurrentDateTime(DateTimeConverter.convertLongToDate(currentDateTime.dateTime))}"
+            android:text="@{DateTimeConverter.convertLongToDate(currentDateTime.dateTime)}"
+            android:textSize="36sp" />
+
+        <include
+            layout="@layout/time_only"
+            bind:currentDateTime="@{currentDateTime}" />
+
+    </LinearLayout>
+</layout>

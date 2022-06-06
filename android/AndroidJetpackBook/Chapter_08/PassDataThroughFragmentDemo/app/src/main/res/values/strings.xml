@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PassDataThroughFragmentDemo</string>
+    <string name="fragment_a">A</string>
+    <string name="fragment_b">B</string>
+</resources>

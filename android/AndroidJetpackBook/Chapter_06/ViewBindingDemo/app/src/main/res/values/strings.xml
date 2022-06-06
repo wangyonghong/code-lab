@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ViewBindingDemo</string>
+    <string name="common_hint">请在此输入</string>
+    <string name="activity_main_name_tv">姓名：</string>
+    <string name="activity_main_age_tv">年龄：</string>
+    <string name="activity_main_phone_tv">电话：</string>
+    <string name="activity_main_confirm_btn">确定</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/activity_main_menu_item_1"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/activity_main_menu_item_1"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/activity_main_menu_item_2"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="@string/activity_main_menu_item_2"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/activity_main_menu_item_3"
+        android:title="@string/activity_main_menu_item_3"
+        app:showAsAction="never" />
+</menu>

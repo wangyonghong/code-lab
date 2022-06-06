@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/center_navigation"
+    app:startDestination="@id/good_navigation">
+
+
+    <include app:graph="@navigation/good_navigation" />
+    <include app:graph="@navigation/account_navigation" />
+    <include app:graph="@navigation/payment_navigation" />
+
+    <fragment
+        android:id="@+id/messageCenterFragment"
+        android:name="com.example.deeplinknavigationdemo.MessageCenterFragment"
+        android:label="fragment_message_center"
+        tools:layout="@layout/fragment_message_center" />
+
+    <action
+        android:id="@+id/action_global_messageCenterFragment"
+        app:destination="@id/messageCenterFragment" />
+</navigation>

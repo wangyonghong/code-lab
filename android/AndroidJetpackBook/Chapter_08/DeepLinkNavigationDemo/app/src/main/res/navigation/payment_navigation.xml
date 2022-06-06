@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_navigation"
+    app:startDestination="@id/paymentListFragment">
+
+    <fragment
+        android:id="@+id/paymentListFragment"
+        android:name="com.example.deeplinknavigationdemo.PaymentListFragment"
+        android:label="fragment_payment_list"
+        tools:layout="@layout/fragment_payment_list">
+        <action
+            android:id="@+id/action_paymentListFragment_to_goodDetailFragment"
+            app:destination="@id/good_navigation" />
+        <action
+            android:id="@+id/action_paymentListFragment_to_paymentPayFragment"
+            app:destination="@id/paymentPayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentPayFragment"
+        android:name="com.example.deeplinknavigationdemo.PaymentPayFragment"
+        android:label="fragment_payment_pay"
+        tools:layout="@layout/fragment_payment_pay">
+        <action
+            android:id="@+id/action_paymentPayFragment_to_paymentPayResultFragment"
+            app:destination="@id/paymentPayResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentPayResultFragment"
+        android:name="com.example.deeplinknavigationdemo.PaymentPayResultFragment"
+        android:label="fragment_payment_pay_result"
+        tools:layout="@layout/fragment_payment_pay_result">
+        <action
+            android:id="@+id/action_paymentPayResultFragment_to_goodListFragment"
+            app:destination="@id/good_navigation" />
+    </fragment>
+
+</navigation>

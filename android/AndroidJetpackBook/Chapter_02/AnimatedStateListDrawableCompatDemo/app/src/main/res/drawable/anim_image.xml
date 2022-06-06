@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/off"
+        android:drawable="@drawable/blue"
+        android:state_pressed="false" />
+    <item
+        android:id="@+id/on"
+        android:drawable="@drawable/green"
+        android:state_pressed="true" />
+    <transition
+        android:fromId="@id/off"
+        android:toId="@id/on">
+        <animation-list>
+            <item
+                android:drawable="@drawable/blue"
+                android:duration="0" />
+            <item
+                android:drawable="@drawable/green"
+                android:duration="0" />
+        </animation-list>
+    </transition>
+
+</animated-selector>

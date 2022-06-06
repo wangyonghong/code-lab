@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RoomSimpleDemo</string>
+    <string name="activity_main_add_btn">添加数据</string>
+    <string name="activity_main_refresh_btn">刷新数据</string>
+    <string name="common_male">男</string>
+    <string name="common_female">女</string>
+</resources>

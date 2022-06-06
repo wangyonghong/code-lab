@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DeepLinkNavigationDemo</string>
+    <string name="fragment_login">登录</string>
+    <string name="fragment_reg_new_user">注册</string>
+    <string name="fragment_recover_password">找回密码</string>
+    <string name="fragment_set_new_password">设置新密码</string>
+
+    <string name="fragment_good_list">商品列表</string>
+    <string name="fragment_good_detail">商品详情</string>
+
+    <string name="fragment_payment_list">待支付列表</string>
+    <string name="fragment_payment_pay">支付中</string>
+    <string name="fragment_payment_pay_result">支付结果</string>
+
+    <string name="fragment_message_center">消息中心</string>
+</resources>
