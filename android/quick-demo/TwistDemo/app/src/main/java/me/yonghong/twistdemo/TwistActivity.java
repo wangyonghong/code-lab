@@ -14,6 +14,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -51,11 +52,16 @@ public class TwistActivity extends AppCompatActivity implements SensorEventListe
     mImg0.setLayoutParams(params1);
     linearLayout.addView(mImg0);
 
+
     mImg1 = new ImageView(getBaseContext());
-    mImg1.setImageResource(R.drawable.studio);
+    mImg1.setImageResource(R.drawable.studio_2);
     mImg1.setScaleType(ImageView.ScaleType.FIT_CENTER); // 默认fix_xy与ios对齐
     mImg1.setLayoutParams(params1);
-    linearLayout.addView(mImg1);
+    FrameLayout layout = new FrameLayout(getBaseContext());
+    layout.setLayoutParams(params1);
+    layout.setBackgroundResource(R.drawable.bg_2);
+    layout.addView(mImg1);
+    linearLayout.addView(layout);
 
     LinearLayout.LayoutParams params2 = new LinearLayout.LayoutParams(dp75, dp75);
     mImg2 = new ImageView(getBaseContext());
