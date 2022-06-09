@@ -3,6 +3,7 @@ package me.yonghong.twistdemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -10,6 +11,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Display;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -19,40 +21,55 @@ public class TwistActivity extends AppCompatActivity implements SensorEventListe
 
   private SensorManager mSensorManager = null;
   private LinearLayout linearLayout;
+  private ImageView mImg0;
   private ImageView mImg1;
   private ImageView mImg2;
+  private ImageView mImg3;
   private long lastModifiedTime;
   private int screenWidth;
+  private int dp75;
+  private int dp150;
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    dp75 = dpToPx(75);
+    dp150 = dpToPx(150);
     DisplayMetrics dm = new DisplayMetrics();
     Display display =
         ((WindowManager) getApplication().getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
     display.getRealMetrics(dm);
-    screenWidth = dm.widthPixels - 200;
+    screenWidth = dm.widthPixels - dp75;
 
     setContentView(R.layout.activity_twist);
-    LinearLayout.LayoutParams params1 = new LinearLayout.LayoutParams(400, 400);
+    LinearLayout.LayoutParams params1 = new LinearLayout.LayoutParams(dp150, dp150);
     linearLayout = findViewById(R.id.container);
-    ImageView imageView = new ImageView(getBaseContext());
-    imageView.setImageResource(R.drawable.studio);
-    imageView.setScaleType(ImageView.ScaleType.FIT_CENTER); // 默认fix_xy与ios对齐
-    imageView.setLayoutParams(params1);
-    linearLayout.addView(imageView);
+    mImg0 = new ImageView(getBaseContext());
+    mImg0.setImageResource(R.drawable.studio);
+    mImg0.setScaleType(ImageView.ScaleType.FIT_CENTER); // 默认fix_xy与ios对齐
+    mImg0.setLayoutParams(params1);
+    linearLayout.addView(mImg0);
+
     mImg1 = new ImageView(getBaseContext());
     mImg1.setImageResource(R.drawable.studio);
     mImg1.setScaleType(ImageView.ScaleType.FIT_CENTER); // 默认fix_xy与ios对齐
     mImg1.setLayoutParams(params1);
     linearLayout.addView(mImg1);
 
-    LinearLayout.LayoutParams params2 = new LinearLayout.LayoutParams(200, 200);
+    LinearLayout.LayoutParams params2 = new LinearLayout.LayoutParams(dp75, dp75);
     mImg2 = new ImageView(getBaseContext());
     mImg2.setImageResource(R.drawable.studio);
     mImg2.setScaleType(ImageView.ScaleType.FIT_CENTER); // 默认fix_xy与ios对齐
     mImg2.setLayoutParams(params2);
     linearLayout.addView(mImg2);
+
+    LinearLayout.LayoutParams params3 = new LinearLayout.LayoutParams(dp75, dp75);
+    mImg3 = new ImageView(getBaseContext());
+    mImg3.setImageResource(R.drawable.studio);
+    mImg3.setScaleType(ImageView.ScaleType.FIT_CENTER); // 默认fix_xy与ios对齐
+    mImg3.setLayoutParams(params3);
+    linearLayout.addView(mImg3);
 
     initSensor();
   }
@@ -105,7 +122,8 @@ public class TwistActivity extends AppCompatActivity implements SensorEventListe
 
 
     Log.d("red", String.valueOf(degree));
-    mImg1.setRotation(degree);
+    mImg0.setRotation(degree);
+    mImg1.animate().rotation(degree).setDuration(0).start();
 
     LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) mImg2.getLayoutParams();
     if (degree > 180) {
@@ -134,13 +152,21 @@ public class TwistActivity extends AppCompatActivity implements SensorEventListe
     }
     layoutParams.leftMargin = leftMargin;
     mImg2.setLayoutParams(layoutParams);
-    degree = (float) ((layoutParams.leftMargin * 360 / (2 * 100 * Math.PI) % 360));
+    degree = (float) ((layoutParams.leftMargin * 360 / (dp75 * Math.PI) % 360));
     mImg2.setRotation(degree);
+
+    mImg3.animate().x(leftMargin).rotation(degree).setDuration(0).start();
   }
 
 
   @Override
   public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+  }
+
+  private int dpToPx(int dp) {
+    Resources r = getApplication().getApplicationContext().getResources();
+    float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics());
+    return (int) px;
   }
 }
