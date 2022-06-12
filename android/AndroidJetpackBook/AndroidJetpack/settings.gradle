@@ -1,0 +1,8 @@
+rootProject.name = "AndroidJetpack"
+include ':C2_AppBarDemo'
+include ':C2_AppCompatDelegateDemo'
+include ':C2_AppCompatDialogDemo'
+include ':C2_AppCompatResourcesDemo'
+include ':C2_AnimatedStateListDrawableCompatDemo'
+include ':C2_ActionMenuViewDemo'
+include ':C2_AppCompatAutoCompleteTextView'
