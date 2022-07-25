@@ -9,11 +9,12 @@ public class Bigram2 {
     private final char second;
 
     public Bigram2(char first, char second) {
-        this.first  = first;
+        this.first = first;
         this.second = second;
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (!(o instanceof Bigram2))
             return false;
         Bigram2 b = (Bigram2) o;

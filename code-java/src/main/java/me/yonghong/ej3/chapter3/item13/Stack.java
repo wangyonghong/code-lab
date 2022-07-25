@@ -1,4 +1,5 @@
 package me.yonghong.ej3.chapter3.item13;
+
 import java.util.Arrays;
 
 // A cloneable version of Stack (Pages 60-61)
@@ -15,7 +16,7 @@ public class Stack implements Cloneable {
         ensureCapacity();
         elements[size++] = e;
     }
-    
+
     public Object pop() {
         if (size == 0)
             throw new EmptyStackException();
@@ -25,11 +26,12 @@ public class Stack implements Cloneable {
     }
 
     public boolean isEmpty() {
-        return size ==0;
+        return size == 0;
     }
 
     // Clone method for class with references to mutable state
-    @Override public Stack clone() {
+    @Override
+    public Stack clone() {
         try {
             Stack result = (Stack) super.clone();
             result.elements = elements.clone();
@@ -44,7 +46,7 @@ public class Stack implements Cloneable {
         if (elements.length == size)
             elements = Arrays.copyOf(elements, 2 * size + 1);
     }
-    
+
     // To see that clone works, call with several command line arguments
     public static void main(String[] args) {
         Stack stack = new Stack();

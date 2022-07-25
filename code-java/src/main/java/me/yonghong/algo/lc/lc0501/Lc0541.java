@@ -26,7 +26,7 @@ class Lc0541 implements Solution {
     public String reverseStr(String s, int k) {
         char[] chs = s.toCharArray();
         int len = chs.length, l = 0, r = Math.min(len - 1, l + k - 1), cur = 0;
-        while(cur < len) {
+        while (cur < len) {
             while (l < r) {
                 char ch = chs[l];
                 chs[l++] = chs[r];

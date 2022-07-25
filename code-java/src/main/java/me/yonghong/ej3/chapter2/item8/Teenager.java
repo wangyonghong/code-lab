@@ -1,7 +1,5 @@
 package me.yonghong.ej3.chapter2.item8;
 
-import java.util.concurrent.TimeUnit;
-
 // Ill-behaved client of resource with cleaner safety-net (Page 33)
 public class Teenager {
     public static void main(String[] args) {

@@ -2,8 +2,10 @@ package me.yonghong.ej3.chapter12.item90;
 
 // Period class with serialization proxy - Pages 363-364
 
-import java.util.*;
-import java.io.*;
+import java.io.InvalidObjectException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+import java.util.Date;
 
 // Immutable class that uses defensive copying
 public final class Period implements Serializable {
@@ -11,24 +13,30 @@ public final class Period implements Serializable {
     private final Date end;
 
     /**
-     * @param  start the beginning of the period
-     * @param  end the end of the period; must not precede start
+     * @param start the beginning of the period
+     * @param end   the end of the period; must not precede start
      * @throws IllegalArgumentException if start is after end
-     * @throws NullPointerException if start or end is null
+     * @throws NullPointerException     if start or end is null
      */
     public Period(Date start, Date end) {
         this.start = new Date(start.getTime());
-        this.end   = new Date(end.getTime());
+        this.end = new Date(end.getTime());
         if (this.start.compareTo(this.end) > 0)
             throw new IllegalArgumentException(
                     start + " after " + end);
     }
 
-    public Date start () { return new Date(start.getTime()); }
+    public Date start() {
+        return new Date(start.getTime());
+    }
 
-    public Date end () { return new Date(end.getTime()); }
+    public Date end() {
+        return new Date(end.getTime());
+    }
 
-    public String toString() { return start + " - " + end; }
+    public String toString() {
+        return start + " - " + end;
+    }
 
 
     // Serialization proxy for Period class

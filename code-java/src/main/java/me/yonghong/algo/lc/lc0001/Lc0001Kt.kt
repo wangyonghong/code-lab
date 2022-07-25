@@ -3,7 +3,6 @@ package me.yonghong.algo.lc.lc0001
 import me.yonghong.algo.Solution
 import me.yonghong.algo.SolutionUtils
 import kotlin.jvm.JvmStatic
-import java.util.HashMap
 
 /**
  * 1. 两数之和

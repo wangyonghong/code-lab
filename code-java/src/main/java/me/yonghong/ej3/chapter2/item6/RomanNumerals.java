@@ -1,4 +1,5 @@
 package me.yonghong.ej3.chapter2.item6;
+
 import java.util.regex.Pattern;
 
 // Reusing expensive object for improved performance (Pages 22 and 23)

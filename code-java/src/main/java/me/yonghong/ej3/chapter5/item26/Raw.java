@@ -1,5 +1,7 @@
 package me.yonghong.ej3.chapter5.item26;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // Fails at runtime - unsafeAdd method uses a raw type (List)!  (Page 119)
 public class Raw {

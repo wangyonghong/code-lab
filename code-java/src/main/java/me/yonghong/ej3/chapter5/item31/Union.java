@@ -1,5 +1,7 @@
 package me.yonghong.ej3.chapter5.item31;
-import java.util.*;
+
+import java.util.HashSet;
+import java.util.Set;
 
 // Generic union method with wildcard types for enhanced flexibility (Pages 142-3)
 public class Union {
@@ -13,14 +15,14 @@ public class Union {
     // Simple program to exercise flexible generic staticfactory
     public static void main(String[] args) {
         Set<Integer> integers = new HashSet<>();
-        integers.add(1); 
-        integers.add(3); 
-        integers.add(5); 
+        integers.add(1);
+        integers.add(3);
+        integers.add(5);
 
-        Set<Double> doubles =  new HashSet<>();
-        doubles.add(2.0); 
-        doubles.add(4.0); 
-        doubles.add(6.0); 
+        Set<Double> doubles = new HashSet<>();
+        doubles.add(2.0);
+        doubles.add(4.0);
+        doubles.add(6.0);
 
         Set<Number> numbers = union(integers, doubles);
 

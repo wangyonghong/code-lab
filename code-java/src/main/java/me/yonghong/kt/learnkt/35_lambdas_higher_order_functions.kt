@@ -1,4 +1,3 @@
-
 /*
     EXAMPLE ONE
 
@@ -20,7 +19,7 @@ fun main(args: Array<String>) {
 
     val test: String = "Hello"
 
-    val myLambda: (Int) -> Unit = { s: Int -> println(s)}   // Lambda Expression [ Function ]
+    val myLambda: (Int) -> Unit = { s: Int -> println(s) }   // Lambda Expression [ Function ]
     program.addTwoNumbers(2, 7, myLambda)
 }
 
@@ -40,7 +39,7 @@ class Program {
 
     fun addTwoNumbers(a: Int, b: Int) {                         // Simple way.. Just for Better Understanding
 
-        val sum =  a + b
+        val sum = a + b
         println(sum)
     }
 }

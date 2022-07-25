@@ -16,7 +16,7 @@ fun typeCheckA(obj: Any) {
 fun typeCheckB(obj: Any) {
     when (obj) {
         is String -> print(obj.length)
-        else      -> print("Not a String")
+        else -> print("Not a String")
     }
 }
 

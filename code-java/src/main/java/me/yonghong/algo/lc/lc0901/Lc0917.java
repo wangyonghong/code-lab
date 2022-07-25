@@ -27,8 +27,12 @@ class Lc0917 implements Solution {
         char[] chs = s.toCharArray();
         int len = chs.length, l = 0, r = len - 1;
         while (l < r) {
-            while (l < r && !Character.isLetter(chs[l])) { l++; }
-            while (l < r && !Character.isLetter(chs[r])) { r--; }
+            while (l < r && !Character.isLetter(chs[l])) {
+                l++;
+            }
+            while (l < r && !Character.isLetter(chs[r])) {
+                r--;
+            }
             char ch = chs[l];
             chs[l++] = chs[r];
             chs[r--] = ch;

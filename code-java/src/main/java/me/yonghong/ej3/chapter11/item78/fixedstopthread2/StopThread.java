@@ -1,5 +1,6 @@
 package me.yonghong.ej3.chapter11.item78.fixedstopthread2;
-import java.util.concurrent.*;
+
+import java.util.concurrent.TimeUnit;
 
 // Cooperative thread termination with a volatile field
 public class StopThread {

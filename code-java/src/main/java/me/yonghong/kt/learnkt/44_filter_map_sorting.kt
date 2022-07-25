@@ -22,7 +22,7 @@ fun main(args: Array<String>) {
     }
 
     var people = listOf<Pperson>(Pperson(10, "Steve"), Pperson(23, "Annie"), Pperson(17, "Sam"))
-    var names = people.filter { person ->person.name.startsWith("S") }.map { it.name }
+    var names = people.filter { person -> person.name.startsWith("S") }.map { it.name }
 
     for (name in names) {
         println(name)

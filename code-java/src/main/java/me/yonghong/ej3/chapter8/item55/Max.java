@@ -1,6 +1,10 @@
 package me.yonghong.ej3.chapter8.item55;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
 
 // Using Optional<T> as a return type (Pages 249-251)
 public class Max {

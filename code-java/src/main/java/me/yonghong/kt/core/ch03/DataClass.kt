@@ -17,8 +17,8 @@ fun main(args: Array<String>) {
     val (weightA, ageA, colorA) = birdInfo.split(",")
     println("weightA: $weightA, ageA: $ageA, colorA: $colorA")
 
-    val pair = Pair(20.0,1)
-    val triple = Triple(20.0, 1,"blue")
+    val pair = Pair(20.0, 1)
+    val triple = Triple(20.0, 1, "blue")
 
     val (weightP, ageP) = pair
     println("weightP: $weightP, ageP: $ageP")

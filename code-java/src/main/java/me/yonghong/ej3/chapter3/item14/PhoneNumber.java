@@ -1,7 +1,12 @@
 package me.yonghong.ej3.chapter3.item14;
-import java.util.*;
+
+import java.util.Comparator;
+import java.util.NavigableSet;
+import java.util.Random;
+import java.util.TreeSet;
 import java.util.concurrent.ThreadLocalRandom;
-import static java.util.Comparator.*;
+
+import static java.util.Comparator.comparingInt;
 
 // Making PhoneNumber comparable (Pages 69-70)
 public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
@@ -9,8 +14,8 @@ public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
 
     public PhoneNumber(int areaCode, int prefix, int lineNum) {
         this.areaCode = rangeCheck(areaCode, 999, "area code");
-        this.prefix   = rangeCheck(prefix,   999, "prefix");
-        this.lineNum  = rangeCheck(lineNum, 9999, "line num");
+        this.prefix = rangeCheck(prefix, 999, "prefix");
+        this.lineNum = rangeCheck(lineNum, 9999, "line num");
     }
 
     private static short rangeCheck(int val, int max, String arg) {
@@ -19,17 +24,19 @@ public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
         return (short) val;
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (o == this)
             return true;
         if (!(o instanceof me.yonghong.ej3.chapter3.item11.PhoneNumber))
             return false;
-        PhoneNumber pn = (PhoneNumber)o;
+        PhoneNumber pn = (PhoneNumber) o;
         return pn.lineNum == lineNum && pn.prefix == prefix
                 && pn.areaCode == areaCode;
     }
 
-    @Override public int hashCode() {
+    @Override
+    public int hashCode() {
         int result = Short.hashCode(areaCode);
         result = 31 * result + Short.hashCode(prefix);
         result = 31 * result + Short.hashCode(lineNum);
@@ -42,13 +49,14 @@ public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
      * "XXX-YYY-ZZZZ", where XXX is the area code, YYY is the
      * prefix, and ZZZZ is the line number. Each of the capital
      * letters represents a single decimal digit.
-     *
+     * <p>
      * If any of the three parts of this phone number is too small
      * to fill up its field, the field is padded with leading zeros.
      * For example, if the value of the line number is 123, the last
      * four characters of the string representation will be "0123".
      */
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return String.format("%03d-%03d-%04d",
                 areaCode, prefix, lineNum);
     }
@@ -77,8 +85,8 @@ public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
     private static PhoneNumber randomPhoneNumber() {
         Random rnd = ThreadLocalRandom.current();
         return new PhoneNumber((short) rnd.nextInt(1000),
-                               (short) rnd.nextInt(1000),
-                               (short) rnd.nextInt(10000));
+                (short) rnd.nextInt(1000),
+                (short) rnd.nextInt(10000));
     }
 
     public static void main(String[] args) {

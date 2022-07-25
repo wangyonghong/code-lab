@@ -15,7 +15,7 @@ public class FlattenWithVarargs {
 
     public static void main(String[] args) {
         List<Integer> flatList = flatten(
-                List.of(1, 2), List.of(3, 4, 5), List.of(6,7));
+                List.of(1, 2), List.of(3, 4, 5), List.of(6, 7));
         System.out.println(flatList);
     }
 }

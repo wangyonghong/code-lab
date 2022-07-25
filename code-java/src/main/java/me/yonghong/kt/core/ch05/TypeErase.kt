@@ -11,6 +11,7 @@ open class PlateA<T>(val t: T, val clazz: Class<T>) {
 
 open class GenericsToken<T> {
     var type: Type = Any::class.java
+
     init {
         val superClass = this.javaClass.genericSuperclass
         type = (superClass as ParameterizedType).getActualTypeArguments()[0]

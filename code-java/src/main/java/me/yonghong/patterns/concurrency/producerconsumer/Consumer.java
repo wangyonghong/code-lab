@@ -21,6 +21,6 @@ public class Consumer {
     public void consume() throws InterruptedException {
         Item item = queue.take();
         log.info("Consumer [{}] consume item [{}] produced by [{}]", name,
-            item.getId(), item.getProducer());
+                item.getId(), item.getProducer());
     }
 }

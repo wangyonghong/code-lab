@@ -32,14 +32,14 @@ public class ProxyHandler implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         String methodName = method.getName();
         if ("movieShow".equals(methodName) || "tvShow".equals(methodName)) {
-            if (args[0] instanceof Integer && ((int)args[0]) < 300000000) {
-                System.out.println(((int)args[0]) + "块钱？！你雇 HuangZiTao 演去吧！");
+            if (args[0] instanceof Integer && ((int) args[0]) < 300000000) {
+                System.out.println(((int) args[0]) + "块钱？！你雇 HuangZiTao 演去吧！");
                 return null;
             }
         }
         if ("sing".equals(methodName)) {
-            if (args[0] instanceof Integer && ((int)args[0]) < 300000000) {
-                System.out.println(((int)args[0]) + "块钱？！你雇 HuangZiTao 唱去吧！");
+            if (args[0] instanceof Integer && ((int) args[0]) < 300000000) {
+                System.out.println(((int) args[0]) + "块钱？！你雇 HuangZiTao 唱去吧！");
                 return null;
             }
         }

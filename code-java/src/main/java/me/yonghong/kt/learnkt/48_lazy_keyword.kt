@@ -1,5 +1,3 @@
-
-
 val pi: Float by lazy {
     3.14f
 }

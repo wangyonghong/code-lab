@@ -1,4 +1,3 @@
-
 /*
 *   INTERFACE
 * */
@@ -30,7 +29,7 @@ interface MySecondInterface {       // You cannot create the instance of interfa
 
 }
 
-class MyButton: MyInterfaceListener, MySecondInterface {
+class MyButton : MyInterfaceListener, MySecondInterface {
 
     override fun onTouch() {
         super<MyInterfaceListener>.onClick()

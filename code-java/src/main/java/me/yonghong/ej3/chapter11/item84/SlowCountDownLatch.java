@@ -12,12 +12,13 @@ public class SlowCountDownLatch {
 
     public void await() {
         while (true) {
-            synchronized(this) {
+            synchronized (this) {
                 if (count == 0)
                     return;
             }
         }
     }
+
     public synchronized void countDown() {
         if (count != 0)
             count--;

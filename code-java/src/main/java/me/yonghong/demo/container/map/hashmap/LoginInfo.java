@@ -31,9 +31,13 @@ public class LoginInfo {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) { return true; }
-        if (o == null || getClass() != o.getClass()) { return false; }
-        LoginInfo loginInfo = (LoginInfo)o;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        LoginInfo loginInfo = (LoginInfo) o;
         return Objects.equals(username, loginInfo.username);
     }
 }

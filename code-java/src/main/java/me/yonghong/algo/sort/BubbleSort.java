@@ -47,7 +47,9 @@ public class BubbleSort implements Solution {
      */
     public void sortOptimize1(int[] nums) {
         int n = nums.length;
-        if (n == 0) { return; }
+        if (n == 0) {
+            return;
+        }
         int lastExchange = 0;
         // 无序数据的边界，每次只需要比较到这里即可退出
         int sortBorder = n - 1;

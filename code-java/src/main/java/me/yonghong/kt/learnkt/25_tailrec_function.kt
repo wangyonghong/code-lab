@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
 tailrec fun getFibonacciNumber(n: Int, a: BigInteger, b: BigInteger): BigInteger {
 
     if (n == 0)
-        return  b
+        return b
     else
         return getFibonacciNumber(n - 1, a + b, a)
 }

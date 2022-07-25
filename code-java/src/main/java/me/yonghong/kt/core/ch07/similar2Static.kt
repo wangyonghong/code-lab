@@ -5,7 +5,8 @@ package me.yonghong.kt.core.ch07
  */
 class Son {
     companion object {
-        val age = 10 }
+        val age = 10
+    }
 }
 
 fun Son.Companion.foo() {

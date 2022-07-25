@@ -25,7 +25,9 @@ public class MergeSort implements Solution {
 
     public void sort(int[] nums) {
         int n = nums.length;
-        if (n == 0) { return; }
+        if (n == 0) {
+            return;
+        }
         aux = new int[n];
         sort(nums, 0, n - 1);
     }
@@ -62,7 +64,9 @@ public class MergeSort implements Solution {
 
     public void sortDown2Up(int[] nums) {
         int n = nums.length;
-        if (n == 0) { return; }
+        if (n == 0) {
+            return;
+        }
         aux = new int[n];
         for (int sz = 1; sz < n; sz += sz) {
             for (int lo = 0; lo < n - sz; lo += sz + sz) {

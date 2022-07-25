@@ -13,7 +13,8 @@ public class ColorPoint extends Point {
     }
 
     // Broken - violates symmetry!  (Page 41)
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (!(o instanceof ColorPoint))
             return false;
         return super.equals(o) && ((ColorPoint) o).color == color;
@@ -43,6 +44,6 @@ public class ColorPoint extends Point {
         Point p2 = new Point(1, 2);
         ColorPoint p3 = new ColorPoint(1, 2, Color.BLUE);
         System.out.printf("%s %s %s%n",
-                          p1.equals(p2), p2.equals(p3), p1.equals(p3));
+                p1.equals(p2), p2.equals(p3), p1.equals(p3));
     }
 }

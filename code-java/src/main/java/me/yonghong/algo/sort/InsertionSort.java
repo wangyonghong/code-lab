@@ -23,7 +23,9 @@ public class InsertionSort implements Solution {
 
     public static void sort(int[] nums) {
         int n = nums.length;
-        if (n == 0) { return; }
+        if (n == 0) {
+            return;
+        }
         for (int i = 1; i < n; i++) {
             int value = nums[i];
             int j = i - 1;

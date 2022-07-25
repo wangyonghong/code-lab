@@ -1,4 +1,3 @@
-
 /*
 *   1. Object Declaration
 * */
@@ -22,7 +21,7 @@ open class MySuperClass {
     }
 }
 
-object CustomersData: MySuperClass() {      // Object Declaration
+object CustomersData : MySuperClass() {      // Object Declaration
 
     var count: Int = -1             // Behaves like a STATIC variable
 

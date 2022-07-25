@@ -1,10 +1,10 @@
 package me.yonghong.patterns.concurrency.producerconsumer;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 生产者消费者模式

@@ -1,4 +1,3 @@
-
 /*
 *   1. 'with' function
 *   2. 'apply' function

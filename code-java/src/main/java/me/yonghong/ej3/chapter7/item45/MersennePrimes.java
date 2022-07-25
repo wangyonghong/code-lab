@@ -3,7 +3,8 @@ package me.yonghong.ej3.chapter7.item45;
 import java.math.BigInteger;
 import java.util.stream.Stream;
 
-import static java.math.BigInteger.*;
+import static java.math.BigInteger.ONE;
+import static java.math.BigInteger.TWO;
 
 // Generating the first twent Mersenne primes using streams (Page 208)
 public class MersennePrimes {

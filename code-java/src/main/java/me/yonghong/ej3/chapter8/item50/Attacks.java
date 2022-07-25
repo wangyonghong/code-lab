@@ -1,5 +1,6 @@
 package me.yonghong.ej3.chapter8.item50;
-import java.util.*;
+
+import java.util.Date;
 
 // Two attacks on the internals of an "immutable" period (232-3)
 public class Attacks {

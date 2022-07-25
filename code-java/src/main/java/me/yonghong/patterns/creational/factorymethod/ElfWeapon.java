@@ -11,10 +11,10 @@ import lombok.RequiredArgsConstructor;
 @Getter
 public class ElfWeapon implements Weapon {
 
-  private final WeaponType weaponType;
+    private final WeaponType weaponType;
 
-  @Override
-  public String toString() {
-    return "an elven " + weaponType;
-  }
+    @Override
+    public String toString() {
+        return "an elven " + weaponType;
+    }
 }

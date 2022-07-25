@@ -1,6 +1,12 @@
 package me.yonghong.ej3.chapter8.item52;
-import java.util.*;
-import java.math.*;
+
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 // Broken! - What does this program print?  (Page 238)
 public class CollectionClassifier {

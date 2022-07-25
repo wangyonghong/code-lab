@@ -1,5 +1,7 @@
 package me.yonghong.ej3.chapter6.item40;
-import java.util.*;
+
+import java.util.HashSet;
+import java.util.Set;
 
 // Can you spot the bug? (Page 188)
 public class Bigram {
@@ -7,7 +9,7 @@ public class Bigram {
     private final char second;
 
     public Bigram(char first, char second) {
-        this.first  = first;
+        this.first = first;
         this.second = second;
     }
 

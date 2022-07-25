@@ -1,10 +1,10 @@
 package me.yonghong.demo.container.map;
 
+import org.apache.commons.lang3.RandomUtils;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
-
-import org.apache.commons.lang3.RandomUtils;
 
 /**
  * @author yonghongwang#163.com
@@ -94,9 +94,13 @@ class RandomPoint2 {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) { return true; }
-        if (o == null || getClass() != o.getClass()) { return false; }
-        RandomPoint2 that = (RandomPoint2)o;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        RandomPoint2 that = (RandomPoint2) o;
         return Objects.equals(x, that.x) && Objects.equals(y, that.y);
     }
 

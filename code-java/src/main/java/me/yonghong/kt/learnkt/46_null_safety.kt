@@ -1,4 +1,3 @@
-
 fun main(args: Array<String>) {
 
     // WAP to find out length of name

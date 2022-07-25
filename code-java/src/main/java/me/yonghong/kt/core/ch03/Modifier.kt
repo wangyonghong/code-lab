@@ -2,15 +2,15 @@ package me.yonghong.kt.core.ch03
 
 
 open class Bird6 {
-	open fun fly() {
-		println("I can fly.")
-	}
+    open fun fly() {
+        println("I can fly.")
+    }
 }
 
 class Penguin : Bird6() {
-	override fun fly() {
-		println("I can't fly actually.")
-	}
+    override fun fly() {
+        println("I can't fly actually.")
+    }
 }
 
 
@@ -21,7 +21,7 @@ private open class Engine(val type: String) {
 }
 
 private class BZEngine(type: String) : Engine(type) {
-	override fun engineType(): String {
-		return super.engineType()  //ok
-	}
+    override fun engineType(): String {
+        return super.engineType()  //ok
+    }
 }

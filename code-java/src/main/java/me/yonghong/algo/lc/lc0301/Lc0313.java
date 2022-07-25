@@ -21,8 +21,8 @@ class Lc0313 implements Solution {
 
     @Override
     public void test() {
-        System.out.println(nthSuperUglyNumber(12, new int[] {2, 7, 13, 19}));
-        System.out.println(nthSuperUglyNumber(1, new int[] {2, 3, 5}));
+        System.out.println(nthSuperUglyNumber(12, new int[]{2, 7, 13, 19}));
+        System.out.println(nthSuperUglyNumber(1, new int[]{2, 3, 5}));
     }
 
     public int nthSuperUglyNumber(int n, int[] primes) {

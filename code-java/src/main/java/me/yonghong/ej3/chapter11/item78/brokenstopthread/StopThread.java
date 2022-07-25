@@ -1,5 +1,6 @@
 package me.yonghong.ej3.chapter11.item78.brokenstopthread;
-import java.util.concurrent.*;
+
+import java.util.concurrent.TimeUnit;
 
 // Broken! - How long would you expect this program to run?  (Page 312)
 public class StopThread {

@@ -2,12 +2,15 @@ package me.yonghong.ej3.chapter7.item46;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 import java.util.stream.Stream;
 
 import static java.util.Comparator.comparing;
-import static java.util.stream.Collectors.*;
-import static java.util.stream.Collectors.*;
+import static java.util.stream.Collectors.counting;
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.toList;
 
 // Frequency table examples showing improper and proper use of stream (Page 210-11)
 public class Freq {

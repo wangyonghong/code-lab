@@ -51,9 +51,9 @@ public final class Hero {
 
         var sb = new StringBuilder();
         sb.append("This is a ")
-            .append(profession)
-            .append(" named ")
-            .append(name);
+                .append(profession)
+                .append(" named ")
+                .append(name);
         if (hairColor != null || hairType != null) {
             sb.append(" with ");
             if (hairColor != null) {

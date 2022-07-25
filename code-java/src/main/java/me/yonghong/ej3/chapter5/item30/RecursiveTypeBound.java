@@ -1,5 +1,9 @@
 package me.yonghong.ej3.chapter5.item30;
-import java.util.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.Objects;
 
 // Using a recursive type bound to express mutual comparability (Pages 137-8)
 public class RecursiveTypeBound {

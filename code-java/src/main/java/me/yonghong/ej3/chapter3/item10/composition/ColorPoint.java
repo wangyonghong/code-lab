@@ -22,14 +22,16 @@ public class ColorPoint {
         return point;
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (!(o instanceof ColorPoint))
             return false;
         ColorPoint cp = (ColorPoint) o;
         return cp.point.equals(point) && cp.color.equals(color);
     }
 
-    @Override public int hashCode() {
+    @Override
+    public int hashCode() {
         return 31 * point.hashCode() + color.hashCode();
     }
 }

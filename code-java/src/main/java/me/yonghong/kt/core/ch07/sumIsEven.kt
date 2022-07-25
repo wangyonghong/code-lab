@@ -12,6 +12,6 @@ val MutableList<Int>.sumIsEven: Boolean
 
 
 fun main(args: Array<String>) {
-    val list = mutableListOf(2,2,4)
+    val list = mutableListOf(2, 2, 4)
     list.sumIsEven
 }

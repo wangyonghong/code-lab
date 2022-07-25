@@ -1,8 +1,8 @@
 package me.yonghong.algo.lc.lc1701;
 
-import java.util.Stack;
-
 import me.yonghong.algo.Solution;
+
+import java.util.Stack;
 
 /**
  * @author yonghongwang#163.com
@@ -28,7 +28,9 @@ class Lc1740 implements Solution {
     }
 
     private boolean findPath(Stack<TreeNode> path, TreeNode root, int p) {
-        if (root == null) { return false;}
+        if (root == null) {
+            return false;
+        }
         if (root.val == p) {
             path.push(root);
             return true;

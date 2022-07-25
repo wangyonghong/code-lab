@@ -1,4 +1,3 @@
-
 /**
  *  PREDICATES
  * */
@@ -8,7 +7,7 @@ fun main(args: Array<String>) {
 
     val myPredicate = { num: Int -> num > 10 }
 
-    val check1 = myNumbers.all( myPredicate )       // Are all elements greater than 10?
+    val check1 = myNumbers.all(myPredicate)       // Are all elements greater than 10?
     println(check1)
 
     val check2 = myNumbers.any(myPredicate)         // Does any of these elements satisfy the predicate?

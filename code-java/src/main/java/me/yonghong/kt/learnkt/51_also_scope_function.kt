@@ -1,5 +1,3 @@
-
-
 fun main(args: Array<String>) {
 
     /** Scope Function: 'also'              'ALSO PERFORM THE FOLLOWING EXTRA OPERATION'

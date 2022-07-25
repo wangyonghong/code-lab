@@ -19,7 +19,7 @@ class Lc0344 implements Solution {
 
     @Override
     public void test() {
-        char[] s = new char[] {'h', 'e', 'l', 'l', 'o'};
+        char[] s = new char[]{'h', 'e', 'l', 'l', 'o'};
         reverseString(s);
         System.out.println(new String(s));
     }

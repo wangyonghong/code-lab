@@ -1,4 +1,3 @@
-
 /*
 *   Inheritance with Primary and Secondary Constructors
 * */
@@ -21,7 +20,7 @@ class TheDog : TheAnimal {    // Sub class / Child class / Derived class
 
     var bread: String = ""
 
-    constructor(color: String, breed: String): super(color) {
+    constructor(color: String, breed: String) : super(color) {
         this.bread = breed
 
         println("From Dog: $color and $breed")

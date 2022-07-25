@@ -4,7 +4,12 @@ package me.yonghong.ej3.chapter4.item23.hierarchy;
 class Circle extends Figure {
     final double radius;
 
-    Circle(double radius) { this.radius = radius; }
+    Circle(double radius) {
+        this.radius = radius;
+    }
 
-    @Override double area() { return Math.PI * (radius * radius); }
+    @Override
+    double area() {
+        return Math.PI * (radius * radius);
+    }
 }

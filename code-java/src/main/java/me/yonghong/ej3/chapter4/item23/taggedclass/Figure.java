@@ -2,7 +2,9 @@ package me.yonghong.ej3.chapter4.item23.taggedclass;
 
 // Tagged class - vastly inferior to a class hierarchy! (Page 109)
 class Figure {
-    enum Shape { RECTANGLE, CIRCLE };
+    enum Shape {RECTANGLE, CIRCLE}
+
+    ;
 
     // Tag field - the shape of this figure
     final Shape shape;
@@ -28,7 +30,7 @@ class Figure {
     }
 
     double area() {
-        switch(shape) {
+        switch (shape) {
             case RECTANGLE:
                 return length * width;
             case CIRCLE:

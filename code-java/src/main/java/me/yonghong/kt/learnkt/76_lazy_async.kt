@@ -1,4 +1,3 @@
-
 import kotlinx.coroutines.*
 
 fun main() = runBlocking {    // Creates a blocking coroutine that executes in current thread (main)

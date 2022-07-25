@@ -1,5 +1,7 @@
 package me.yonghong.ej3.chapter5.item30;
-import java.util.*;
+
+import java.util.HashSet;
+import java.util.Set;
 
 // Generic union method and program to exercise it  (Pages 135-6)
 public class Union {

@@ -4,7 +4,7 @@ fun sum(a: Int, b: Int): Int {
     return a + b
 }
 
-class SmartList<T> : ArrayList<T> () {
+class SmartList<T> : ArrayList<T>() {
     fun find(t: T): T? {
         val index = super.indexOf(t)
         return if (index >= 0) super.get(index) else null
@@ -20,18 +20,18 @@ class Plate<T>(val t: T)
 
 open class Fruit(val weight: Double)
 
-class Apple(weight: Double): Fruit(weight)
-class Banana(weight: Double): Fruit(weight)
+class Apple(weight: Double) : Fruit(weight)
+class Banana(weight: Double) : Fruit(weight)
 
-class FruitPlate<T: Fruit>(val t: T)
+class FruitPlate<T : Fruit>(val t: T)
 
 class Noodles(weight: Double)
 
-interface Ground{}
+interface Ground {}
 
-class Watermelon(weight: Double): Fruit(weight), Ground
+class Watermelon(weight: Double) : Fruit(weight), Ground
 
-fun <T> cut(t: T) where T: Fruit, T: Ground {
+fun <T> cut(t: T) where T : Fruit, T : Ground {
     print("You can cut me")
 }
 

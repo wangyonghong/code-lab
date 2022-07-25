@@ -1,4 +1,3 @@
-
 package me.yonghong.patterns.creational.factorymethod;
 
 import lombok.Getter;

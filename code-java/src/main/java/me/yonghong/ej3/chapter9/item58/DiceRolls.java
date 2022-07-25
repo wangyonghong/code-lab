@@ -1,9 +1,12 @@
 package me.yonghong.ej3.chapter9.item58;
-import java.util.*;
+
+import java.util.Collection;
+import java.util.EnumSet;
+import java.util.Iterator;
 
 // Same bug as NestIteration.java (but different symptom)!! - Page 213
 public class DiceRolls {
-    enum Face { ONE, TWO, THREE, FOUR, FIVE, SIX }
+    enum Face {ONE, TWO, THREE, FOUR, FIVE, SIX}
 
     public static void main(String[] args) {
         // Same bug, different symptom!

@@ -1,9 +1,9 @@
 package me.yonghong.patterns.creational.factory;
 
-import java.util.function.Supplier;
-
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+
+import java.util.function.Supplier;
 
 /**
  * @author yonghongwang#163.com

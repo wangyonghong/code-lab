@@ -1,32 +1,38 @@
 package me.yonghong.ej3.chapter4.item20;
-import java.util.*;
+
+import java.util.Map;
+import java.util.Objects;
 
 // Skeletal implementation class (Pages 102-3)
-public abstract class AbstractMapEntry<K,V>
-        implements Map.Entry<K,V> {
+public abstract class AbstractMapEntry<K, V>
+        implements Map.Entry<K, V> {
     // Entries in a modifiable map must override this method
-    @Override public V setValue(V value) {
+    @Override
+    public V setValue(V value) {
         throw new UnsupportedOperationException();
     }
-    
+
     // Implements the general contract of Map.Entry.equals
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (o == this)
             return true;
         if (!(o instanceof Map.Entry))
             return false;
-        Map.Entry<?,?> e = (Map.Entry) o;
-        return Objects.equals(e.getKey(),   getKey())
+        Map.Entry<?, ?> e = (Map.Entry) o;
+        return Objects.equals(e.getKey(), getKey())
                 && Objects.equals(e.getValue(), getValue());
     }
 
     // Implements the general contract of Map.Entry.hashCode
-    @Override public int hashCode() {
+    @Override
+    public int hashCode() {
         return Objects.hashCode(getKey())
                 ^ Objects.hashCode(getValue());
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return getKey() + "=" + getValue();
     }
 }

@@ -18,7 +18,8 @@ public class Sample4 {
     }
 
     @ExceptionTest(ArithmeticException.class)
-    public static void m3() { }  // Should fail (no exception)
+    public static void m3() {
+    }  // Should fail (no exception)
 
     // Code containing a repeated annotation (Page 186)
     @ExceptionTest(IndexOutOfBoundsException.class)

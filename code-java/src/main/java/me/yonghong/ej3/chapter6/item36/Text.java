@@ -1,6 +1,8 @@
 package me.yonghong.ej3.chapter6.item36;
 
-import java.util.*;
+import java.util.EnumSet;
+import java.util.Objects;
+import java.util.Set;
 
 // EnumSet - a modern replacement for bit fields (Page 170)
 public class Text {

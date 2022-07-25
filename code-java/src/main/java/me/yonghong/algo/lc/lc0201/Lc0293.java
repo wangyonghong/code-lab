@@ -1,9 +1,9 @@
 package me.yonghong.algo.lc.lc0201;
 
+import me.yonghong.algo.Solution;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import me.yonghong.algo.Solution;
 
 /**
  * 293. 翻转游戏

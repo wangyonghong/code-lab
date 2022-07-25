@@ -1,5 +1,6 @@
 package me.yonghong.ej3.chapter2.item7;
-import java.util.*;
+
+import java.util.Arrays;
 
 // Can you spot the "memory leak"?  (Pages 26-27)
 public class Stack {

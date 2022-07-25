@@ -4,12 +4,12 @@ package ch05
  * Created by prefert on 2019/5/13.
  */
 abstract class Animal(val weight: Double)
-class Fish(weight: Double, val swimmingSpeed: Double): Animal(weight)
+class Fish(weight: Double, val swimmingSpeed: Double) : Animal(weight)
 
 
 interface ICanFly
 interface ICanBuildNest
-class Bird(weight: Double, flightSpeed: Double): Animal(weight), ICanFly,
+class Bird(weight: Double, flightSpeed: Double) : Animal(weight), ICanFly,
     ICanBuildNest
 
 fun main(args: Array<String>) {

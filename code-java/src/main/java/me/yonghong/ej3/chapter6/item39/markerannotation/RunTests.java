@@ -2,7 +2,8 @@ package me.yonghong.ej3.chapter6.item39.markerannotation;
 
 // Program to process marker annotations (Page 182)
 
-import java.lang.reflect.*;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class RunTests {
     public static void main(String[] args) throws Exception {

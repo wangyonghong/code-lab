@@ -4,7 +4,10 @@ import me.yonghong.algo.lc.lc0001.Lc0001;
 import org.apache.commons.lang3.ArrayUtils;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * @author yonghongwang#163.com

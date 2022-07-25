@@ -1,20 +1,25 @@
 package me.yonghong.ej3.chapter12.item87;
-import java.io.*;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
 // StringList with a reasonable custom serialized form  - Page 349
 public final class StringList implements Serializable {
-    private transient int size   = 0;
+    private transient int size = 0;
     private transient Entry head = null;
 
     // No longer Serializable!
     private static class Entry {
         String data;
-        Entry  next;
-        Entry  previous;
+        Entry next;
+        Entry previous;
     }
 
     // Appends the specified string to the list
-    public final void add(String s) {  }
+    public final void add(String s) {
+    }
 
     /**
      * Serialize this {@code StringList} instance.

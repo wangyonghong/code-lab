@@ -3,8 +3,13 @@ package me.yonghong.ej3.chapter2.item3.staticfactory;
 // Singleton with static factory (Page 17)
 public class Elvis {
     private static final Elvis INSTANCE = new Elvis();
-    private Elvis() { }
-    public static Elvis getInstance() { return INSTANCE; }
+
+    private Elvis() {
+    }
+
+    public static Elvis getInstance() {
+        return INSTANCE;
+    }
 
     public void leaveTheBuilding() {
         System.out.println("Whoa baby, I'm outta here!");

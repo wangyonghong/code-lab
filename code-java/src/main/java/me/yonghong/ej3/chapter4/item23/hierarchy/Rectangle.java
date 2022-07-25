@@ -7,7 +7,11 @@ class Rectangle extends Figure {
 
     Rectangle(double length, double width) {
         this.length = length;
-        this.width  = width;
+        this.width = width;
     }
-    @Override double area() { return length * width; }
+
+    @Override
+    double area() {
+        return length * width;
+    }
 }

@@ -1,7 +1,9 @@
 package me.yonghong.ej3.chapter6.item39.annotationwithparameter;
 
 import me.yonghong.ej3.chapter6.item39.markerannotation.Test;
-import java.lang.reflect.*;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 // Program to process marker annotations and annotations with a parameter (Page 184)
 public class RunTests {

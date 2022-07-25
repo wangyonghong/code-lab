@@ -130,7 +130,8 @@ public class LockTest {
     }
 
     public void testAbstractQueuedSynchronizer() {
-        AbstractQueuedSynchronizer abstractQueuedSynchronizer = new AbstractQueuedSynchronizer() {};
+        AbstractQueuedSynchronizer abstractQueuedSynchronizer = new AbstractQueuedSynchronizer() {
+        };
     }
 
     public void testNRSpinLock() {
