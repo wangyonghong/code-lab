@@ -152,7 +152,8 @@ public class SensorsDataAutoTrackHelper {
     }
 
     @Keep
-    public static void trackViewOnClick(DialogInterface dialogInterface, int whichButton, boolean isChecked) {
+    public static void trackViewOnClick(DialogInterface dialogInterface, int whichButton,
+                                        boolean isChecked) {
         try {
             Dialog dialog = null;
             if (dialogInterface instanceof Dialog) {
@@ -259,13 +260,13 @@ public class SensorsDataAutoTrackHelper {
 
     @Keep
     public static void trackViewOnClick(ExpandableListView expandableListView, View view,
-                                                           int groupPosition) {
+                                        int groupPosition) {
         trackViewOnClick(expandableListView, view, groupPosition, -1);
     }
 
     @Keep
     public static void trackViewOnClick(ExpandableListView expandableListView, View view,
-                                                           int groupPosition, int childPosition) {
+                                        int groupPosition, int childPosition) {
         try {
             Context context = expandableListView.getContext();
             if (context == null) {
@@ -279,9 +280,11 @@ public class SensorsDataAutoTrackHelper {
             }
 
             if (childPosition != -1) {
-                properties.put("$element_position", String.format(Locale.CHINA, "%d:%d", groupPosition, childPosition));
+                properties.put("$element_position", String.format(Locale.CHINA, "%d:%d",
+                    groupPosition, childPosition));
             } else {
-                properties.put("$element_position", String.format(Locale.CHINA, "%d", groupPosition));
+                properties.put("$element_position", String.format(Locale.CHINA, "%d",
+                    groupPosition));
             }
 
             String idString = SensorsDataPrivate.getViewId(expandableListView);
@@ -295,7 +298,8 @@ public class SensorsDataAutoTrackHelper {
             if (view instanceof ViewGroup) {
                 try {
                     StringBuilder stringBuilder = new StringBuilder();
-                    viewText = SensorsDataPrivate.traverseViewContent(stringBuilder, (ViewGroup) view);
+                    viewText = SensorsDataPrivate.traverseViewContent(stringBuilder,
+                        (ViewGroup) view);
                     if (!TextUtils.isEmpty(viewText)) {
                         viewText = viewText.substring(0, viewText.length() - 1);
                     }
@@ -316,7 +320,8 @@ public class SensorsDataAutoTrackHelper {
 
 
     @Keep
-    public static void trackViewOnClick(android.widget.AdapterView adapterView, android.view.View view, int position) {
+    public static void trackViewOnClick(android.widget.AdapterView adapterView,
+                                        android.view.View view, int position) {
         try {
             Context context = adapterView.getContext();
             if (context == null) {
@@ -355,7 +360,8 @@ public class SensorsDataAutoTrackHelper {
                 if (view instanceof ViewGroup) {
                     try {
                         StringBuilder stringBuilder = new StringBuilder();
-                        viewText = SensorsDataPrivate.traverseViewContent(stringBuilder, (ViewGroup) view);
+                        viewText = SensorsDataPrivate.traverseViewContent(stringBuilder,
+                            (ViewGroup) view);
                         if (!TextUtils.isEmpty(viewText)) {
                             viewText = viewText.substring(0, viewText.length() - 1);
                         }

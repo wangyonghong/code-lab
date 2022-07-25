@@ -6,7 +6,8 @@ public class SensorsAnalyticsMethodCell {
     private int paramStart;
     private int paramCount;
 
-    SensorsAnalyticsMethodCell(String interfaces, String methodDesc, int paramStart, int paramCount) {
+    SensorsAnalyticsMethodCell(String interfaces, String methodDesc, int paramStart,
+                               int paramCount) {
         this.interfaces = interfaces;
         this.methodDesc = methodDesc;
         this.paramStart = paramStart;

@@ -113,14 +113,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="AdapterView Test"/>
+                android:text="AdapterView Test" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/expandableListViewTest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="ExpandableListView Test"/>
+                android:text="ExpandableListView Test" />
         </LinearLayout>
 
     </ScrollView>

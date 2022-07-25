@@ -1,5 +1,7 @@
 pluginManagement {
-
+    // 参考：
+    // https://juejin.cn/post/6844903941793120270  Gradle 插件
+    // https://www.cnblogs.com/baiyuas/p/15171076.html  AndroidStudio Gradle编译脚本中关于插件部分的变更
     repositories {
         gradlePluginPortal()
         google()
@@ -54,9 +56,9 @@ dependencyResolutionManagement {
         }
         mavenCentral()
         google()
-//        maven {
-//            url uri('repo')
-//        }
+        maven {
+            url uri('repo')
+        }
     }
 }
 
@@ -70,7 +72,8 @@ include ':AppClick4', ':DemoAppClick4'
 include ':pluginAppClick5', ':AppClick5'
 include ':pluginAppClick6', ':AppClick6'
 include ':pluginAppClick7', ':AppClick7'
+include ':pluginAppClick8', ':AppClick8'
 // 如果项目导入失败。可以先注释掉下面这行，先发布插件
-include ':DemoAppClick5', ':DemoAppClick6', ':DemoAppClick7'
+include ':DemoAppClick5', ':DemoAppClick6', ':DemoAppClick7', ':DemoAppClick8'
 
 //include ':sdk', ':app'

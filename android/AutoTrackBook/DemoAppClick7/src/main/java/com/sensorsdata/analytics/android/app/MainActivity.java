@@ -6,10 +6,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatCheckBox;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,11 +18,15 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.sensorsdata.analytics.android.sdk.SensorsDataTrackViewOnClick;
 import com.sensorsdata.analytics.android.app.databinding.ActivityMainBinding;
+import com.sensorsdata.analytics.android.sdk.SensorsDataTrackViewOnClick;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatCheckBox;
 import androidx.databinding.DataBindingUtil;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityMainBinding mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        ActivityMainBinding mainBinding = DataBindingUtil.setContentView(this,
+            R.layout.activity_main);
         mainBinding.setHandlers(this);
 
         ButterKnife.bind(this);
@@ -91,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
         dataList.add("广州");
         dataList.add("深圳");
         dataList.add("咸宁");
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, dataList);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+            android.R.layout.simple_spinner_item, dataList);
 
         //为适配器设置下拉列表下拉时的菜单样式。
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -232,14 +234,14 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("神策数据在哪些城市有服务团队？");
         DialogInterface.OnMultiChoiceClickListener mutiListener =
-                new DialogInterface.OnMultiChoiceClickListener() {
+            new DialogInterface.OnMultiChoiceClickListener() {
 
-                    @Override
-                    public void onClick(DialogInterface dialogInterface,
-                                        int which, boolean isChecked) {
-                        selected[which] = isChecked;
-                    }
-                };
+                @Override
+                public void onClick(DialogInterface dialogInterface,
+                                    int which, boolean isChecked) {
+                    selected[which] = isChecked;
+                }
+            };
         builder.setMultiChoiceItems(items, selected, mutiListener);
         dialog = builder.create();
         dialog.show();

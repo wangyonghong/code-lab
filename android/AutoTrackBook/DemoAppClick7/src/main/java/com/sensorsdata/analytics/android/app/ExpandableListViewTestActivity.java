@@ -36,7 +36,7 @@ public class ExpandableListViewTestActivity extends AppCompatActivity {
         initialData();
 
         androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null){
+        if (actionBar != null) {
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
@@ -48,7 +48,8 @@ public class ExpandableListViewTestActivity extends AppCompatActivity {
             public boolean onChildClick(ExpandableListView expandableListView, View view,
                                         int groupPosition, int childPosition, long id) {
                 Toast.makeText(ExpandableListViewTestActivity.this,
-                        mDataSet.get(parentList[groupPosition]).get(childPosition), Toast.LENGTH_SHORT).show();
+                    mDataSet.get(parentList[groupPosition]).get(childPosition),
+                    Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
@@ -60,7 +61,7 @@ public class ExpandableListViewTestActivity extends AppCompatActivity {
                     content = "父类第" + view.getTag(R.layout.parent_item) + "项" + "被长按了";
                 } else {
                     content = "父类第" + view.getTag(R.layout.parent_item) + "项" + "中的"
-                            + "子类第" + view.getTag(R.layout.child_item) + "项" + "被长按了";
+                        + "子类第" + view.getTag(R.layout.child_item) + "项" + "被长按了";
                 }
                 Toast.makeText(ExpandableListViewTestActivity.this, content, Toast.LENGTH_SHORT).show();
                 return true;
@@ -69,7 +70,8 @@ public class ExpandableListViewTestActivity extends AppCompatActivity {
 
         mListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
-            public boolean onGroupClick(ExpandableListView expandableListView, View view, int groupPosition, long id) {
+            public boolean onGroupClick(ExpandableListView expandableListView, View view,
+                                        int groupPosition, long id) {
                 return false;
             }
         });
@@ -97,7 +99,8 @@ public class ExpandableListViewTestActivity extends AppCompatActivity {
         private LayoutInflater mLayoutInflater;
 
         MyExpandableListViewAdapter(Context context) {
-            this.mLayoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            this.mLayoutInflater =
+                (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
 
         //  获得某个父项的某个子项
@@ -164,10 +167,11 @@ public class ExpandableListViewTestActivity extends AppCompatActivity {
         //  获得子项显示的view
         @SuppressWarnings("all")
         @Override
-        public View getChildView(int parentPos, int childPos, boolean b, View view, ViewGroup viewGroup) {
+        public View getChildView(int parentPos, int childPos, boolean b, View view,
+                                 ViewGroup viewGroup) {
             if (view == null) {
                 LayoutInflater inflater = (LayoutInflater) ExpandableListViewTestActivity
-                        .this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    .this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 view = inflater.inflate(R.layout.child_item, null);
             }
             view.setTag(R.layout.parent_item, parentPos);
@@ -178,7 +182,7 @@ public class ExpandableListViewTestActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(ExpandableListViewTestActivity.this, "点到了内置的TextView",
-                            Toast.LENGTH_SHORT).show();
+                        Toast.LENGTH_SHORT).show();
                 }
             });
             return view;

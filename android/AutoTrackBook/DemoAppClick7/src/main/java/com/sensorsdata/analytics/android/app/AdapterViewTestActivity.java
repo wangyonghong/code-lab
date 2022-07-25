@@ -30,7 +30,7 @@ public class AdapterViewTestActivity extends AppCompatActivity {
         BaseAdapter adapter = new SAListViewAdapter(this);
         gridView.setAdapter(adapter);
         gridView.setOnItemClickListener((adapterView, view, position, l) ->
-                Toast.makeText(AdapterViewTestActivity.this, "dd：" + position, Toast.LENGTH_SHORT).show()
+            Toast.makeText(AdapterViewTestActivity.this, "dd：" + position, Toast.LENGTH_SHORT).show()
         );
     }
 
@@ -39,7 +39,7 @@ public class AdapterViewTestActivity extends AppCompatActivity {
         BaseAdapter adapter = new SAListViewAdapter(this);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener((adapterView, view, position, l) ->
-                Toast.makeText(AdapterViewTestActivity.this, "dd：" + position, Toast.LENGTH_SHORT).show()
+            Toast.makeText(AdapterViewTestActivity.this, "dd：" + position, Toast.LENGTH_SHORT).show()
         );
     }
 
