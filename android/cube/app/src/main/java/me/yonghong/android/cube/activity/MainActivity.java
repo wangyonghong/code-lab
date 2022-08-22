@@ -1,4 +1,4 @@
-package me.yonghong.android.cube;
+package me.yonghong.android.cube.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
