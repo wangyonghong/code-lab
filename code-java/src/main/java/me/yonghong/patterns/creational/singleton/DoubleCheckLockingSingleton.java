@@ -10,7 +10,7 @@ public class DoubleCheckLockingSingleton {
 
     private static volatile DoubleCheckLockingSingleton instance;
 
-    private static boolean flag = true;
+    private static volatile boolean flag = true;
 
     private DoubleCheckLockingSingleton() {
         if (flag) {
