@@ -21,7 +21,7 @@ public class DisplayUtils {
   }
 
   private static DisplayMetrics getRealScreenDisplayMetrics() {
-    Context context = CubeApp.appContext;
+    Context context = CubeApp.getAppContext();
     DisplayMetrics dm = new DisplayMetrics();
     Display display = ((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
     display.getRealMetrics(dm);
@@ -29,9 +29,8 @@ public class DisplayUtils {
   }
 
   public static int getStatusBarHeight() {
-    Context context = CubeApp.appContext;
-    int statusBarHeight = getInternalDimensionSize(context, "status_bar_height");
-    return statusBarHeight;
+    Context context = CubeApp.getAppContext();
+    return getInternalDimensionSize(context, "status_bar_height");
   }
 
   private static int getInternalDimensionSize(Context context, String key) {

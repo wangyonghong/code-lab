@@ -4,11 +4,15 @@ import android.app.Application;
 
 public class CubeApp extends Application {
 
-  public static Application appContext;
+  private static Application sAppContext;
 
   @Override
   public void onCreate() {
     super.onCreate();
-    appContext = this;
+    sAppContext = this;
+  }
+
+  public static Application getAppContext() {
+    return sAppContext;
   }
 }

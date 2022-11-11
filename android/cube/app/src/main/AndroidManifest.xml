@@ -11,6 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cube">
         <activity
+            android:name=".activity.animation.InterpolatorActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.animation.TweenActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activity.FSDialogActivity"
             android:exported="false" />
         <activity
