@@ -15,6 +15,7 @@ import java.util.List;
 import androidx.appcompat.app.AppCompatActivity;
 import me.yonghong.android.cube.activity.animation.FrameActivity;
 import me.yonghong.android.cube.activity.animation.InterpolatorActivity;
+import me.yonghong.android.cube.activity.animation.PropertyActivity;
 import me.yonghong.android.cube.activity.animation.TweenActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
   private void registerToLab() {
     mExperiments.add(new Pair<>("补间动画 Tween Animation", TweenActivity.class));
     mExperiments.add(new Pair<>("逐帧动画 Frame Interpolator", FrameActivity.class));
+    mExperiments.add(new Pair<>("属性动画 Property Interpolator", PropertyActivity.class));
     mExperiments.add(new Pair<>("动画插值器 Animation Interpolator", InterpolatorActivity.class));
     mExperiments.add(new Pair<>("弹窗 Dialog", FSDialogActivity.class));
   }

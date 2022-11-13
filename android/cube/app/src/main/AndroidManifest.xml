@@ -11,6 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cube">
         <activity
+            android:name=".activity.animation.PropertyActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activity.animation.FrameActivity"
             android:exported="false">
             <meta-data
