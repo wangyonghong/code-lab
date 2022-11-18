@@ -21,7 +21,7 @@ import me.yonghong.android.cube.activity.animation.PropertyRotationActivity;
 import me.yonghong.android.cube.activity.animation.ShakePhoneActivity;
 import me.yonghong.android.cube.activity.animation.TweenActivity;
 import me.yonghong.android.cube.compose.FirstComposeActivity;
-import me.yonghong.android.cube.compose.animation.ComposeFrameActivity;
+import me.yonghong.android.cube.compose.animation.AnimatedVisibilityAndContentActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     mExperiments.add(new Pair<>("动画插值器 Animation Interpolator", InterpolatorActivity.class));
     mExperiments.add(new Pair<>("弹窗 Dialog", FSDialogActivity.class));
     mExperiments.add(new Pair<>("First Compose", FirstComposeActivity.class));
-    mExperiments.add(new Pair<>("First Compose", ComposeFrameActivity.class));
+    mExperiments.add(new Pair<>("Compose 高级动画", AnimatedVisibilityAndContentActivity.class));
   }
 
   private View createContentView() {
@@ -53,13 +53,15 @@ public class MainActivity extends AppCompatActivity {
       Button button = new Button(getBaseContext());
       button.setText(experiment.first);
       button.setAllCaps(false);
-      button.setOnClickListener(v -> startActivity(new Intent(getBaseContext(), experiment.second)));
+      button.setOnClickListener(v ->
+          startActivity(new Intent(getBaseContext(), experiment.second)));
       linearLayout.addView(button);
     }
 
     ScrollView scrollView = new ScrollView(this);
     scrollView.addView(linearLayout,
-        new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
+        new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
+            FrameLayout.LayoutParams.MATCH_PARENT));
     return scrollView;
   }
 }
