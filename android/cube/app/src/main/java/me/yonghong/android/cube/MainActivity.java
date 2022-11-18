@@ -1,4 +1,4 @@
-package me.yonghong.android.cube.activity;
+package me.yonghong.android.cube;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,12 +13,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
+import me.yonghong.android.cube.activity.FSDialogActivity;
 import me.yonghong.android.cube.activity.animation.FrameActivity;
 import me.yonghong.android.cube.activity.animation.InterpolatorActivity;
 import me.yonghong.android.cube.activity.animation.PropertyActivity;
 import me.yonghong.android.cube.activity.animation.PropertyRotationActivity;
 import me.yonghong.android.cube.activity.animation.ShakePhoneActivity;
 import me.yonghong.android.cube.activity.animation.TweenActivity;
+import me.yonghong.android.cube.compose.FirstComposeActivity;
+import me.yonghong.android.cube.compose.animation.ComposeFrameActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
     mExperiments.add(new Pair<>("摇手机动画 Shake Phone", ShakePhoneActivity.class));
     mExperiments.add(new Pair<>("动画插值器 Animation Interpolator", InterpolatorActivity.class));
     mExperiments.add(new Pair<>("弹窗 Dialog", FSDialogActivity.class));
+    mExperiments.add(new Pair<>("First Compose", FirstComposeActivity.class));
+    mExperiments.add(new Pair<>("First Compose", ComposeFrameActivity.class));
   }
 
   private View createContentView() {

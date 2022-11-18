@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.yonghong.android.cube">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:name=".CubeApp"
@@ -10,6 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cube">
+        <activity
+            android:name=".compose.FirstComposeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".compose.animation.ComposeFrameActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".activity.animation.PropertyRotationActivity"
             android:exported="false">
@@ -56,7 +69,7 @@
             android:name=".activity.FSDialogActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
