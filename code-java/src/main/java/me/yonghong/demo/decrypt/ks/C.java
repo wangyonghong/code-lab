@@ -1,10 +1,11 @@
 package me.yonghong.demo.decrypt.ks;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 public class C {
-    private static final Charset charset = Charset.forName("ISO-8859-1");
+    private static final Charset charset = StandardCharsets.ISO_8859_1;
 
     public static B a() {
         return B.a;

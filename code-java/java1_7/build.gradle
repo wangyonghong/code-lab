@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'me.yonghong'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+java {
+    sourceCompatibility JavaVersion.VERSION_1_7
+    targetCompatibility JavaVersion.VERSION_1_7
+}
+
+test {
+    useJUnitPlatform()
+}

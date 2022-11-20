@@ -1,4 +1,5 @@
 val pi: Float by lazy {
+    println("init pi")
     3.14f
 }
 

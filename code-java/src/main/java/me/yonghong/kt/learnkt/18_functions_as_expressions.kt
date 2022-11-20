@@ -1,5 +1,6 @@
 /*
-*   FUNCTIONS as Expressions
+* FUNCTIONS as Expressions
+* 表达式函数
 * */
 fun main(args: Array<String>) {
 

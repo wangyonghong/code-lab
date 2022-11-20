@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main(args: Array<String>) {
 
     /** Scope Function: 'let'
@@ -6,13 +8,13 @@ fun main(args: Array<String>) {
 
     // Use 'let' function to avoid NullPointerException
 
-    val name: String? = "Hello"
+    val name: String? = "hello world"
 
     // Execute the lambda expression only if the 'name' variable is NOT NULL
-    val stringLength = name?.let {
+    val stringLength = name?.let { it ->
         println(it.reversed())
-        println(it.capitalize())
-        it.length       // Will be returned and stored within stringLength variable 
+        println(it.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() })
+        it.length       // Will be returned and stored within stringLength variable
     }
 
     println(stringLength)

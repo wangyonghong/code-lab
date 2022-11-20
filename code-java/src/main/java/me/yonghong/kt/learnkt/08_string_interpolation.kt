@@ -1,5 +1,6 @@
 /*
 * Explore String Interpolation in Kotlin
+* 字符串模板
 * */
 fun main(args: Array<String>) {
 

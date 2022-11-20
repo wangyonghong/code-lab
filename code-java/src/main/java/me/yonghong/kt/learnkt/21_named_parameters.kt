@@ -1,5 +1,6 @@
 /*
-*   Named Parameters
+* Named Parameters
+* 具名参数（named arguments）
 * */
 fun main(args: Array<String>) {
 

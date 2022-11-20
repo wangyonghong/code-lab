@@ -1,6 +1,7 @@
 import kotlinx.coroutines.*
 
 
+@OptIn(DelicateCoroutinesApi::class)
 fun main(args: Array<String>) {        // Executes in main thread
 
     println("Main program starts: ${Thread.currentThread().name}")
