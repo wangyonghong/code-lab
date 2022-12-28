@@ -20,7 +20,9 @@ import me.yonghong.android.cube.activity.animation.PropertyActivity;
 import me.yonghong.android.cube.activity.animation.PropertyRotationActivity;
 import me.yonghong.android.cube.activity.animation.ShakePhoneActivity;
 import me.yonghong.android.cube.activity.animation.TweenActivity;
+import me.yonghong.android.cube.activity.threed.ThreeDActivity;
 import me.yonghong.android.cube.compose.FirstComposeActivity;
+import me.yonghong.android.cube.compose.animation.AnimateAsStateActivity;
 import me.yonghong.android.cube.compose.animation.AnimatedVisibilityAndContentActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   private void registerToLab() {
+    mExperiments.add(new Pair<>("3D", ThreeDActivity.class));
     mExperiments.add(new Pair<>("补间动画 Tween Animation", TweenActivity.class));
     mExperiments.add(new Pair<>("逐帧动画 Frame Interpolator", FrameActivity.class));
     mExperiments.add(new Pair<>("属性动画 Property Interpolator", PropertyActivity.class));
@@ -43,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
     mExperiments.add(new Pair<>("动画插值器 Animation Interpolator", InterpolatorActivity.class));
     mExperiments.add(new Pair<>("弹窗 Dialog", FSDialogActivity.class));
     mExperiments.add(new Pair<>("First Compose", FirstComposeActivity.class));
-    mExperiments.add(new Pair<>("Compose 高级动画", AnimatedVisibilityAndContentActivity.class));
+    mExperiments.add(new Pair<>("Compose EasyAnimation", AnimatedVisibilityAndContentActivity.class));
+    mExperiments.add(new Pair<>("Compose AnimateAsState", AnimateAsStateActivity.class));
   }
 
   private View createContentView() {

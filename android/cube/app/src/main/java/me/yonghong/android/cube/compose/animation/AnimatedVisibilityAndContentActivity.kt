@@ -26,6 +26,7 @@ class AnimatedVisibilityAndContentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+            EasyAnimation()
         }
     }
 

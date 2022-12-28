@@ -10,7 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cube">
         <activity
-            android:name=".compose.FirstComposeActivity"
+            android:name=".activity.threed.ThreeDActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".compose.animation.AnimateAsStateActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -18,6 +25,13 @@
         </activity>
         <activity
             android:name=".compose.animation.AnimatedVisibilityAndContentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".compose.FirstComposeActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

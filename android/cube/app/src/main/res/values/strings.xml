@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android 实验室</string>
+    <string name="app_channel">main</string>
 </resources>

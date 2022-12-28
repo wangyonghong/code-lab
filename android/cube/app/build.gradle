@@ -18,9 +18,27 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
+        }
+
+        release {
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "channel"
+
+    productFlavors {
+        huawei {
+            dimension "channel"
+            buildConfigField("int", "SDK_CHANNEL", "1")
+        }
+
+        xiaomi {
+            dimension "channel"
+            buildConfigField("int", "SDK_CHANNEL", "2")
         }
     }
 
