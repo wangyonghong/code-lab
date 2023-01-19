@@ -22,8 +22,11 @@ import me.yonghong.android.cube.activity.animation.ShakePhoneActivity;
 import me.yonghong.android.cube.activity.animation.TweenActivity;
 import me.yonghong.android.cube.activity.threed.ThreeDActivity;
 import me.yonghong.android.cube.compose.FirstComposeActivity;
+import me.yonghong.android.cube.tlab.lottie.LottieActivity;
+import me.yonghong.android.cube.tlab.lottie.LottieComposeActivity;
 import me.yonghong.android.cube.compose.animation.AnimateAsStateActivity;
 import me.yonghong.android.cube.compose.animation.AnimatedVisibilityAndContentActivity;
+import me.yonghong.android.cube.tlab.pag.PagDemoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
   }
 
   private void registerToLab() {
+    mExperiments.add(new Pair<>("Lottie Compose", LottieComposeActivity.class));
+    mExperiments.add(new Pair<>("Lottie", LottieActivity.class));
+    mExperiments.add(new Pair<>("PAG Demo", PagDemoActivity.class));
     mExperiments.add(new Pair<>("3D", ThreeDActivity.class));
     mExperiments.add(new Pair<>("补间动画 Tween Animation", TweenActivity.class));
     mExperiments.add(new Pair<>("逐帧动画 Frame Interpolator", FrameActivity.class));
