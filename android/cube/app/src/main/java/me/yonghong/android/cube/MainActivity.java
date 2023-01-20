@@ -27,6 +27,7 @@ import me.yonghong.android.cube.tlab.lottie.LottieComposeActivity;
 import me.yonghong.android.cube.compose.animation.AnimateAsStateActivity;
 import me.yonghong.android.cube.compose.animation.AnimatedVisibilityAndContentActivity;
 import me.yonghong.android.cube.tlab.pag.PagDemoActivity;
+import me.yonghong.android.cube.tlab.tquic.TnetSampleActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
   }
 
   private void registerToLab() {
+    mExperiments.add(new Pair<>("Tquic Demo", TnetSampleActivity.class));
     mExperiments.add(new Pair<>("Lottie Compose", LottieComposeActivity.class));
     mExperiments.add(new Pair<>("Lottie", LottieActivity.class));
     mExperiments.add(new Pair<>("PAG Demo", PagDemoActivity.class));

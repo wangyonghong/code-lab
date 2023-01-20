@@ -25,3 +25,9 @@
 # https://github.com/Tencent/libpag
 -keep class org.libpag.** {*;}
 -keep class androidx.exifinterface.** {*;}
+
+
+# keep tquic相关java类，native方法会反射调用
+-keep class com.tencent.qqlive.modules.vb.tquic.impl.** {
+ *;
+}
