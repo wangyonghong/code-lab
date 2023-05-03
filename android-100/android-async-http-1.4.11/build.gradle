@@ -1,0 +1,40 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath 'com.vanniktech:gradle-android-javadoc-plugin:0.4.0-SNAPSHOT'
+        classpath 'digital.wup:android-maven-publish:3.6.2'
+        classpath "gradle.plugin.com.dorongold.plugins:task-tree:1.4"
+    }
+}
+
+def isReleaseBuild() {
+    return version.contains("SNAPSHOT") == false
+}
+
+allprojects {
+    group = 'com.loopj.android'
+    version = '1.4.11'
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+        options.compilerArgs << "-Xlint:unchecked"
+        options.compilerArgs << "-Xlint:deprecation"
+    }
+}
+
+apply plugin: 'android-reporting'
+apply plugin: 'com.vanniktech.android.javadoc'
+apply plugin: 'com.dorongold.task-tree'

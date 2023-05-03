@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+}
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 28
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        standard {
+            dimension "version"
+        }
+    }
+
+    lintOptions {
+        xmlReport false
+        warningsAsErrors true
+        quiet false
+        showAll true
+        disable 'OldTargetApi', 'UnusedAttribute', 'LongLogTag', 'TrustAllX509TrustManager', 'GoogleAppIndexingWarning', 'Autofill', 'LabelFor', 'SetTextI18n'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.0'
+    implementation project(':android-async-http')
+}
