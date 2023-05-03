@@ -1,0 +1,17 @@
+dependencies {
+    api project(":core")
+    compileOnly "androidx.annotation:annotation:1.0.1"
+    compileOnly "org.chromium.net:cronet-embedded:76.3809.111"
+
+    testImplementation project(":testing")
+    testImplementation "org.chromium.net:cronet-embedded:76.3809.111"
+    testImplementation "junit:junit:4.12"
+    testImplementation "org.mockito:mockito-core:2.19.0"
+    testImplementation "org.robolectric:robolectric:3.4.2"
+    // TODO(#424): Fix this dependency at the library level.
+    testImplementation "androidx.annotation:annotation:1.0.1"
+}
+
+project.ext.artifactId = 'volley-cronet'
+project.ext.pomName = 'Volley Cronet'
+project.ext.pomDescription = 'Cronet support for Volley.'
