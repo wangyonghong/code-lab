@@ -24,6 +24,16 @@ import javax.annotation.Nullable;
  * Adapts a {@link Call} with response type {@code R} into the type of {@code T}. Instances are
  * created by {@linkplain Factory a factory} which is {@linkplain
  * Retrofit.Builder#addCallAdapterFactory(Factory) installed} into the {@link Retrofit} instance.
+ *
+ * 将 Call<R> 类型的调用适配为 T 类型的调用。
+ * 具体来说:
+ * - R 是 Call 的响应类型
+ * - T 是适配后的类型
+ * - CallAdapter 由 Factory 工厂创建,并通过 Retrofit.Builder#addCallAdapterFactory(Factory) 方法安装到 Retrofit 中
+ * 这个接口的作用是,可以将 Retrofit 的 Call 类型进行适配,转换为其他类型。比如:
+ * - 将 Call<ResponseBody> 转换为 Call<String>
+ * - 将 Call<List<User>> 转换为 Observable<List<User>>
+ * 等等。这给予了 Retrofit 很大的灵活性,可以返回各种类型,而不仅仅是 Call。
  */
 public interface CallAdapter<R, T> {
   /**

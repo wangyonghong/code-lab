@@ -64,13 +64,22 @@ import retrofit2.http.Url;
  * @author Jake Wharton (jw@squareup.com)
  */
 public final class Retrofit {
+  // 这是一个方法的缓存类，key为网络请求的Method，比如GET，POST等，而ServiceMethod则对应着动态代理解析后的方法类
   private final Map<Method, ServiceMethod<?>> serviceMethodCache = new ConcurrentHashMap<>();
 
+  // 创建OkHttp的工厂类
   final okhttp3.Call.Factory callFactory;
+  // API的基URL，所有请求都会以这个URL为前缀
   final HttpUrl baseUrl;
+  // Converter.Factory的集合，Converter.Factory是将返回的数据通过这个工厂转化为对应的数据，
+  // 比如Gson的GsonConverterFactory工厂类，也就是数据转化器工厂；
   final List<Converter.Factory> converterFactories;
+  // CallAdapter.Factory是网络请求的适配器工厂，
+  // 比如把Call转化为RxJava请求的RxJavaCallAdapterFactory工厂，也就是Call转化工厂；
   final List<CallAdapter.Factory> callAdapterFactories;
+  // 用于回调网络请求
   final @Nullable Executor callbackExecutor;
+  // 用于判断是否需要立即解析方法
   final boolean validateEagerly;
 
   Retrofit(
@@ -138,7 +147,9 @@ public final class Retrofit {
    */
   @SuppressWarnings("unchecked") // Single-interface proxy creation guarded by parameter safety.
   public <T> T create(final Class<T> service) {
+    // 验证API接口
     validateServiceInterface(service);
+    // 动态代理
     return (T)
         Proxy.newProxyInstance(
             service.getClassLoader(),
@@ -193,12 +204,14 @@ public final class Retrofit {
   }
 
   ServiceMethod<?> loadServiceMethod(Method method) {
+    // 读缓存
     ServiceMethod<?> result = serviceMethodCache.get(method);
     if (result != null) return result;
 
     synchronized (serviceMethodCache) {
       result = serviceMethodCache.get(method);
       if (result == null) {
+        // 这是个比较耗时的操作，解析方法的注解、解析方法的泛型的类型参数、以及解析方法参数的注解
         result = ServiceMethod.parseAnnotations(this, method);
         serviceMethodCache.put(method, result);
       }

@@ -1,6 +1,10 @@
 Retrofit
 ========
 
+相关文档：
+- https://juejin.cn/post/6885358107996717064
+- https://mp.weixin.qq.com/s/TdHoC0afcb26LIAA9Cix9A
+
 A type-safe HTTP client for Android and Java.
 
 For more information please see [the website][1].

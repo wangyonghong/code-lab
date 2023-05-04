@@ -34,6 +34,7 @@ import okio.Timeout;
  */
 public interface Call<T> extends Cloneable {
   /**
+   * 同步
    * Synchronously send the request and return its response.
    *
    * @throws IOException if a problem occurred talking to the server.
@@ -43,6 +44,7 @@ public interface Call<T> extends Cloneable {
   Response<T> execute() throws IOException;
 
   /**
+   * 异步
    * Asynchronously send the request and notify {@code callback} of its response or if an error
    * occurred talking to the server, creating the request, or processing the response.
    */

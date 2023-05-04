@@ -25,6 +25,7 @@ import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 
 abstract class ParameterHandler<T> {
+  // apply方法在进行网络请求的时候会调用
   abstract void apply(RequestBuilder builder, @Nullable T value) throws IOException;
 
   final ParameterHandler<Iterable<T>> iterable() {
@@ -426,6 +427,7 @@ abstract class ParameterHandler<T> {
       }
       RequestBody body;
       try {
+        // 将body参数转化为对应类型的数据
         body = converter.convert(value);
       } catch (IOException e) {
         throw Utils.parameterError(method, e, p, "Unable to convert " + value + " to RequestBody");

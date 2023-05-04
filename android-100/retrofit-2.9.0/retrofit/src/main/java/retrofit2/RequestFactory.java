@@ -171,13 +171,17 @@ final class RequestFactory {
     Builder(Retrofit retrofit, Method method) {
       this.retrofit = retrofit;
       this.method = method;
+      // 获取方法所有的注解，包括自己声明的以及继承的
       this.methodAnnotations = method.getAnnotations();
+      // 获取方法参数的所有类型，包含泛型；
       this.parameterTypes = method.getGenericParameterTypes();
+      // 获取方法参数上的所有注解
       this.parameterAnnotationsArray = method.getParameterAnnotations();
     }
 
     RequestFactory build() {
       for (Annotation annotation : methodAnnotations) {
+        // 遍历方法的注解，解析方法的参数配置，获取到请求的url，header等参数
         parseMethodAnnotation(annotation);
       }
 
@@ -202,6 +206,7 @@ final class RequestFactory {
       int parameterCount = parameterAnnotationsArray.length;
       parameterHandlers = new ParameterHandler<?>[parameterCount];
       for (int p = 0, lastParameter = parameterCount - 1; p < parameterCount; p++) {
+        // 遍历方法的参数，以及参数的类型，解析方法的参数逻辑
         parameterHandlers[p] =
             parseParameter(p, parameterTypes[p], parameterAnnotationsArray[p], p == lastParameter);
       }
@@ -219,6 +224,7 @@ final class RequestFactory {
         throw methodError(method, "Multipart method must contain at least one @Part.");
       }
 
+      // 根据上面解析的参数配置，创建RequestFactory
       return new RequestFactory(this);
     }
 

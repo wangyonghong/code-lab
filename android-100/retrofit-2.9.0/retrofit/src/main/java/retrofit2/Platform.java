@@ -116,6 +116,7 @@ class Platform {
 
     @Override
     public Executor defaultCallbackExecutor() {
+      // 默认的线程执行器Executor，可以看出，获取的是主线程的Hander，execute的时候，会post到主线程执行
       return new MainThreadExecutor();
     }
 

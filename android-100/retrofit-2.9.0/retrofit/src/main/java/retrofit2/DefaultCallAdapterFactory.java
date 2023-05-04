@@ -25,6 +25,9 @@ import javax.annotation.Nullable;
 import okhttp3.Request;
 import okio.Timeout;
 
+/**
+ * 默认网络请求适配器工厂
+ */
 final class DefaultCallAdapterFactory extends CallAdapter.Factory {
   private final @Nullable Executor callbackExecutor;
 
@@ -66,6 +69,10 @@ final class DefaultCallAdapterFactory extends CallAdapter.Factory {
     final Executor callbackExecutor;
     final Call<T> delegate;
 
+    /**
+     * @param callbackExecutor {@link Platform.Android#defaultCallbackExecutor()}
+     * @param delegate
+     */
     ExecutorCallbackCall(Executor callbackExecutor, Call<T> delegate) {
       this.callbackExecutor = callbackExecutor;
       this.delegate = delegate;
@@ -79,6 +86,7 @@ final class DefaultCallAdapterFactory extends CallAdapter.Factory {
           new Callback<T>() {
             @Override
             public void onResponse(Call<T> call, final Response<T> response) {
+              // 切换到主线程
               callbackExecutor.execute(
                   () -> {
                     if (delegate.isCanceled()) {
@@ -93,6 +101,7 @@ final class DefaultCallAdapterFactory extends CallAdapter.Factory {
 
             @Override
             public void onFailure(Call<T> call, final Throwable t) {
+              // 切换到主线程
               callbackExecutor.execute(() -> callback.onFailure(ExecutorCallbackCall.this, t));
             }
           });
