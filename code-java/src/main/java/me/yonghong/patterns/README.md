@@ -1,5 +1,9 @@
 # 设计模式
 
+## 参考资料
+
+- [https://java-design-patterns.com/patterns/](https://java-design-patterns.com/patterns/)
+
 ## 原则（0/7）
 
 - [ ] 开闭原则（Open Closed Principle）
