@@ -1,6 +1,12 @@
 OkHttp
 ======
 
+源码解析：
+- https://juejin.cn/post/6844904102669844493
+- https://segmentfault.com/a/1190000041128933
+- https://juejin.cn/post/6844903765217116173
+- https://juejin.cn/post/6844903765225685006
+
 See the [project website][okhttp] for documentation and APIs.
 
 HTTP is the way modern applications network. It’s how we exchange data & media. Doing HTTP

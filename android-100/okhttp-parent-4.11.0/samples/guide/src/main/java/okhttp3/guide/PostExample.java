@@ -40,5 +40,8 @@ public class PostExample {
     String json = example.bowlingJson("Jesse", "Jake");
     String response = example.post("http://www.roundsapp.com/post", json);
     System.out.println(response);
+
+    response = example.post("https://httpbin.org/post", json);
+    System.out.println(response);
   }
 }

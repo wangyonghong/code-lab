@@ -222,6 +222,7 @@ class RetryAndFollowUpInterceptor(private val client: OkHttpClient) : Intercepto
 
       HTTP_UNAUTHORIZED -> return client.authenticator.authenticate(route, userResponse)
 
+      // 30X 重定向
       HTTP_PERM_REDIRECT, HTTP_TEMP_REDIRECT, HTTP_MULT_CHOICE, HTTP_MOVED_PERM, HTTP_MOVED_TEMP, HTTP_SEE_OTHER -> {
         return buildRedirectRequest(userResponse, method)
       }

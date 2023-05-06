@@ -158,6 +158,9 @@ open class OkHttpClient internal constructor(
 
   @get:JvmName("cache") val cache: Cache? = builder.cache
 
+  /**
+   * [Dns.SYSTEM]
+   */
   @get:JvmName("dns") val dns: Dns = builder.dns
 
   @get:JvmName("proxy") val proxy: Proxy? = builder.proxy

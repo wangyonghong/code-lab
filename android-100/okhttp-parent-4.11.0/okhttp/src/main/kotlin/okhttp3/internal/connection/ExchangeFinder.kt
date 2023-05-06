@@ -33,17 +33,22 @@ import okhttp3.internal.http2.StreamResetException
 /**
  * Attempts to find the connections for an exchange and any retries that follow. This uses the
  * following strategies:
+ * 尝试查找交换的连接以及随后的任何重试。使用以下策略:
  *
  *  1. If the current call already has a connection that can satisfy the request it is used. Using
  *     the same connection for an initial exchange and its follow-ups may improve locality.
+ *  1. 如果当前调用已经有可以满足请求的连接，则使用它。
  *
  *  2. If there is a connection in the pool that can satisfy the request it is used. Note that it is
  *     possible for shared exchanges to make requests to different host names! See
  *     [RealConnection.isEligible] for details.
+ *  2. 如果连接池中有可以满足请求的连接，则使用它。
  *
  *  3. If there's no existing connection, make a list of routes (which may require blocking DNS
  *     lookups) and attempt a new connection them. When failures occur, retries iterate the list of
  *     available routes.
+ *  3. 如果没有现有连接，则制作一份路由列表(可能需要阻塞的DNS查找)，然后尝试创建新连接。
+ *     发生故障时，依次重试可用路由列表。
  *
  * If the pool gains an eligible connection while DNS, TCP, or TLS work is in flight, this finder
  * will prefer pooled connections. Only pooled HTTP/2 connections are used for such de-duplication.
@@ -54,6 +59,7 @@ import okhttp3.internal.http2.StreamResetException
  * executing [call].
  */
 class ExchangeFinder(
+  // 连接复用是通过ConnectionPool来实现的
   private val connectionPool: RealConnectionPool,
   internal val address: Address,
   private val call: RealCall,
@@ -71,6 +77,7 @@ class ExchangeFinder(
     chain: RealInterceptorChain
   ): ExchangeCodec {
     try {
+      // 调用 findHealthyConnection 获得 RealConnection
       val resultConnection = findHealthyConnection(
           connectTimeout = chain.connectTimeoutMillis,
           readTimeout = chain.readTimeoutMillis,
@@ -79,6 +86,7 @@ class ExchangeFinder(
           connectionRetryEnabled = client.retryOnConnectionFailure,
           doExtensiveHealthChecks = chain.request.method != "GET"
       )
+      // 获得 ExchangeCodec
       return resultConnection.newCodec(client, chain)
     } catch (e: RouteException) {
       trackFailure(e.lastConnectException)

@@ -602,6 +602,7 @@ class RealConnection(
         peerCertificates[0] as X509Certificate)
   }
 
+  // 核心工作都由 HttpCodec 对象完成，而 HttpCodec 实际上利用的是 Okio，而 Okio 实际上还是用的 Socket
   @Throws(SocketException::class)
   internal fun newCodec(client: OkHttpClient, chain: RealInterceptorChain): ExchangeCodec {
     val socket = this.socket!!

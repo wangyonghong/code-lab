@@ -144,23 +144,34 @@ class RealCall(
 
   override fun isCanceled() = canceled
 
+  // 处理同步请求
   override fun execute(): Response {
+    // 确保只能执行一次，如果已经执行过，则抛出异常
     check(executed.compareAndSet(false, true)) { "Already Executed" }
 
+    // 请求超时开始计时
     timeout.enter()
+    // 开启请求监听
     callStart()
     try {
+      // 调用调度器中的 executed() 方法，调度器只是将 call 加入到了runningSyncCalls队列中
       client.dispatcher.executed(this)
+      // 调用 getResponseWithInterceptorChain 方法拿到 response
       return getResponseWithInterceptorChain()
     } finally {
+      // 执行完毕，调度器将该 call 从 runningSyncCalls 队列中移除
       client.dispatcher.finished(this)
     }
   }
 
+  // 处理异步请求
   override fun enqueue(responseCallback: Callback) {
+    // 确保只能执行一次，如果已经执行过，则抛出异常
     check(executed.compareAndSet(false, true)) { "Already Executed" }
 
+    // 开启请求监听
     callStart()
+    // 新建一个 AsyncCall 对象，通过调度器 enqueue 方法加入到 readyAsyncCalls 队列中
     client.dispatcher.enqueue(AsyncCall(responseCallback))
   }
 
@@ -171,18 +182,26 @@ class RealCall(
     eventListener.callStart(this)
   }
 
+  // 核心逻辑
+  // OkHttp将整个请求的复杂逻辑切成了一个一个的独立模块并命名为拦截器(Interceptor)，
+  // 通过责任链的设计模式串联到了一起，最终完成请求获取响应结果。
   @Throws(IOException::class)
   internal fun getResponseWithInterceptorChain(): Response {
     // Build a full stack of interceptors.
     val interceptors = mutableListOf<Interceptor>()
     interceptors += client.interceptors
+    // 失败和重定向拦截器
     interceptors += RetryAndFollowUpInterceptor(client)
+    // 封装request和response拦截器
     interceptors += BridgeInterceptor(client.cookieJar)
+    // 缓存相关的过滤器，负责读取缓存直接返回、更新缓存
     interceptors += CacheInterceptor(client.cache)
+    // 连接服务，负责和服务器建立连接 这里才是真正的请求网络
     interceptors += ConnectInterceptor
     if (!forWebSocket) {
       interceptors += client.networkInterceptors
     }
+    // 执行流操作(写出请求体、获得响应数据) 负责向服务器发送请求数据、从服务器读取响应数据 进行http请求报文的封装与请求报文的解析
     interceptors += CallServerInterceptor(forWebSocket)
 
     val chain = RealInterceptorChain(
@@ -252,6 +271,7 @@ class RealCall(
     }
 
     val exchangeFinder = this.exchangeFinder!!
+    // 调用ExchangeFinder的find()获得ExchangeCodec
     val codec = exchangeFinder.find(client, chain)
     val result = Exchange(this, eventListener, exchangeFinder, codec)
     this.interceptorScopedExchange = result

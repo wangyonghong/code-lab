@@ -22,5 +22,8 @@ public class GetExample {
     GetExample example = new GetExample();
     String response = example.run("https://raw.github.com/square/okhttp/master/README.md");
     System.out.println(response);
+
+    response = example.run("https://httpbin.org/get");
+    System.out.println(response);
   }
 }

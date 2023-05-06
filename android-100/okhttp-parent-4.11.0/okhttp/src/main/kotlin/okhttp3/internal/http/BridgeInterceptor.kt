@@ -30,6 +30,11 @@ import okio.buffer
  * Bridges from application code to network code. First it builds a network request from a user
  * request. Then it proceeds to call the network. Finally it builds a user response from the network
  * response.
+ * 1、负责把用户构造的请求转换为发送到服务器的请求 、把服务器返回的响应转换为用户友好的响应，是从应用程序代码到网络代码的桥梁
+ * 2、设置内容长度，内容编码
+ * 3、设置gzip压缩，并在接收到内容后进行解压。省去了应用层处理数据解压的麻烦
+ * 4、添加cookie
+ * 5、设置其他报头，如User-Agent,Host,Keep-alive等。其中Keep-Alive是实现连接复用的必要步骤
  */
 class BridgeInterceptor(private val cookieJar: CookieJar) : Interceptor {
 

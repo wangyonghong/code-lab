@@ -34,6 +34,8 @@ import okhttp3.internal.threadFactory
  * Each dispatcher uses an [ExecutorService] to run calls internally. If you supply your own
  * executor, it should be able to run [the configured maximum][maxRequests] number of calls
  * concurrently.
+ *
+ * 调度器，用来调度Call对象，同时包含线程池与异步请求队列，用来存放与执行AsyncCall对象。
  */
 class Dispatcher constructor() {
   /**
@@ -86,6 +88,7 @@ class Dispatcher constructor() {
   @get:Synchronized
   var idleCallback: Runnable? = null
 
+  // 线程池，异步处理请求
   private var executorServiceOrNull: ExecutorService? = null
 
   @get:Synchronized
@@ -99,12 +102,15 @@ class Dispatcher constructor() {
     }
 
   /** Ready async calls in the order they'll be run. */
+  /** 已准备好的异步请求队列 */
   private val readyAsyncCalls = ArrayDeque<AsyncCall>()
 
   /** Running asynchronous calls. Includes canceled calls that haven't finished yet. */
+  /** 正在运行的异步请求队列, 包含取消但是还未finish的AsyncCall */
   private val runningAsyncCalls = ArrayDeque<AsyncCall>()
 
   /** Running synchronous calls. Includes canceled calls that haven't finished yet. */
+  /** 正在运行的同步请求队列, 包含取消但是还未finish的RealCall */
   private val runningSyncCalls = ArrayDeque<RealCall>()
 
   constructor(executorService: ExecutorService) : this() {
@@ -118,6 +124,7 @@ class Dispatcher constructor() {
       // Mutate the AsyncCall so that it shares the AtomicInteger of an existing running call to
       // the same host.
       if (!call.call.forWebSocket) {
+        // 通过域名来查找有没有相同域名的请求，有则复用。
         val existingCall = findExistingCallWithHost(call.host)
         if (existingCall != null) call.reuseCallsPerHostFrom(existingCall)
       }
