@@ -38,13 +38,20 @@ dependencies {
     // https://mvnrepository.com/artifact/commons-io/commons-io
     implementation 'commons-io:commons-io:2.11.0'
 
-    implementation 'cn.hutool:hutool-all:5.8.9'
+    implementation 'cn.hutool:hutool-all:5.8.11'
 
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.20'
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.7.20'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
 
     implementation 'com.guardsquare:proguard-retrace:7.2.2'
+
+    implementation 'org.openjdk.jol:jol-core:0.17'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation 'com.typesafe.akka:akka-actor_2.10:2.3.10'
+    implementation 'com.typesafe.akka:akka-persistence-experimental_2.10:2.3.10'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.17'
+
 
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
     implementation 'org.slf4j:slf4j-log4j12:2.0.3'
