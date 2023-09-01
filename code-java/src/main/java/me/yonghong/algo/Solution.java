@@ -1,8 +1,7 @@
 package me.yonghong.algo;
 
-import me.yonghong.algo.lc.lc0001.Lc0001;
+
 import org.apache.commons.lang3.ArrayUtils;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -16,7 +15,6 @@ import java.util.Queue;
 public interface Solution extends Comparable<Solution> {
 
     public static void main(String[] args) {
-        SolutionUtils.runTest(Lc0001.class);
     }
 
     /**
@@ -58,6 +56,14 @@ public interface Solution extends Comparable<Solution> {
         System.out.println(Arrays.toString(nums));
     }
 
+    default void print(int[][] nums) {
+        String[] numStrs = new String[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            numStrs[i] = Arrays.toString(nums[i]);
+        }
+        System.out.println(Arrays.toString(numStrs));
+    }
+
     /**
      * 打印 List<T> list
      *
@@ -90,7 +96,7 @@ public interface Solution extends Comparable<Solution> {
     default int[] stringToIntegerArray(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
-        if (input.length() == 0) {
+        if (input.isEmpty()) {
             return new int[0];
         }
 
@@ -122,23 +128,23 @@ public interface Solution extends Comparable<Solution> {
             return "[]";
         }
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
         while (node != null) {
-            result += Integer.toString(node.val) + ", ";
+            result.append(node.val).append(", ");
             node = node.next;
         }
         return "[" + result.substring(0, result.length() - 2) + "]";
     }
 
     @Override
-    default int compareTo(@NotNull Solution o) {
+    default int compareTo(Solution o) {
         return this.getClass().getCanonicalName().compareTo(o.getClass().getCanonicalName());
     }
 
     default TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
-        if (input.length() == 0) {
+        if (input.isEmpty()) {
             return null;
         }
 
